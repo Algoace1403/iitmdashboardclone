@@ -1,0 +1,13 @@
+{
+  "terms": [
+    {
+      "termId": "t1",
+      "term": 1,
+      "sgpa": 0,
+      "cgpa": 0,
+      "creditsEarned": 0,
+      "totalCredits": 0,
+      "grades": []
+    }
+  ]
+}

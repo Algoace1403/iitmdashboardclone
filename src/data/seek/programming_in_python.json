@@ -1,0 +1,305 @@
+{
+  "courseId": "programming_in_python",
+  "seekCode": "ns_26t1_cs1002",
+  "aboutCourse": {
+    "title": "Programming in Python",
+    "subtitle": "Data Science Foundation and Electronic System Diploma",
+    "dsFoundation": {
+      "courseId": "CS1002",
+      "credits": 4,
+      "type": "Foundational",
+      "prerequisites": "BSCS1001 - Computational Thinking"
+    },
+    "esDiploma": {
+      "courseId": "CS2102",
+      "credits": 4,
+      "type": "Diploma",
+      "prerequisites": "None"
+    },
+    "faculty": "Sudarshan Iyengar",
+    "facultyTitle": "Associate Professor & Head",
+    "department": "Department of Computer Science & Engineering",
+    "institute": "IIT Ropar",
+    "instructors": [
+      "Kubra Kadeejathil",
+      "Livin Nector",
+      "Manidipa Bhattacharjee"
+    ],
+    "studyMaterial": "The primary study material for this course is the set of videos and assignments posted on the course page. The learners are advised to make best use of the interaction sessions with the course support mentors in addition to the videos and assignments.",
+    "websiteLinks": {
+      "dsFoundation": "https://study.iitm.ac.in/ds/course_pages/BSCS1002.html",
+      "esDiploma": "https://study.iitm.ac.in/es/course_pages/CS2102.html"
+    }
+  },
+  "weeks": [
+    {
+      "weekNumber": 0,
+      "title": "Week 0",
+      "items": [
+        { "title": "Important Document & Resources", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 1,
+      "title": "Week 1",
+      "items": [
+        { "title": "Orientation of the Course", "type": "Lesson" },
+        { "title": "Live Python Tutor Demo", "type": "Video" },
+        { "title": "Introduction to Google Colab", "type": "Video" },
+        { "title": "L1.1: Introduction", "type": "Video" },
+        { "title": "L1.2: Introduction to Replit", "type": "Video" },
+        { "title": "L1.3: More on Replit, print and Common Mistakes", "type": "Video" },
+        { "title": "L1.4: A Quick Introduction to Variables", "type": "Video" },
+        { "title": "L1.5: Variables and Input Statement", "type": "Video" },
+        { "title": "L1.6: Variables and Literals", "type": "Video" },
+        { "title": "L1.7: Data Types 1", "type": "Video" },
+        { "title": "L1.8: Data Types 2", "type": "Video" },
+        { "title": "L1.9: Operators and Expressions 1", "type": "Video" },
+        { "title": "L1.10: Operators and Expressions 2", "type": "Video" },
+        { "title": "L1.11: Introduction to Strings", "type": "Video" },
+        { "title": "L1.12: More on Strings", "type": "Video" },
+        { "title": "L1.13: Conclusion: FAQs", "type": "Video" },
+        { "title": "Week 1 Practice assignment 1 - Not Graded", "type": "Assignment" },
+        { "title": "Week 1 Graded Assignment 1", "type": "Assignment", "graded": true },
+        { "title": "GrPA 1 - Numbers (Arithemetic) - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA2 - Numbers (Relational and Logical) - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3 - Strings (Indexing and Slicing) - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4 - Strings (Concatenation, repetition, and substring check) - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA5 - I/O and Type Conversion - GRADED", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "title": "Week 2",
+      "items": [
+        { "title": "L2.1: Introduction", "type": "Video" },
+        { "title": "L2.2: Variables : A Programmer's Perspective", "type": "Video" },
+        { "title": "L2.3: Variables Revisited: Dynamic Typing", "type": "Video" },
+        { "title": "L2.4: More on Variables, Operators and Expressions", "type": "Video" },
+        { "title": "L2.5: Escape characters and types of quotes", "type": "Video" },
+        { "title": "L2.6: String Methods", "type": "Video" },
+        { "title": "L2.7: An Interesting Cipher: More on Strings", "type": "Video" },
+        { "title": "L2.8: Introduction to the if statement", "type": "Video" },
+        { "title": "L2.9: Tutorial on if, else and else-if (elif) conditions", "type": "Video" },
+        { "title": "L2.10: Introduction to \"import library\"", "type": "Video" },
+        { "title": "L2.11: Different ways to import a library", "type": "Video" },
+        { "title": "L2.12: Conclusion", "type": "Video" },
+        { "title": "Week 2 Practice Assignment 2 - Not Graded", "type": "Assignment" },
+        { "title": "Week 2 - Graded Assignment 2", "type": "Assignment", "graded": true },
+        { "title": "GrPA 1 - Variables and Assignment - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2 - String Escaping - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3 - Basic conditional patterns - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4 - Conditionals - Applications - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 5 - Conditionals - Debugging - GRADED", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "title": "Week 3",
+      "items": [
+        { "title": "L3.1: Introduction", "type": "Video" },
+        { "title": "L3.2: Introduction to while loop", "type": "Video" },
+        { "title": "L3.3: While to Compute Factorial", "type": "Video" },
+        { "title": "L3.4: Tutorial on while loop", "type": "Video" },
+        { "title": "L3.5: Introduction to for loop", "type": "Video" },
+        { "title": "L3.6: for loop to add the first n numbers", "type": "Video" },
+        { "title": "L3.7: for loop for multiplication tables", "type": "Video" },
+        { "title": "L3.8: More on range and for loop without range", "type": "Video" },
+        { "title": "L3.9: Formatted Printing", "type": "Video" },
+        { "title": "L3.10: Tutorial on for loop and difference between while loop and for loop", "type": "Video" },
+        { "title": "L3.11: Nested for loop", "type": "Video" },
+        { "title": "L3.12: Tutorial on nested loops", "type": "Video" },
+        { "title": "L3.13: break, continue and pass", "type": "Video" },
+        { "title": "L3.14: Conclusion", "type": "Video" },
+        { "title": "Week 3 - Practice assignment 3 - Not Graded", "type": "Assignment" },
+        { "title": "Week 3 - Graded Assignment 3", "type": "Assignment", "graded": true },
+        { "title": "GrPA 1 - While Loop - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2 - For Loop - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3 - Nested loops - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4 - Loops Application - GRADED", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "title": "Week 4",
+      "items": [
+        { "title": "L4.1: Warmup with Lists", "type": "Video" },
+        { "title": "L4.2: Lists and Sets", "type": "Video" },
+        { "title": "L4.3: Tuples", "type": "Video" },
+        { "title": "L4.4: More on Lists", "type": "Video" },
+        { "title": "L4.5: More on Sets", "type": "Video" },
+        { "title": "L4.6: More on Tuples", "type": "Video" },
+        { "title": "L4.7: List Comprehensions", "type": "Video" },
+        { "title": "L4.8: Introduction to Functions", "type": "Video" },
+        { "title": "L4.9: More Examples of Functions", "type": "Video" },
+        { "title": "L4.10: Types of Function Arguments", "type": "Video" },
+        { "title": "L4.11: Types of Functions", "type": "Video" },
+        { "title": "Week 4 - Practice Assignment 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 4 - Graded Assignment 4", "type": "Assignment", "graded": true },
+        { "title": "GrPA 1 - Basic Collections - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2 - Operations on list and set - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3 - List and set application - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4 - Function Basics - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 5 - Comprehensions - GRADED", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "title": "Week 5",
+      "items": [
+        { "title": "L5.1: Dictionaries", "type": "Video" },
+        { "title": "L5.2: More on Dictionaries", "type": "Video" },
+        { "title": "Collections Summary", "type": "Lesson" },
+        { "title": "L5.3: Sorting using Functions", "type": "Video" },
+        { "title": "L5.4: Matrix Multiplication - 1", "type": "Video" },
+        { "title": "L5.5: Matrix Multiplication - 2", "type": "Video" },
+        { "title": "L5.6: Matrix Multiplication using Functions", "type": "Video" },
+        { "title": "L5.7: Scope of Variables", "type": "Video" },
+        { "title": "L5.8: Tutorial on functions", "type": "Video" },
+        { "title": "L5.9: Iterators and generator", "type": "Video" },
+        { "title": "L5.10: lambda functions, enumerate, zip, map filter", "type": "Video" },
+        { "title": "Practice assignment 5 - Not Graded", "type": "Assignment" },
+        { "title": "Week 5 - Graded Assignment 5", "type": "Assignment", "graded": true },
+        { "title": "GrPA 1 - Dictionary Basics - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2 - Dictionary Applications - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3 - Composing functions - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4 - lambda, zip, enumerate, map, filter - GRADED", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 5 - min, max, sorted, groupby - GRADED", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "title": "Week 6",
+      "items": [
+        { "title": "Numbers 1 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Numbers 2 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Numbers 3 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 1 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 2 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 3 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 1 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 2 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 3 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 4 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 5 - Graded", "type": "Programming Assignment", "graded": true },
+        { "title": "Week 6 - Graded Assignment 6", "type": "Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "title": "Week 7",
+      "items": [
+        { "title": "Numbers 1 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Numbers 2 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Numbers 3 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Numbers 4 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 1 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 2 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 3 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Strings 4 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 1 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 2 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 3 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Collections 4 - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Data Processing 1 - Function Type - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Data Processing 2 - Function Type - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Data Processing 3 - Function Type - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "Data Processing 4 - Function Type - GRPA", "type": "Programming Assignment", "graded": true },
+        { "title": "week 7 - Graded Assignment 7", "type": "Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "title": "Week 8",
+      "items": [
+        { "title": "L8.1: Introduction to File Handling", "type": "Video" },
+        { "title": "L8.2: Reading and Writing to a File", "type": "Video" },
+        { "title": "L8.3: Big text file handling", "type": "Video" },
+        { "title": "L8.4: Very big files - a tip", "type": "Video" },
+        { "title": "L8.5: Caesar Cipher", "type": "Video" },
+        { "title": "L8.6: File handling, Genetic Sequences", "type": "Video" },
+        { "title": "Practice Assignment 8 - Not Graded", "type": "Assignment" },
+        { "title": "Week 8 - Graded Assignment 8", "type": "Assignment", "graded": true },
+        { "title": "PPA 1 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 2 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 3 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 4 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 5 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 6 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 7 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 8 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 9 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 10 - Not Graded", "type": "Programming Assignment" },
+        { "title": "GrPA 1", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "title": "Week 9",
+      "items": [
+        { "title": "L9.1: Introduction to the week and introduction to recursion", "type": "Video" },
+        { "title": "L9.2: Theoretical Introduction to Recursion", "type": "Video" },
+        { "title": "L9.3: Recursion - An Illustration", "type": "Video" },
+        { "title": "L9.4: Recursion: a simple question", "type": "Video" },
+        { "title": "L9.5: Recursion: find 0 in a list", "type": "Video" },
+        { "title": "L9.6: Sorting Recursively", "type": "Video" },
+        { "title": "L9.7: Introduction to Binary Search", "type": "Video" },
+        { "title": "L9.8: Warm up for Binary Search", "type": "Video" },
+        { "title": "L9.9: Binary Search Implementation", "type": "Video" },
+        { "title": "L9.10: Binary Search Recursion Way", "type": "Video" },
+        { "title": "Practice Assignment 9 - Not Graded", "type": "Assignment" },
+        { "title": "Week 9 - Graded Assignment 9", "type": "Assignment", "graded": true },
+        { "title": "PPA 1 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 2 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 3 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 4 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 5 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 6 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 7 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 8 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 9 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 10 - Not Graded", "type": "Programming Assignment" },
+        { "title": "WEEK9-GrPA 1", "type": "Programming Assignment", "graded": true },
+        { "title": "WEEK9-GrPA 2", "type": "Programming Assignment", "graded": true },
+        { "title": "WEEK9-GrPA 3", "type": "Programming Assignment", "graded": true },
+        { "title": "WEEK9-GrPA 4", "type": "Programming Assignment", "graded": true },
+        { "title": "WEEK9-GrPA 5", "type": "Programming Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "title": "Week 10",
+      "items": [
+        { "title": "L10.1: Exception handling", "type": "Video" },
+        { "title": "L10.2: Introduction to Object Oriented Programming", "type": "Video" },
+        { "title": "L10.3: Classes and Objects", "type": "Video" },
+        { "title": "L10.4: Attributes and Methods", "type": "Video" },
+        { "title": "L10.5: Inheritance and Method Overriding", "type": "Video" },
+        { "title": "Practice Assignment 10 - Part I", "type": "Assignment" },
+        { "title": "Practice Assignment 10 - Part II", "type": "Assignment" },
+        { "title": "Week 10 - Graded Assignment 10", "type": "Assignment", "graded": true },
+        { "title": "PPA 1 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 2 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 3 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 4 - Not Graded", "type": "Programming Assignment" },
+        { "title": "PPA 5 - Not Graded", "type": "Programming Assignment" },
+        { "title": "GrPA 1", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 2", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 3", "type": "Programming Assignment", "graded": true },
+        { "title": "GrPA 4", "type": "Programming Assignment", "graded": true }
+      ]
+    }
+  ],
+  "practiceTests": [
+    { "title": "Mock - Quiz 1", "type": "Assignment" },
+    { "title": "Mock - End Term", "type": "Assignment" }
+  ],
+  "supplementary": [
+    { "title": "Lecture PPTs/Slides", "type": "Lesson" },
+    { "title": "Lecture Transcripts", "type": "Lesson" },
+    { "title": "Quiz 1 - Question Paper and Answer key", "type": "Lesson" }
+  ]
+}

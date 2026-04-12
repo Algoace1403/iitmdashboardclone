@@ -1,0 +1,1729 @@
+{
+  "programming_in_python": {
+    "week1": {
+      "practice_assignment": {
+        "title": "Week 1 Practice assignment 1 - Not Graded",
+        "questions": [
+          {
+            "questionNumber": 1,
+            "text": "What will be the output of the following statement?\nprint('15 % 3 * 2 + 2')",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`12`",
+              "`2`",
+              "`15 % 3 * 2 + 2`",
+              "`'15 % 3 * 2 + 2'`"
+            ],
+            "correctAnswer": "`15 % 3 * 2 + 2`"
+          },
+          {
+            "questionNumber": 2,
+            "text": "What will be the output of the following statement?\nprint(\"a + 'b' + c + '' + d\")",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`a + 'b' + c + '' + d`",
+              "`\"a + 'b' + c + '' + d\"`",
+              "`a + b + c + '' + d`",
+              "`a + ''b'' + c + '' + d`"
+            ],
+            "correctAnswer": "`a + 'b' + c + '' + d`"
+          },
+          {
+            "questionNumber": 3,
+            "text": "A snippet of code gives the following output when executed:\n1 2 3 4 5\nThere is exactly one space between any two consecutive integers. Which of the following options correspond to the correct code snippet? (MSQ).",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "`print(1 2 3 4 5)`",
+              "`print('1 2 3 4 5') # there is a space between consecutive numbers`",
+              "`print(1)\nprint(2)\nprint(3)\nprint(4)\nprint(5)`",
+              "`print(1, 2, 3, 4, 5)`"
+            ],
+            "correctAnswer": [
+              "`print('1 2 3 4 5') # there is a space between consecutive numbers`",
+              "`print(1, 2, 3, 4, 5)`"
+            ]
+          },
+          {
+            "questionNumber": 4,
+            "text": "What will be the type of the following expressions?\n13 % 5 // 2 * 30 ** 5\n\"@Python\"\n20 ** 10 / 2 + 25 - 70\n(5 > 3) and False\n20 * 100.0 // 11 % 5\n(A) float\n(B) int\n(C) str\n(D) bool",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "1 - (A), 2 - (C), 3 - (B), 4 - (D), 5 - (A)",
+              "1 - (B), 2 - (C), 3 - (A), 4 - (D), 5 - (A)",
+              "1 - (A), 2 - (C), 3 - (B), 4 - (D), 5 - (B)",
+              "1 - (B), 2 - (C), 3 - (A), 4 - (D), 5 - (B)"
+            ],
+            "correctAnswer": "1 - (B), 2 - (C), 3 - (A), 4 - (D), 5 - (A)"
+          },
+          {
+            "questionNumber": 5,
+            "text": "Given a string variable word that stores some word in the English language, we wish to create a new string with just two characters:\n- The first character in the new string is the first letter in word.\n- The second character in the new string the last letter in word.\nAssume that word has at least three characters. Which of the following lines of code can be used to create the new string? (MSQ).",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "`word[0] + word[1]`",
+              "`word[0] + word[-1]`",
+              "`word[0] + word[len(word) - 1]`",
+              "`word[-1] + word[len(word)]`"
+            ],
+            "correctAnswer": [
+              "`word[0] + word[-1]`",
+              "`word[0] + word[len(word) - 1]`"
+            ]
+          },
+          {
+            "questionNumber": 6,
+            "text": "Consider the following snippet of code:\nx = int(input())\ny = int(input())\nz = int(input())\navg = (x + y + z) / 3\nprint(avg)\nWhat is the output of the code given above for the following input? Try to think about the answer without executing the code in an interpreter.\n10\n11\n12",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`11`",
+              "`11.0`",
+              "`33`",
+              "`33.0`"
+            ],
+            "correctAnswer": "`11.0`"
+          },
+          {
+            "questionNumber": 7,
+            "text": "Consider the following snippet of code:\nw1 = input()\nw2 = input()\nprint(w1 + w2)\nWhat is the output of the code given above for the following input? NAT\n10\n20",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "1020"
+          },
+          {
+            "questionNumber": 8,
+            "text": "Exploratory problem: This problem is meant to encourage you to try certain things outside the lectures\nRun this piece of code in the Replit console:\n2 ** 3 ** 0\nWhat is the output? What do you think is happening here?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "2"
+          }
+        ]
+      },
+      "graded_assignment": {
+        "title": "Week 1 Graded Assignment 1",
+        "questions": [
+          {
+            "questionNumber": 1,
+            "text": "What will be the output type of the expression 5 + 2.0?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "float"
+          },
+          {
+            "questionNumber": 2,
+            "text": "What will be the output type of the expression 5.0 * 2?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "float"
+          },
+          {
+            "questionNumber": 3,
+            "text": "What will be the output type of the expression '5' * 2.0?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "Invalid Expression (raises an error)"
+          },
+          {
+            "questionNumber": 4,
+            "text": "What will be the output type of the expression 5 * \"2\"?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "str"
+          },
+          {
+            "questionNumber": 5,
+            "text": "What will be the output type of the expression '5' + 2?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "Invalid Expression (raises an error)"
+          },
+          {
+            "questionNumber": 6,
+            "text": "What will be the output type of the expression 5 == 2?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "bool"
+          },
+          {
+            "questionNumber": 7,
+            "text": "What will be the output type of the expression \"5\" > \"2\"?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "bool"
+          },
+          {
+            "questionNumber": 8,
+            "text": "What will be the output type of the expression 5 and 2?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "int"
+          },
+          {
+            "questionNumber": 9,
+            "text": "What will be the output type of the expression 555[2]?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "Invalid Expression (raises an error)"
+          },
+          {
+            "questionNumber": 10,
+            "text": "What will be the output type of the expression \"555\"\"['2']\"?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "Invalid Expression (raises an error)"
+            ],
+            "correctAnswer": "str"
+          },
+          {
+            "questionNumber": 11,
+            "text": "What will be the output type of the expression print(True)?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "NoneType"
+            ],
+            "correctAnswer": "NoneType"
+          },
+          {
+            "questionNumber": 12,
+            "text": "What will be the output type of the expression print('True')?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "NoneType"
+            ],
+            "correctAnswer": "NoneType"
+          },
+          {
+            "questionNumber": 13,
+            "text": "What will be the output type of the expression None?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "float",
+              "str",
+              "bool",
+              "NoneType"
+            ],
+            "correctAnswer": "NoneType"
+          },
+          {
+            "questionNumber": 14,
+            "text": "Select the expression(s) that are equivalent to the given expression.\n10 // 2 * 5 ** 2",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "((10 // 2) * 5) ** 2",
+              "(10 // 2) * (5 ** 2)",
+              "10 // ((2 * 5) ** 2)",
+              "(10 // (2 * 5)) ** 2"
+            ],
+            "correctAnswer": "(10 // 2) * (5 ** 2)"
+          },
+          {
+            "questionNumber": 15,
+            "text": "Select the expression(s) that are equivalent to the given expression.\n(1 + 2) * (3 + 4)",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "(1 + (2 * (3 + 4)))",
+              "(1 + 2) * 3 + 4",
+              "((1 + 2) * (3 + 4))",
+              "1 + (2 * 3) + 4"
+            ],
+            "correctAnswer": "((1 + 2) * (3 + 4))"
+          },
+          {
+            "questionNumber": 16,
+            "text": "Select the expression(s) that are equivalent to the given expression.\n(10 + 2) * (5 - 3)",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "(10 + (2 * (5 - 3)))",
+              "((10 + 2) * (5 - 3))",
+              "(10 * 5) - (2 * 3)",
+              "10 + 2 * (5 - 3)"
+            ],
+            "correctAnswer": "((10 + 2) * (5 - 3))"
+          },
+          {
+            "questionNumber": 17,
+            "text": "Select the expression(s) that are equivalent to the given expression.\na == b > c == d",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "(a == b) > (c == d)",
+              "a == (b > (c == d))",
+              "(a == b) and (b > c) and (c == d)",
+              "(a == (b > c)) and ((b > c) == d)"
+            ],
+            "correctAnswer": "(a == b) and (b > c) and (c == d)"
+          },
+          {
+            "questionNumber": 18,
+            "text": "Select the expression(s) that are equivalent to the given expression.\na and not b or not c",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "(a and (not b)) or (not c)",
+              "(a and not b) or (not c)",
+              "a and (not (b or not c))",
+              "a and ((not b) or (not c))"
+            ],
+            "correctAnswer": [
+              "(a and (not b)) or (not c)",
+              "(a and not b) or (not c)"
+            ]
+          },
+          {
+            "questionNumber": 19,
+            "text": "How does the Python interpreter parenthesize the following expression?\n1 + 3 / 4 ** 2 * 0",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "1 + (((3 / 4) ** 2) * 0)",
+              "1 + ((3 / (4 ** 2)) * 0)",
+              "(1 + 3 / 4) ** (2 * 0)",
+              "All of the above"
+            ],
+            "correctAnswer": "1 + ((3 / (4 ** 2)) * 0)"
+          },
+          {
+            "questionNumber": 20,
+            "text": "Select the correct statement(s) about print in python.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "print is a built-in function.",
+              "In a python REPL/Notebook print(\"hi\") will give same output as just \"hi\".",
+              "print prints new line character at the end of the line.",
+              "print can be used to disply any data type."
+            ],
+            "correctAnswer": [
+              "print is a built-in function.",
+              "print prints new line character at the end of the line.",
+              "print can be used to disply any data type."
+            ]
+          },
+          {
+            "questionNumber": 21,
+            "text": "Select the correct statement(s) about input in python.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "input is a built-in function.",
+              "Single input can take multiple lines of input.",
+              "input includes next line character each line.",
+              "input accepts atmost one argument."
+            ],
+            "correctAnswer": [
+              "input is a built-in function.",
+              "input accepts atmost one argument."
+            ]
+          },
+          {
+            "questionNumber": 22,
+            "text": "Common data for the next 3 questions\nThis set of questions is intended for you to practice python tutor and get used\nto it. Watch\nthis\ntutorial on how to use python tutor before attempting this questions.\nConsider the code present in\nthis\npython tutor link.\nAnswer the following questions by using the python tutor interface.\nWhat is the value of a after executing line 3, using the input already given?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "5"
+          },
+          {
+            "questionNumber": 23,
+            "text": "What is the value of a after executing line 4, if input given changed to 13?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "14"
+          },
+          {
+            "questionNumber": 24,
+            "text": "What is the value of a after executing line 5, if the input is changed to 8?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "70"
+          },
+          {
+            "questionNumber": 25,
+            "text": "Common data for the next 3 questions\nThis set of questions is intended for you to practice python tutor and get used\nto it. Watch\nthis\ntutorial on how to use python tutor before attempting this questions.\nConsider the code present in\nthis\npython tutor link.\nAnswer the following questions by using the python tutor interface.\nWhat is the value of a after executing line 3, using the input already given?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "63"
+          },
+          {
+            "questionNumber": 26,
+            "text": "What is the value of a after executing line 4, if input given changed to 15?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "22"
+          },
+          {
+            "questionNumber": 27,
+            "text": "What is the value of a after executing line 5, if the input is changed to 7?",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "19"
+          },
+          {
+            "questionNumber": 28,
+            "text": "What is the type of the following expression?\n(1 > 0) and (-1 < 0) and (1 == 1)",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "str",
+              "bool",
+              "True",
+              "False"
+            ],
+            "correctAnswer": "bool"
+          },
+          {
+            "questionNumber": 29,
+            "text": "Common data for the next 2 questions\nConsider the following string:\nword = '138412345678901938'\nFor what values of a and b does the following expression evaluate to True?\nAssume that both a and b are positive integers.\nword[a : b] == '123456789'\nEnter the value of a. (NAT)",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "4"
+          },
+          {
+            "questionNumber": 30,
+            "text": "Enter the value of b.",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "13"
+          }
+        ]
+      },
+      "grpa": [
+        {
+          "id": 54,
+          "title": "GrPA 1 - Numbers (Arithemetic) - GRADED",
+          "codeTemplate": "output1 = ... # int: sum of a and b\noutput2 = ... # int: twice the sum of a and b\noutput3 = ... # int: absolute difference between a and b\noutput4 = ... # int: absolute difference between sum and product of a and b\n\n# Find discounted price given price and discount_percent\n# input variables : price: int, discount_percent: float\ndiscounted_price = ... # float\n\n# Round the discounted_price\nrounded_discounted_price = ... # int\n\n# Find hrs and mins given the total_mins\n# input variables : total_mins\nhrs = ... # int: hint: think about floor division operator\nmins = ... # int\n",
+          "description": "Change in eligibility criteria to write oppe1 exam: \nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nSolve the below tasks related to Numbers.\n- Tasks 1 to 3 - building up Arithemetic expression\n- Tasks 4 and 5 - floating point arithemetic\n- Tasks 6 and 7 - modulo and floor division\nProblem Type: Input variable - Output Variable, Hidden suffix for evaluation\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you should not take input or print anything unless your are explicitly asked to. Assign the result of the required computation to the correct variable name as it will be evaluated for type and value by the evaluator.\nThe input variables will be assigned by the evaluator based on the test cases.\nThe grey part before the white part (if any) in the code is the prefix code. The grey part after the white part (if any) is the suffix code which are not editable. Usually they will be the part of code but in this type of questions it will be removed by the evaluator.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nThe inputs on the code blocks are just sample inputs they won't be evaluated in the actual testcases.\nEach testcase will have its own set of testcases defined as variables. The check function in the testcases is in the hidden evaluation code that checks the value and type of the variable.\n Template Code(Click to Expand) \noutput1 = ... # int: sum of a and b\noutput2 = ... # int: twice the sum of a and b\noutput3 = ... # int: absolute difference between a and b\noutput4 = ... # int: absolute difference between sum and product of a and b\n# Find discounted price given price and discount_percent\n# input variables : price: int, discount_percent: float\ndiscounted_price = ... # float\n# Round the discounted_price\nrounded_discounted_price = ... # int\n# Find hrs and mins given the total_mins\n# input variables : total_mins\nhrs = ... # int: hint: think about floor division operator\nmins = ... # int\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "a=5\nb=7\ncheck('output1',12)\n",
+              "output": "12\n",
+              "weight": 1
+            },
+            {
+              "input": "a,b = 2,-5\ncheck(\"output2\", -6)\n",
+              "output": "-6\n",
+              "weight": 1
+            },
+            {
+              "input": "a,b  = 6,4\ncheck('output3', 2)\na,b = 4,7\ncheck('output3', 3)\n",
+              "output": "2\n3\n",
+              "weight": 1
+            },
+            {
+              "input": "a,b = 4,7\ncheck('output4',17)\n",
+              "output": "17\n",
+              "weight": 1
+            },
+            {
+              "input": "price = 80\ndiscount_percent = 2\ncheck('discounted_price', 78.4)\n",
+              "output": "78.4\n",
+              "weight": 1
+            },
+            {
+              "input": "total_mins = 270\ncheck('hrs',4)\n",
+              "output": "4\n",
+              "weight": 1
+            },
+            {
+              "input": "total_mins = 270\ncheck('mins',30)\n",
+              "output": "30\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "output1 = a+b # int: sum of a and b\r\noutput2 = 2*(a+b) # int: twice the sum of a and b\r\noutput3 = abs(a-b)# int: absolute difference between a and b\r\noutput4 = abs((a+b) - (a*b)) # int: absolute difference between sum and product of a and b\r\n\r\n# Find discounted price given price and discount_percent\r\n# input variables : price: int, discount_percent: float\r\ndiscounted_price = price*(1-discount_percent/100) # float\r\n\r\n# Round the discounted_price\r\nrounded_discounted_price = round(discounted_price) # int\r\n\r\n# Find hrs and mins given the total_mins\r\n# input variables : total_mins\r\nhrs = total_mins //60 # int: hint: think about floor division operator\r\nmins = total_mins%60 # int\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 55,
+          "title": "GrPA2 - Numbers (Relational and Logical) - GRADED",
+          "codeTemplate": "output1 = ... # bool: True if a greater than or equal to 5\n\noutput2 = ... # bool: True if a is divisible by 5\n\noutput3 = ... # bool: True if a is odd number less than 10\n\noutput4 = ... # bool: True if a is an odd number within the range -10 and 10\n\noutput5 = ... # bool: True if a has even number of digits but not more than 10 digits\n\nis_offer1_cheaper = ... # bool: True if the offer1 is strictly cheaper\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nSolve all the below tasks related to relational and logical operators.\nThis exercise gives you practice in building up boolean expressions.\nProblem Type: Input variable - Output Variable, Hidden suffix for evaluation\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you should not take input or print anything unless your are explicitly asked to. Assign the result of the required computation to the correct variable name as it will be evaluated for type and value by the evaluator.\nThe input variables will be assigned by the evaluator based on the test cases.\nThe grey part before the white part (if any) in the code is the prefix code. The grey part after the white part (if any) is the suffix code which are not editable. Usually they will be the part of code but in this type of questions it will be removed by the evaluator.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nThe inputs on the code blocks are just sample inputs they won't be evaluated in the actual testcases.\nEach testcase will have its own set of testcases defined as variables. The check function in the testcases is in the hidden evaluation code that checks the value and type of the variable.\n Template Code(Click to Expand) \noutput1 = ... # bool: True if a greater than or equal to 5\noutput2 = ... # bool: True if a is divisible by 5\noutput3 = ... # bool: True if a is odd number less than 10\noutput4 = ... # bool: True if a is an odd number within the range -10 and 10\noutput5 = ... # bool: True if a has even number of digits but not more than 10 digits\nis_offer1_cheaper = ... # bool: True if the offer1 is strictly cheaper\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "a=6\ncheck('output1', True)\na=5\ncheck('output1', True)\na=4\ncheck('output1', False)\n",
+              "output": "True\nTrue\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "a=25\ncheck('output2', True)\na=14\ncheck('output2', False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "a=7\ncheck('output3', True)\na=12\ncheck('output3', False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "a=7\ncheck('output4', True)\na=-9\ncheck('output4', True)\na=15\ncheck('output4', False)\n",
+              "output": "True\nTrue\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "a=1234\ncheck('output5', True)\na=12345\ncheck('output5', False)\na=1234567890\ncheck('output5', True)\na=12345678901\ncheck('output5', False)\n",
+              "output": "True\nFalse\nTrue\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "price1, discount1, price2, discount2 = 100, 20, 120, 10\ncheck('is_offer1_cheaper', True)\nprice1, discount1, price2, discount2 = 150, 25, 200, 45\ncheck('is_offer1_cheaper', False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "output1 = a>=5 # bool: True if a greater than or equal to 5\r\n\r\noutput2 = a % 5 == 0 # bool: True if a is divisible by 5\r\n\r\noutput3 = (a % 2 != 0) and (a<10) # bool: True if a is odd number less than 10\r\n\r\noutput4 = (-10 <= a<= 10) and (a%2 != 0) # bool: True if a is an odd number within the range -10 and 10\r\ndigits = len(str(abs(a))) if a != 0 else 1\r\noutput5 = (digits % 2 ==0) and (digits <= 10)# bool: True if a has even number of digits but not more than 10 digits\r\n\r\nis_offer1_cheaper = price1 *(1- discount1 /100)< price2*(1- discount2 /100) # bool: True if the offer1 is strictly cheaper",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 56,
+          "title": "GrPA 3 - Strings (Indexing and Slicing) - GRADED",
+          "codeTemplate": "output1 = ... # str: get the third character of s\n\noutput2 = ... # str: get the fourth last character of s\n\noutput3 = ... # str: get the first 3 characters of s\n\noutput4 = ... # str: get every second character of s\n\noutput5 = ... # str: get the last 3 characters of s\n\noutput6 = ... # str: get the reverse of s\n\ncourse_term = ... # int: get the term of the year as number from course_code\ncourse_year = ... # int: get the year as two digit number from course_code\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nSolve all the below tasks related to indexing and slicing.\nKeep in mind 🧠 The concept of indexing and slicing will come again in later weeks with list and tuple which are also sequences like string.\nThis exercise gives you practice in different indexing and slicing methods.\nProblem Type: Input variable - Output Variable, Hidden suffix for evaluation\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you should not take input or print anything unless your are explicitly asked to. Assign the result of the required computation to the correct variable name as it will be evaluated for type and value by the evaluator.\nThe input variables will be assigned by the evaluator based on the test cases.\nThe grey part before the white part (if any) in the code is the prefix code. The grey part after the white part (if any) is the suffix code which are not editable. Usually they will be the part of code but in this type of questions it will be removed by the evaluator.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nThe inputs on the code blocks are just sample inputs they won't be evaluated in the actual testcases.\nEach testcase will have its own set of testcases defined as variables. The check function in the testcases is in the hidden evaluation code that checks the value and type of the variable.\n Template Code(Click to Expand) \noutput1 = ... # str: get the third character of s\noutput2 = ... # str: get the fourth last character of s\noutput3 = ... # str: get the first 3 characters of s\noutput4 = ... # str: get every second character of s\noutput5 = ... # str: get the last 3 characters of s\noutput6 = ... # str: get the reverse of s\ncourse_term = ... # int: get the term of the year as number from course_code\ncourse_year = ... # int: get the year as two digit number from course_code\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "s = \"what\"\ncheck(\"output1\", \"a\")\n",
+              "output": "a\n",
+              "weight": 1
+            },
+            {
+              "input": "s = \"hello\"\ncheck(\"output2\", \"e\")\n",
+              "output": "e\n",
+              "weight": 1
+            },
+            {
+              "input": "s = \"python\"\ncheck(\"output3\", \"pyt\")\n",
+              "output": "pyt\n",
+              "weight": 1
+            },
+            {
+              "input": "s = \"hello\"\ncheck(\"output4\", \"hlo\")\n",
+              "output": "hlo\n",
+              "weight": 1
+            },
+            {
+              "input": "s = \"programming\"\ncheck(\"output5\", \"ing\")\n",
+              "output": "ing\n",
+              "weight": 1
+            },
+            {
+              "input": "s = \"hello\"\ncheck(\"output6\", \"olleh\")\n",
+              "output": "olleh\n",
+              "weight": 1
+            },
+            {
+              "input": "course_code = \"24t1cs1001\"\ncheck(\"course_term\", 1)\n",
+              "output": "1\n",
+              "weight": 1
+            },
+            {
+              "input": "course_code = \"24t3cs1010\"\ncheck(\"course_year\", 24)\n",
+              "output": "24\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "output1 = s[2] # str: get the third character of s\r\n\r\noutput2 = s[-4] # str: get the fourth last character of s\r\n\r\noutput3 = s[:3]# str: get the first 3 characters of s\r\n\r\noutput4 = s[::2] # str: get every second character of s\r\n\r\noutput5 = s[-3:] # str: get the last 3 characters of s\r\n\r\noutput6 = s[::-1] # str: get the reverse of s\r\n\r\ncourse_term = int(course_code[3]) # int: get the term of the year as number from course_code\r\ncourse_year = int(course_code[:2]) # int: get the year as two digit number from course_code\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 57,
+          "title": "GrPA 4 - Strings (Concatenation, repetition, and substring check) - GRADED",
+          "codeTemplate": "output1 = ... # str: join word1 and word2 with space in between\n\noutput2 = ... # str: join first four letters of word1 and last four letters of word 2 with a hyphen \"-\" in between\n\noutput3 = ... # str: join the word3 and n1 with a space in between\n\noutput4 = ... # str: just the hypen \"-\" repeated 50 times\n\noutput5 = ... # str: just the hypen \"-\" repeated n2 times\n\noutput6 = ... # str: repeat the number n1, n2 times\n\nare_all_words_equal = ... # bool: True if all three words are equal\n\nis_word1_comes_before_other_two = ... # bool: True if word1 comes before word2 and word3 assume all words are different\n\nhas_h = ... # bool: True if word1 has the letter h\n\nends_with_a = ... # bool: True if word1 ends with letter a or A\n\nhas_the_word_python = ... # bool: True if the sentence has the word python\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nSolve all the below tasks related to string concatenation, repeatition and\nsubstring check in strings.\nProblem Type: Input variable - Output Variable, Hidden suffix for evaluation\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you should not take input or print anything unless your are explicitly asked to. Assign the result of the required computation to the correct variable name as it will be evaluated for type and value by the evaluator.\nThe input variables will be assigned by the evaluator based on the test cases.\nThe grey part before the white part (if any) in the code is the prefix code. The grey part after the white part (if any) is the suffix code which are not editable. Usually they will be the part of code but in this type of questions it will be removed by the evaluator.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nThe inputs on the code blocks are just sample inputs they won't be evaluated in the actual testcases.\nEach testcase will have its own set of testcases defined as variables. The check function in the testcases is in the hidden evaluation code that checks the value and type of the variable.\n Template Code(Click to Expand) \noutput1 = ... # str: join word1 and word2 with space in between\noutput2 = ... # str: join first four letters of word1 and last four letters of word 2 with a hyphen \"-\" in between\noutput3 = ... # str: join the word3 and n1 with a space in between\noutput4 = ... # str: just the hypen \"-\" repeated 50 times\noutput5 = ... # str: just the hypen \"-\" repeated n2 times\noutput6 = ... # str: repeat the number n1, n2 times\nare_all_words_equal = ... # bool: True if all three words are equal\nis_word1_comes_before_other_two = ... # bool: True if word1 comes before word2 and word3 assume all words are different\nhas_h = ... # bool: True if word1 has the letter h\nends_with_a = ... # bool: True if word1 ends with letter a or A\nhas_the_word_python = ... # bool: True if the sentence has the word python\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "word1 = \"hello\"\nword2 = \"world\"\ncheck(\"output1\", \"hello world\")\n",
+              "output": "hello world\n",
+              "weight": 1
+            },
+            {
+              "input": "word1, word2 = \"Tyrannosaurus\", \"Velociraptor\"\ncheck(\"output2\", \"Tyra-ptor\")\n",
+              "output": "Tyra-ptor\n",
+              "weight": 1
+            },
+            {
+              "input": "word3 = \"Gold\"\ncheck(\"output3\", \"Gold 6\")\n",
+              "output": "Gold 6\n",
+              "weight": 1
+            },
+            {
+              "input": "check(\"output4\", \"-\"*50)\n",
+              "output": "--------------------------------------------------\n",
+              "weight": 1
+            },
+            {
+              "input": "n2 = 3\ncheck(\"output5\", \"---\")\n",
+              "output": "---\n",
+              "weight": 1
+            },
+            {
+              "input": "n1, n2 = 3, 6\ncheck(\"output6\", \"333333\")\n",
+              "output": "333333\n",
+              "weight": 1
+            },
+            {
+              "input": "word1 = word2 = word3 = \"Same\"\ncheck(\"are_all_words_equal\", True)\nword1 = word2 = word3 = \"different\"\ncheck(\"are_all_words_equal\", True)\nword1 = word2 = \"Same\"\nword3 = \"different\"\ncheck(\"are_all_words_equal\", False)\n",
+              "output": "True\nTrue\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "word1, word2, word3 = \"Apple\", \"Banana\", \"Carrot\"\ncheck(\"is_word1_comes_before_other_two\", True)\nword1, word2, word3 = \"Banana\",\"Apple\", \"Carrot\"\ncheck(\"is_word1_comes_before_other_two\", False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "word1 = \"yellow\"\ncheck(\"has_h\", False)\nword1 = \"hello\"\ncheck(\"has_h\", True)\n",
+              "output": "False\nTrue\n",
+              "weight": 1
+            },
+            {
+              "input": "word1 = \"Banana\"\ncheck(\"ends_with_a\", True)\nword1 = \"Apple\"\ncheck(\"ends_with_a\", False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            },
+            {
+              "input": "sentence = \"learning python is easy\"\ncheck(\"has_the_word_python\", True)\nsentence = \"Mary had a little lamb\"\ncheck(\"has_the_word_python\", False)\n",
+              "output": "True\nFalse\n",
+              "weight": 1
+            }
+          ],
+          "score": 90.9090909090909,
+          "maxScore": 100,
+          "savedCode": "output1 = word1+\" \"+word2 # str: join word1 and word2 with space in between\r\n\r\noutput2 = word1[:4] + \"-\" + word2[-4:] # str: join first four letters of word1 and last four letters of word 2 with a hyphen \"-\" in between\r\n\r\noutput3 = word3 + \" \"+ str(n1) # str: join the word3 and n1 with a space in between\r\n\r\noutput4 = \"-\"*50 # str: just the hypen \"-\" repeated 50 times\r\n\r\noutput5 = \"-\" *n2 # str: just the hypen \"-\" repeated n2 times\r\n\r\noutput6 = str(n1)*n2  # str: repeat the number n1, n2 times\r\n\r\nare_all_words_equal = (word1 == word2 == word3)  # bool: True if all three words are equal\r\n\r\nis_word1_comes_before_other_two = (word1< word2) and (word1<word3) # bool: True if word1 comes before word2 and word3 assume all words are different\r\n\r\nhas_h = (\"h\" in word1.lower()) # bool: True if word1 has the letter h\r\n\r\nends_with_a = word1.lower().endswith(\"a\") # bool: True if word1 ends with letter a or A\r\n\r\nhas_the_word_python = (\"python\" in sentence.lower().split()) # bool: True if the sentence has the word python\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 58,
+          "title": "GrPA5 - I/O and Type Conversion - GRADED",
+          "codeTemplate": "age = ... # int: Read a number as integer from standard input\ndob = ... # str: Read a string of format dd/mm/yy from standard input\nday, month, year = ... # int, int, int: Get the correct parts from dob as int\n\nfifth_birthday = ... # str: fifth birthday formatted as day/month/year \n\nlast_birthday = ... # str: last birthday formatted as day/month/year\n\ntenth_month = ... # str: dob same day after 10 months formatted as day/month/year\n\n# print tenth_month, fifth_birthday and last_birthday in same line separated by comma and a space\nprint(...)\n\nweight = ... # float: Read a number as float from stdin(Standard input)\n\nweight_readable = ... # str: reformat weight of format 55 kg 250 grams\n\n# print weight_readable \nprint(...)\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nGet age(int), dob(str of format \"dd/mm/yy\") and weight(float) from the standard input and print the tenth_month, fifth_birthday and last_birthday formatted as \"day/month/year\"(do not include the preceeding zero for single digit number) separated by comma and a space a single line and print the weight_readable(str formatted as \"55 kg 200 grams\")\nNote: while formatting dates you may have to convert back int to str using the type conversion. There is something called as \"f-strings\" or \"formatted strings\" that will help us format things by automatically doing type conversion. This will be covered in later weeks. But you can explore that (Google or ChatGPT) and compare the difference.\nNote: The last_birthday depends on the dob and age. For example if the dob is \"20/02/2001\" and the age is 5 the last birthday will be \"20/02/2006\".\nNote: Finding the tenth_month will be a bit of challange. If you are stuck open the below hint.\n Hint for tenth_month \nExplanation\nWhen you're adding months to a date, you need to make sure that the month number doesn't go beyond 12, because there are only 12 months in a year. \n- \nStarting from Zero: \n- Think of months like positions on a number line that starts at zero instead of one (because modulo cycles from 0 to n-1). January is 0, February is 1, and so on. \n- When you subtract 1 from a month, you're basically shifting it to this zero-based system. For example, if you start at month 10 (October), subtracting 1 gives you 9.\n- \nUsing Modulo: \n- The modulo operation helps to wrap around when you go past December. So, 13 becomes 1 (January), 14 becomes 2 (February), etc.\n- The modulo operation works naturally with zero-based numbers. For example, 24 % 12 = 0 means it wraps around to the starting point (January).\n- \nAdding 1 Back: \n- After using the modulo operation, you add 1 back to shift back to the regular month numbering system. This makes sure that months are in the range of 1 to 12.\nExample\nLet's say it's October (month 10) and you want to find the date 15 months later.\n- \nAdd the Months: \n- 10 (October) + 15 months = 25.\n- \nConvert to Zero-Based and Apply Modulo: \n- Subtract 1: 25 - 1 = 24.\n- Apply modulo 12: 24 % 12 = 0. \n- This means it wraps around to the start of the year.\n- \nConvert Back to One-Based: \n- Add 1: 0 + 1 = 1.\n- So, it’s January.\n- \nAdjust the Year: \n- Since you added enough months to go into the next year, you need to account for that.\n- Calculate how many full years you’ve added: (25 - 1) // 12 = 2.\n- So, if you started in 2022, adding 2 years brings you to 2024.\nResult\n15 months from October 2022 is January 2024.\nProblem Type: Standard Input - Standard Output\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you have to read input from standard input(stdin) using input function in an appropriate manner and print the output in the appropriate format using print function.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nEach testcase will have the standard input and expected output your program should read the standard input and print the result to the standard output matching the expected output.\n Template Code(Click to Expand) \nage = ... # int: Read a number as integer from standard input\ndob = ... # str: Read a string of format dd/mm/yy from standard input\nday, month, year = ... # int, int, int: Get the correct parts from dob as int\nfifth_birthday = ... # str: fifth birthday formatted as day/month/year \nlast_birthday = ... # str: last birthday formatted as day/month/year\ntenth_month = ... # str: dob same day after 10 months formatted as day/month/year\n# print tenth_month, fifth_birthday and last_birthday in same line separated by comma and a space\nprint(...)\nweight = ... # float: Read a number as float from stdin(Standard input)\nweight_readable = ... # str: reformat weight of format 55 kg 250 grams\n# print weight_readable \nprint(...)\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "8\n01/01/15\n72.25\n",
+              "output": "1/11/15, 1/1/20, 1/1/23\n72 kg 250 grams\n",
+              "weight": 1
+            },
+            {
+              "input": "12\n15/05/10\n45.5\n",
+              "output": "15/3/11, 15/5/15, 15/5/22\n45 kg 500 grams\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "age = int(input()) # int: Read a number as integer from standard input\r\ndob = input() # str: Read a string of format dd/mm/yy from standard input\r\nday, month, year = map(int,dob.split('/')) # int, int, int: Get the correct parts from dob as int\r\n\r\nfifth_birthday = f\"{day}/{month}/{year+5}\" # str: fifth birthday formatted as day/month/year \r\n\r\nlast_birthday = f\"{day}/{month}/{year+age}\" # str: last birthday formatted as day/month/year\r\n\r\ntotal_months = month+10\r\nnew_month=((total_months-1)%12)+1\r\nyear_increment = (total_months-1) // 12\r\nnew_year = year+year_increment\r\n\r\ntenth_month = f\"{day}/{new_month}/{new_year}\" # str: dob same day after 10 months formatted as day/month/year\r\n\r\n# print tenth_month, fifth_birthday and last_birthday in same line separated by comma and a space\r\nprint(f\"{tenth_month}, {fifth_birthday}, {last_birthday}\")\r\n\r\nweight = float(input()) # float: Read a number as float from stdin(Standard input)\r\n\r\nkg = int(weight)\r\ngrams=int(round((weight-kg)*1000))\r\n\r\nweight_readable = f\"{kg} kg {grams} grams\"# str: reformat weight of format 55 kg 250 grams\r\n\r\n# print weight_readable \r\nprint(weight_readable)\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        }
+      ]
+    },
+    "week2": {
+      "practice_assignment": {
+        "title": "Week 2 Practice Assignment 2 - Not Graded",
+        "questions": [
+          {
+            "questionNumber": 1,
+            "text": "Which of the following are valid names for variables in Python? (MSQ)",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "a_",
+              "_a",
+              "1a",
+              "a variable",
+              "a_variable"
+            ],
+            "correctAnswer": [
+              "a_",
+              "_a",
+              "a_variable"
+            ]
+          },
+          {
+            "questionNumber": 2,
+            "text": "Execute the the following code-block. Assume that word1 and word2 are strings that have already been defined.\n# word1, word2 are two strings\nprint(word1 + word2)\nword = word1\nword1 = word2\nword2 = word\nprint(word2 + word1)\nSelect the statement that accurately describes the two lines in the output.",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "The two lines are always the same.",
+              "The two lines are always different.",
+              "The two lines are the same if and only if word1 and word2 are equal.",
+              "None of the above"
+            ],
+            "correctAnswer": "The two lines are always the same."
+          },
+          {
+            "questionNumber": 3,
+            "text": "Assume that a, b and c are three distinct integers. The following code runs without any error.\nx, y, z = a, b, c\nx = y = z\nSelect all statements that evaluate to True at the end of execution of the code given above. (MSQ)",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "`x == y == z`",
+              "`x == y == z == a`",
+              "`x == y == z == b`",
+              "`x == y == z == c`"
+            ],
+            "correctAnswer": [
+              "`x == y == z`",
+              "`x == y == z == c`"
+            ]
+          },
+          {
+            "questionNumber": 4,
+            "text": "x is a variable of type float and is of the form a.bcd, where a, b, c, d are all positive integers less than . What is the output of the following snippet of code?\nprint(int(x))\nprint(int(-x))",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`a\na`",
+              "`a + 1\na + 1`",
+              "`a - 1\na - 1`",
+              "`a - 1\n-a`",
+              "`a\n-a + 1`",
+              "`a\n-a`"
+            ],
+            "correctAnswer": "`a\n-a`"
+          },
+          {
+            "questionNumber": 5,
+            "text": "Consider the following code blocks:\nBlock-1\nflag = True\nif flag == True:\n print('works')\nBlock-2\nflag = True\nif flag:\n print('works')\nTwo blocks of code are said to be equivalent if they produce the same output for a given input. Are the two blocks equivalent?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "Yes",
+              "No"
+            ],
+            "correctAnswer": "Yes"
+          },
+          {
+            "questionNumber": 6,
+            "text": "Consider the following code-blocks. E is a Boolean expression. Two blocks of code are said to be equivalent if they produce the same output for a given input.\nBlock-1\nif E:\n print('good')\nelse:\n print('bad')\nBlock-2\nif E:\n print('good')\nprint('bad')\nBlock-3\nprint('good')\nprint('bad')\nSelect all true statements. (MSQ)",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "All three blocks are equivalent to each other.",
+              "Exactly two of these three blocks are equivalent to each other.",
+              "Blocks 1 and 2 print the same output when E evaluates to True.",
+              "Blocks 1 and 2 print the same output when E evaluates to False.",
+              "Blocks 2 and 3 print the same output when E evaluates to True."
+            ],
+            "correctAnswer": [
+              "Blocks 1 and 2 print the same output when E evaluates to False.",
+              "Blocks 2 and 3 print the same output when E evaluates to True."
+            ]
+          },
+          {
+            "questionNumber": 7,
+            "text": "bool_var is a variable of type bool. x is a variable of type int. Assume that both these variables have already been defined. Now, consider the following code-block:\nif bool_var:\n x = x + 1\n bool_var = not bool_var\n if bool_var:\n x = x + 1\n else:\n x = x - 1\nprint(x)\nWhich of the following statements are true at the end of execution of the code-block given above? (MSQ).",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "The value of variable x is independent of the value of bool_var.",
+              "The value of variable x is dependent on the value of boon_var.",
+              "Line-5 is never executed.",
+              "The variable x is updated exactly two times."
+            ],
+            "correctAnswer": [
+              "The value of variable x is independent of the value of bool_var.",
+              "Line-5 is never executed."
+            ]
+          },
+          {
+            "questionNumber": 8,
+            "text": "When will this code throw an error?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "When all three Boolean variables are True.",
+              "When all three Boolean variables are False.",
+              "When at least one of the three Boolean variables is True.",
+              "When at least one of the three Boolean variables is False.",
+              "This code will never throw an error."
+            ],
+            "correctAnswer": "When all three Boolean variables are False."
+          },
+          {
+            "questionNumber": 9,
+            "text": "If the code throws an error, in which line will it occur? Enter an integer between 1 and 7, both endpoints included.",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "7"
+          },
+          {
+            "questionNumber": 10,
+            "text": "Select the correct code snippet that prints a backslash character to the console.",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`print(\\)`",
+              "`print('\\')`",
+              "`print('\\\\')`",
+              "`print(\"\\\")`"
+            ],
+            "correctAnswer": "`print('\\\\')`"
+          },
+          {
+            "questionNumber": 11,
+            "text": "Consider the following snippet of code:\n# Warning! This code may not make complete sense for certain inputs!\nname = input()\nif name.isalpha():\n print('This is a valid name')\nelse:\n print('This is not a valid name')\nIf the output of this code is the string This is a valid name, select all possible inputs to the program. (MSQ)",
+            "points": 1,
+            "type": "msq",
+            "options": [
+              "`Neeraj`",
+              "`Mirabai`",
+              "`Sindhu`",
+              "`X AE A-12`",
+              "`Rohit Sharma`"
+            ],
+            "correctAnswer": [
+              "`Neeraj`",
+              "`Mirabai`",
+              "`Sindhu`"
+            ]
+          },
+          {
+            "questionNumber": 12,
+            "text": "Exploratory Problem: This problem is meant to encourage you to try certain things outside the lectures.\nWe have looked at string slicing. Consider the following piece of code:\nalphabets = 'abcdefghijklmnopqrstuvwxyz'\neven = alphabets[0: 10: 2]\nprint(even)\nWhat is the output? Feel free to use the Python interpreter for exploratory questions.",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`abcdefghij`",
+              "`abcde`",
+              "`acegi`",
+              "`bdfhj`"
+            ],
+            "correctAnswer": "`acegi`"
+          },
+          {
+            "questionNumber": 13,
+            "text": "Exploratory Problem: This problem is meant to encourage you to try certain things outside the lectures.\nConsider the following snippet of code.\na, b, c, d = input()\nprint(a)\nprint(b)\nprint(c)\nprint(d)\nWhat is the output of this code for the following input? Feel free to use the Python interpreter for exploratory questions.\n1234",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "`1234\n1234\n1234\n1234`",
+              "`1\n2\n3\n4`",
+              "`1\n1\n1\n1`",
+              "`4\n4\n4\n4`"
+            ],
+            "correctAnswer": "`1\n2\n3\n4`"
+          }
+        ]
+      },
+      "graded_assignment": {
+        "title": "Week 2 - Graded Assignment 2",
+        "questions": [
+          {
+            "questionNumber": 1,
+            "text": "Common data for the next 4 questions\nConsider the below code.\na = 5\nb = \"hello\"\nc = a\nd = a + 5\ne = b[:d-7]\nb,e = d,b\nb,d = c,b\nf,d = d,e\nd,b = e,c\nb,d = f,e\ndel c\nTry playing around in\nthis\npython tutor link for answering the questions.\nWhat is the total number of objects that were referenced by the variables in the\ngiven code during the execution?",
+            "points": 2,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "4"
+          },
+          {
+            "questionNumber": 2,
+            "text": "What is the total number of objects that were referenced by the variables in the\ngiven code at the end of the execution?",
+            "points": 2,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "3"
+          },
+          {
+            "questionNumber": 3,
+            "text": "What is the total number of variables refering to the same object as variable\nb (including b) at the end of the execution of the given code?",
+            "points": 2,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "2"
+          },
+          {
+            "questionNumber": 4,
+            "text": "Select the variable(s) that are refering to the same object as a at some point\nof time during the execution of the above code.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "b",
+              "c",
+              "d",
+              "e",
+              "f"
+            ],
+            "correctAnswer": [
+              "b",
+              "c"
+            ]
+          },
+          {
+            "questionNumber": 5,
+            "text": "Assume s is a str, if the output of print(s) is\nSingle quotes ' and double quotes \", then select the possible the value(s) of\ns.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "'Single quotes \\' and double quotes \"'",
+              "'Single quotes ' and double quotes \\\"'",
+              "\"Single quotes ' and double quotes \\\"\"",
+              "\"Single quotes \\' and double quotes \"\"",
+              "\"\"\"Single quotes ' and double quotes \"\"\"\"",
+              "'''Single quotes ' and double quotes \"'''"
+            ],
+            "correctAnswer": [
+              "'Single quotes \\' and double quotes \"'",
+              "\"Single quotes ' and double quotes \\\"\"",
+              "\"\"\"Single quotes ' and double quotes \"\"\"\"",
+              "'''Single quotes ' and double quotes \"'''"
+            ]
+          },
+          {
+            "questionNumber": 6,
+            "text": "Assume s is a str, if the output of print(s) is given below.\nThe first line.\nThe second line.\nSelect the possible the value(s) of s.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "`s = 'The first line.\\n The second line.'`",
+              "`s = 'The first line.\\nThe second line.'`",
+              "`s = '''\nThe first line.\nThe second line.\n'''`",
+              "`s = '''The first line.\nThe second line.\n'''`",
+              "`s = '''The first line.\n The second line.\n '''`",
+              "`s = (\n \"The first line.\\n\"\n \"The second line.\"\n)`",
+              "`s = (\n \"The first line.\\n\"\n + \"The second line.\"\n)`"
+            ],
+            "correctAnswer": [
+              "`s = 'The first line.\\nThe second line.'`",
+              "`s = '''The first line.\nThe second line.\n'''`",
+              "`s = (\n \"The first line.\\n\"\n \"The second line.\"\n)`",
+              "`s = (\n \"The first line.\\n\"\n + \"The second line.\"\n)`"
+            ]
+          },
+          {
+            "questionNumber": 7,
+            "text": "Select the string(s) that are equal to \"0.500\".",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "f\"{0.5:02f}\"",
+              "f\"{0.5:03f}\"",
+              "f\"{0.5:03}\"",
+              "str(0.5) + \"00\"",
+              "f\"{0.5}00\"",
+              "f\"0{.5}00\"",
+              "f\"{0.545:.1f}00\""
+            ],
+            "correctAnswer": [
+              "str(0.5) + \"00\"",
+              "f\"{0.5}00\"",
+              "f\"{0.545:.1f}00\""
+            ]
+          },
+          {
+            "questionNumber": 8,
+            "text": "Select the string(s) that are equal to \"333,0333,00333\".",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "f\"{333},{333:01},{333:02}\"",
+              "f\"{333},{333:04},{333:05}\"",
+              "f\"333,333:04,333:05\"",
+              "str(333)+',0'+str(333)+',00'+str(333)",
+              "\"333\"',0'\"333\"',00'\"333\""
+            ],
+            "correctAnswer": [
+              "f\"{333},{333:04},{333:05}\"",
+              "str(333)+',0'+str(333)+',00'+str(333)",
+              "\"333\"',0'\"333\"',00'\"333\""
+            ]
+          },
+          {
+            "questionNumber": 9,
+            "text": "Consider the below code block.\nn_apples = 5\napple_price = 5.7\ns = ...\nprint(s)\nIf the output of the code is 5 kgs of apple cost ₹ 28.50, select the possible\nexpression(s) that can be used for `s``.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "s = f\"{n_apples} kgs of apple cost ₹ {n_apples*apple_price}\"",
+              "s = f\"{n_apples} kgs of apple cost ₹ {n_apples*apple_price:0.2f}\"",
+              "s = f\"{n_apples} kgs of apple cost ₹ {n_apples*apple_price:.2f}\"",
+              "s = n_apples+\" kgs of apple cost ₹ \"+n_apples*apple_price",
+              "s = str(n_apples)+\" kgs of apple cost ₹ \"+str(n_apples*apple_price)",
+              "s = str(n_apples)+\" kgs of apple cost ₹ \"+str(n_apples*apple_price)+\"0\""
+            ],
+            "correctAnswer": [
+              "s = f\"{n_apples} kgs of apple cost ₹ {n_apples*apple_price:0.2f}\"",
+              "s = f\"{n_apples} kgs of apple cost ₹ {n_apples*apple_price:.2f}\"",
+              "s = str(n_apples)+\" kgs of apple cost ₹ \"+str(n_apples*apple_price)+\"0\""
+            ]
+          },
+          {
+            "questionNumber": 10,
+            "text": "Consider the below code block.\na,b = \"56\"\ns = f'{a*3:9}|{b*5:^9}|{a*7:>9}'\nWhat is the value of the variable s? Enter the answer as a single quoted\nstring.",
+            "points": 2,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "'555      |  66666  |  5555555'"
+          },
+          {
+            "questionNumber": 11,
+            "text": "Assume s is a str variable. What is the type of the expression\nstr(len(s.upper().split())).isdigit()?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "NoneType"
+            ],
+            "correctAnswer": "bool"
+          },
+          {
+            "questionNumber": 12,
+            "text": "Assume s is a str variable. What is the type of the expression\ns[:3].upper().split(\"-\")?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "Raises Error"
+            ],
+            "correctAnswer": "list"
+          },
+          {
+            "questionNumber": 13,
+            "text": "Assume s is a str variable. What is the type of the expression\ns.startswith()?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "NoneType",
+              "Raises Error"
+            ],
+            "correctAnswer": "Raises Error"
+          },
+          {
+            "questionNumber": 14,
+            "text": "Assume s is a str variable. What is the type of the expression\ns.startswith(\"hello\")?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "NoneType",
+              "Raises Error"
+            ],
+            "correctAnswer": "bool"
+          },
+          {
+            "questionNumber": 15,
+            "text": "Assume s is a str variable. What is the type of the expression\ns.replace('h').index(\"3\")?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "Raises error"
+            ],
+            "correctAnswer": "Raises error"
+          },
+          {
+            "questionNumber": 16,
+            "text": "Assume s is a str variable. What is the type of the expression\ns.join(\"hello\")?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "Raises Error"
+            ],
+            "correctAnswer": "str"
+          },
+          {
+            "questionNumber": 17,
+            "text": "Assume s is a str variable. What is the type of the expression\ns[0].join(s)?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "Raises Error"
+            ],
+            "correctAnswer": "str"
+          },
+          {
+            "questionNumber": 18,
+            "text": "Assume s is a str variable. What is the type of the expression\ns.join(s.split('-'))?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "int",
+              "str",
+              "float",
+              "list",
+              "bool",
+              "Raises Error"
+            ],
+            "correctAnswer": "str"
+          },
+          {
+            "questionNumber": 19,
+            "text": "What is the value stored in the variable x?\nx = bool(input())\nInput\nFalse",
+            "points": 2,
+            "type": "mcq",
+            "options": [
+              "False",
+              "True",
+              "Value Error",
+              "'False'"
+            ],
+            "correctAnswer": "True"
+          },
+          {
+            "questionNumber": 20,
+            "text": "What is the value of the expression bool(0)?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "True",
+              "False",
+              "Raises Error"
+            ],
+            "correctAnswer": "False"
+          },
+          {
+            "questionNumber": 21,
+            "text": "What is the value of the expression bool('0.0')?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "True",
+              "False",
+              "Raises Error"
+            ],
+            "correctAnswer": "True"
+          },
+          {
+            "questionNumber": 22,
+            "text": "What is the value of the expression 0 or \"2\" and 4?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "True",
+              "False",
+              "\"2\"",
+              "0",
+              "4",
+              "Raises Error"
+            ],
+            "correctAnswer": "4"
+          },
+          {
+            "questionNumber": 23,
+            "text": "What is the value of the expression not None or \"2\" or 4?",
+            "points": 1,
+            "type": "mcq",
+            "options": [
+              "True",
+              "False",
+              "None",
+              "\"2\"",
+              "4",
+              "Raises Error"
+            ],
+            "correctAnswer": "True"
+          },
+          {
+            "questionNumber": 24,
+            "text": "Consider the below code\nif a:\n print('a')\nelif b:\n print('b')\nelse:\n print('c')\nSelect the possible output(s) of the given code, assuming any possible values\nfor a, b and c.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "`a`",
+              "`b`",
+              "`a\nb`",
+              "`a\nc`",
+              "`c`"
+            ],
+            "correctAnswer": [
+              "`a`",
+              "`b`",
+              "`c`"
+            ]
+          },
+          {
+            "questionNumber": 25,
+            "text": "Consider the below code\nif a:\n if b:\n if c:\n print('c')\n print('b')\n print('a')\nSelect the possible output(s) of the given code, assuming any possible values\nfor a, b and c.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "`a`",
+              "`b`",
+              "`a\nb`",
+              "`b\na`",
+              "`c\nb`",
+              "`c\nb\na`"
+            ],
+            "correctAnswer": [
+              "`a`",
+              "`b\na`",
+              "`c\nb\na`"
+            ]
+          },
+          {
+            "questionNumber": 26,
+            "text": "Consider the below code\nif a:\n if b:\n if c:\n print('c')\n else:\n print('b')\n else:\n print('a')\nSelect the possible output(s) of the given code, assuming any possible values\nfor a, b and c.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "`a`",
+              "`b`",
+              "`b\na`",
+              "`c\nb`",
+              "`c\nb\na`"
+            ],
+            "correctAnswer": [
+              "`a`",
+              "`b`"
+            ]
+          },
+          {
+            "questionNumber": 27,
+            "text": "Consider the given code.\nif a:\n if b:\n print('ab')\n if c:\n print('ac')\nSelect the code block(s) that is/are equivalent to the above code.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "`if a or b:\n print('ab')\nif a or c:\n print('ac')`",
+              "`if not (not a or not b):\n print('ab')\nif not (not a or not c):\n print('ac')`",
+              "`if a and b:\n print('ab')\nif a and c:\n print('ac')`",
+              "`if a and b:\n print('ab')\nelif c:\n print('ac')`",
+              "`if a:\n if b:\n print('ab')\n elif c:\n print('ac')`",
+              "`if a:\n if c:\n print('ac') \n if b:\n print('ab')`",
+              "`if b:\n if a:\n print('ab')\nif c:\n if a:\n print('ac')`"
+            ],
+            "correctAnswer": [
+              "`if not (not a or not b):\n print('ab')\nif not (not a or not c):\n print('ac')`",
+              "`if a and b:\n print('ab')\nif a and c:\n print('ac')`",
+              "`if b:\n if a:\n print('ab')\nif c:\n if a:\n print('ac')`"
+            ]
+          },
+          {
+            "questionNumber": 28,
+            "text": "Select all the code snippet(s) that execute without any error.",
+            "points": 2,
+            "type": "msq",
+            "options": [
+              "`from math import sin, cos, sqrt`",
+              "`import pi from math`",
+              "`from math import pi`",
+              "`from math import pi as math_pi`"
+            ],
+            "correctAnswer": [
+              "`from math import sin, cos, sqrt`",
+              "`from math import pi`",
+              "`from math import pi as math_pi`"
+            ]
+          },
+          {
+            "questionNumber": 29,
+            "text": "Consider the below code snippet.\ns = \"abcdefghijklmnopqrstuvwxyz\"\na = int(input())\nb = int(input())\nc = int(input())\nd = int(input())\ne = int(input())\nprint(s[-a:-len(s):-3])\nprint(s[::-b])\nprint(s[c:0:-3])\nprint(s[len(s):-d:-3])\nprint(s[:e:-3])\nSelect the user input combination(s) of a, b, c , d and e (where\n0 <= a,b,c,d,e <= len(s) ) does the above code-snippet print following output\n?\nzwtqnkheb\nzwtqnkheb\nzwtqnkheb\nzwtqnkheb\nzwtqnkheb",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "1,3,26,26,0",
+              "1,3,25,26,0",
+              "1,3,25,25,0",
+              "1,3,26,0,0",
+              "1,3,25,0,0"
+            ],
+            "correctAnswer": [
+              "1,3,26,26,0",
+              "1,3,25,26,0",
+              "1,3,26,0,0",
+              "1,3,25,0,0"
+            ]
+          },
+          {
+            "questionNumber": 30,
+            "text": "Exploratory Problem: This problem is meant to encourage you to try\ncertain things outside the lectures.\nConsider the following snippet of code.\na, b, c, d = input()\nprint(a)\nprint(b)\nprint(c)\nprint(d)\nWhat is the output of this code for the following input? Feel free to use the\nPython interpreter for exploratory questions.\n1234",
+            "points": 3,
+            "type": "mcq",
+            "options": [
+              "`1234\n1234\n1234\n1234`",
+              "`1\n2\n3\n4`",
+              "`1\n1\n1\n1`",
+              "`4\n4\n4\n4`"
+            ],
+            "correctAnswer": "`1\n2\n3\n4`"
+          },
+          {
+            "questionNumber": 31,
+            "text": "A three digit number is called a sandwich number if the sum of its first and\nlast digit is equal to its middle digit. Accept a three digit number as input\nand print sandwich if the number is a sandwich number. Print plain if the\nnumber is not a sandwich number. Select the correct implementation of the code\nthat achieves this. Sample test cases follow:\nInput\nOutput\n143\nsandwich\n118\nplain",
+            "points": 3,
+            "type": "mcq",
+            "options": [
+              "`num = int(input())\nfirst, middle, last = num[0], num[1], num[2]\nif first + last == middle:\n print('sandwich')\nelse:\n print('plain')`",
+              "`num = input()\nfirst, middle, last = num[0], num[1], num[2]\nif first + last == middle:\n print('sandwich')\nelse:\n print('plain')`",
+              "`num = input()\nfirst, middle, last = int(num[0]), int(num[1]), int(num[2])\nif first + last == middle:\n print('sandwich')\nelse:\n print('plain')`",
+              "`num = int(input())\nfirst, middle, last = int(num[0]), int(num[1]), int(num[2])\nif first + last == middle:\n print('sandwich')\nelse:\n print('plain')`"
+            ],
+            "correctAnswer": "`num = input()\nfirst, middle, last = int(num[0]), int(num[1]), int(num[2])\nif first + last == middle:\n print('sandwich')\nelse:\n print('plain')`"
+          },
+          {
+            "questionNumber": 32,
+            "text": "Chose the correct matching option for operator and related function in string .\nOperator\nFunction related to string\n1. +\nA. Replicates same string multiple times\n2. *\nB. Membership check\n3. []\nC. Escape character\n4. [:]\nD. Concatenates two string\n5. in\nE. Range slice\n6. \\\nF. Character of the string using indexing\nChose the correct option for given code.",
+            "points": 3,
+            "type": "mcq",
+            "options": [
+              "1-D, 2-A, 3-F, 4-E, 5-B, 6-C",
+              "1-D, 2-A, 3-F, 4-E, 5-C, 6-B",
+              "1-D, 2-A, 3-E, 4-F, 5-B, 6-C",
+              "1-A, 2-D, 3-E, 4-F, 5-B, 6-C"
+            ],
+            "correctAnswer": "1-D, 2-A, 3-F, 4-E, 5-B, 6-C"
+          },
+          {
+            "questionNumber": 33,
+            "text": "Common data for the next 3 questions\nConsider the below code blocks.\nCode-1\na = int(input())\nb = int(input())\nif a > 0:\n if b < 0:\n print('OK')Code-2\nif int(input()) > 0 and int(input()) < 0:\n print('OK')\nChoose the correct statement(s) from below regarding the code blocks.",
+            "points": 3,
+            "type": "msq",
+            "options": [
+              "(a) Code-1: Always accepts two inputs",
+              "(b) Code-2: Always accepts two inputs",
+              "(c) Code-1: If the first input is negative then program completes without\nprinting anything",
+              "(d) Code-2: If the first input is negative then program completes without\nprinting anything",
+              "(e) Code-1: It is possible to change the value of a by introducing a new line\nof code before accepting the value of b"
+            ],
+            "correctAnswer": [
+              "(a) Code-1: Always accepts two inputs",
+              "(c) Code-1: If the first input is negative then program completes without\nprinting anything",
+              "(d) Code-2: If the first input is negative then program completes without\nprinting anything",
+              "(e) Code-1: It is possible to change the value of a by introducing a new line\nof code before accepting the value of b"
+            ]
+          },
+          {
+            "questionNumber": 34,
+            "text": "How many comparisons are done for the following input in Code-1?\n-1\n1",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "1"
+          },
+          {
+            "questionNumber": 35,
+            "text": "How many comparisons are done for the following input in Code-2?\n1\n1",
+            "points": 1,
+            "type": "numerical",
+            "options": [],
+            "correctAnswer": "2"
+          }
+        ]
+      },
+      "grpa": [
+        {
+          "id": 77,
+          "title": "GrPA 1 - Variables and Assignment - GRADED",
+          "codeTemplate": "# swap the values of `x1` and `x2`\n\n# do a circular swap of `y1`, `y2` and `y3`  like y1 = y2, y2 = y3, y3 = y1 \n\n# create a new variable `a` with the value of `z`\n\n# delete the variable `z`\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nSolve all the below tasks related to variables.\nThis exercise gives you practice in working with variables.\nNote: Do not take input or print output as they are taken care by the suffix code(evaluator).\nProblem type: Standard Input Standard Output - Input from prefix and Output from suffix\n Template Code(Click to Expand) \n# swap the values of `x1` and `x2`\n# do a circular swap of `y1`, `y2` and `y3` like y1 = y2, y2 = y3, y3 = y1 \n# create a new variable `a` with the value of `z`\n# delete the variable `z`\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "Apple\nOrange\nCar\nBike\nTruck\nZed\n",
+              "output": "Orange\nApple\nBike\nTruck\nCar\nZed\nThe variable z is not present\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "# swap the values of `x1` and `x2`\r\nx1,x2=x2,x1\r\n\r\n# do a circular swap of `y1`, `y2` and `y3`  like y1 = y2, y2 = y3, y3 = y1\r\ny1,y2,y3=y2,y3,y1\r\n\r\n# create a new variable `a` with the value of `z`\r\na=z\r\n# delete the variable `z`\r\ndel z",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 78,
+          "title": "GrPA 2 - String Escaping - GRADED",
+          "codeTemplate": "# A single quote ' and a double quote \"\noutput1 = ...\n\n# A forward slash / and a backward slash \\\noutput2 = ...\n\n# Three single quotes ''' and three double quotes \"\"\"\noutput3 = ...\n\n# Double forward slash // and Double backward slash \\\\\noutput4 = ...\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nAssign text that are given in the comments \"as is\" without the space after the \"#\" to the corresponding variable names in the template.\nNote: There are no inputs to this question, you only have to print the things that are given in the comments in each line\nProblem Type - Variable Out - Hidden suffix for input and output\n Template Code(Click to Expand) \n# A single quote ' and a double quote \"\noutput1 = ...\n# A forward slash / and a backward slash \\\noutput2 = ...\n# Three single quotes ''' and three double quotes \"\"\"\noutput3 = ...\n# Double forward slash // and Double backward slash \\\\\noutput4 = ...\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "output1\nA single quote ' and a double quote \"\n",
+              "output": "A single quote ' and a double quote \"\n",
+              "weight": 1
+            },
+            {
+              "input": "output2\nA forward slash / and a backward slash \\\n",
+              "output": "A forward slash / and a backward slash \\\n",
+              "weight": 1
+            },
+            {
+              "input": "output3\nThree single quotes ''' and three double quotes \"\"\"\n",
+              "output": "Three single quotes ''' and three double quotes \"\"\"\n",
+              "weight": 1
+            },
+            {
+              "input": "output4\nDouble forward slash // and Double backward slash \\\\\n",
+              "output": "Double forward slash // and Double backward slash \\\\\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "# A single quote ' and a double quote \"\r\noutput1 = 'A single quote \\' and a double quote \\\"'\r\n\r\n# A forward slash / and a backward slash \\\r\noutput2 = 'A forward slash / and a backward slash \\\\'\r\n\r\n# Three single quotes ''' and three double quotes \"\"\"\r\noutput3 = 'Three single quotes \\'\\'\\' and three double quotes \"\"\"'\r\n\r\n# Double forward slash // and Double backward slash \\\\\r\noutput4 = 'Double forward slash // and Double backward slash \\\\\\\\'\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 79,
+          "title": "GrPA 3 - Basic conditional patterns - GRADED",
+          "codeTemplate": "# part 1 - basic if\n\nnew_word = word # donot remove this line\n\n# remove the \"ing\" suffix from `new_word` if it is there\nif ... :\n    ...\n\n# add the suffix \"ing\" to `new_word` if `continuous_tense` is True\n# write the whole if else block here\n\n# part 2 - If else pattern\n\n# age_group:str should be \"Adult\" or \"Child\" based on the age. assume age greater than or equal to 18 is adult.\nif ...:\n    ...\nelse:\n    ...\n\n# applicant_type:str should be age goup with the member status like \"Adult Member\" or \"Child Non-member\"\n# write the whole if else block\n\n# part 3 if ... elif .. else\n\n# based on the value of `color_code` assign the `color` value in lower case and \"black\" if `color_code` is none of R, B and G\n\nif ...\nelif ...:\n        ...\nelif ...:\n    ...\nelse:\n    ...\n\nis_time_valid = ... # bool: True if time is valid (should be ranging from 1 - 12 both including) else False \n\n# time_in_hrs:int should have the time in 24 hrs format . Try to do this in a single expression\ntime_in_hrs = ...\n\n# time_of_day:str should have the time of the day as Morning, etc.. use \"Invalid\" if not withing the acceptable range\n\n# write your code here\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nThis problem gives you exposure to different use cases of if ... elif and else conditional structues.\nPart 1 - Only if \nPart 2 - if ... else \nPart 3 - if ... elif \n Template Code(Click to Expand) \n# part 1 - basic if\nnew_word = word # donot remove this line\n# remove the \"ing\" suffix from `new_word` if it is there\nif ... :\n ...\n# add the suffix \"ing\" to `new_word` if `continuous_tense` is True\n# write the whole if else block here\n# part 2 - If else pattern\n# age_group:str should be \"Adult\" or \"Child\" based on the age. assume age greater than or equal to 18 is adult.\nif ...:\n ...\nelse:\n ...\n# applicant_type:str should be age goup with the member status like \"Adult Member\" or \"Child Non-member\"\n# write the whole if else block\n# part 3 if ... elif .. else\n# based on the value of `color_code` assign the `color` value in lower case and \"black\" if `color_code` is none of R, B and G\nif ...\nelif ...:\n ...\nelif ...:\n ...\nelse:\n ...\nis_time_valid = ... # bool: True if time is valid (should be ranging from 1 - 12 both including) else False \n# time_in_hrs:int should have the time in 24 hrs format . Try to do this in a single expression\ntime_in_hrs = ...\n# time_of_day:str should have the time of the day as Morning, etc.. use \"Invalid\" if not withing the acceptable range\n# write your code here\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "word = \"glow\"\ncontinuous_tense = False\ncheck(\"new_word\",\"glow\")\nword = \"glowing\"\ncontinuous_tense = False\ncheck(\"new_word\",\"glow\")\n",
+              "output": "glow\nglow\n",
+              "weight": 1
+            },
+            {
+              "input": "word = \"glow\"\ncontinuous_tense = True\ncheck(\"new_word\",\"glowing\")\nword = \"glowing\"\ncontinuous_tense = True\ncheck(\"new_word\",\"glowing\")\n",
+              "output": "glowing\nglowing\n",
+              "weight": 1
+            },
+            {
+              "input": "age = 18\ncheck(\"age_group\", \"Adult\")\nage = 17\ncheck(\"age_group\", \"Child\")\nage = 19\ncheck(\"age_group\", \"Adult\")\n",
+              "output": "Adult\nChild\nAdult\n",
+              "weight": 1
+            },
+            {
+              "input": "age = 18\nis_member = True\ncheck(\"applicant_type\", \"Adult Member\")\nage = 17\nis_member = True\ncheck(\"applicant_type\", \"Child Member\")\nage = 19\nis_member = False\ncheck(\"applicant_type\", \"Adult Non-member\")\n",
+              "output": "Adult Member\nChild Member\nAdult Non-member\n",
+              "weight": 1
+            },
+            {
+              "input": "color_code = \"R\"\ncheck(\"color\",\"red\")\ncolor_code = \"G\"\ncheck(\"color\",\"green\")\ncolor_code = \"B\"\ncheck(\"color\",\"blue\")\ncolor_code = \"S\"\ncheck(\"color\", \"black\")\n",
+              "output": "red\ngreen\nblue\nblack\n",
+              "weight": 1
+            },
+            {
+              "input": "time = \"12 AM\"\ncheck(\"time_in_hrs\", 0)\ntime = \"12 PM\"\ncheck(\"time_in_hrs\", 12)\n",
+              "output": "0\n12\n",
+              "weight": 1
+            },
+            {
+              "input": "time = \"15 AM\"\ncheck(\"is_time_valid\", False)\ntime = \"00 PM\"\ncheck(\"is_time_valid\", False)\ntime = \"01 PM\"\ncheck(\"is_time_valid\", True)\n",
+              "output": "False\nFalse\nTrue\n",
+              "weight": 1
+            },
+            {
+              "input": "time = \"12 AM\"\ncheck(\"time_of_day\", \"Night\")\ntime = \"12 PM\"\ncheck(\"time_of_day\", \"Afternoon\")\ntime = \"13 PM\"\ncheck(\"time_of_day\", \"Invalid\")\n",
+              "output": "Night\nAfternoon\nInvalid\n",
+              "weight": 1
+            }
+          ],
+          "score": 71.42857142857143,
+          "maxScore": 100,
+          "savedCode": "# part 1 - basic if\r\n\r\nnew_word = word # donot remove this line\r\n\r\n# remove the \"ing\" suffix from `new_word` if it is there\r\nif new_word.endswith(\"ing\"):\r\n    new_word=new_word[:-3]\r\n\r\n# add the suffix \"ing\" to `new_word` if `continuous_tense` is True\r\n# write the whole if else block here\r\nif continuous_tense:\r\n    new_word=new_word+\"ing\"\r\nelse:\r\n    new_word=new_word\r\n# part 2 - If else pattern\r\n\r\n# age_group:str should be \"Adult\" or \"Child\" based on the age. assume age greater than or equal to 18 is adult.\r\nif age>=18:\r\n    age_group=\"Adult\"\r\nelse:\r\n    age_group=\"Child\"\r\n    \r\nif is_member:\r\n    applicant_type = age_group+\" Member\"\r\nelse:\r\n    applicant_type=age_group+\" Non-member\"\r\n\r\n# applicant_type:str should be age goup with the member status like \"Adult Member\" or \"Child Non-member\"\r\n# write the whole if else block\r\n\r\n# part 3 if ... elif .. else\r\n\r\n# based on the value of `color_code` assign the `color` value in lower case and \"black\" if `color_code` is none of R, B and G\r\n\r\nif color_code==\"R\":\r\n    color=\"red\"\r\nelif color_code==\"G\":\r\n    color=\"green\"\r\nelif color_code ==\"B\":\r\n    color=\"blue\"\r\nelse:\r\n    color=\"black\"\r\n\r\nhour = int(time[:2])\r\nmer= time[3:]\r\nis_time_valid =(1<= hour<=12) # bool: True if time is valid (should be ranging from 1 - 12 both including) else False \r\n\r\n# time_in_hrs:int should have the time in 24 hrs format . Try to do this in a single expression\r\ntime_in_hrs = (hour%2)+(12 if mer ==\"PM\" else 0) if is_time_valid else -1\r\n\r\n# time_of_day:str should have the time of the day as Morning, etc.. use \"Invalid\" if not withing the acceptable range\r\n\r\n# write your code here\r\n\r\nif not is_time_valid:\r\n    time_of_day=\"Invalid\"\r\nelif 6<=time_in_hrs<12:\r\n    time_of_day=\"Morning\"\r\nelif 12<=time_in_hrs<18:\r\n    time_of_day=\"Afternoon\"\r\nelif 18<=time_in_hrs<24:\r\n    time_of_day=\"Evening\"\r\nelse:\r\n    time_of_day=\"Night\"\r\n\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 80,
+          "title": "GrPA 4 - Conditionals - Applications - GRADED",
+          "codeTemplate": "\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nProblem Type: Standard Output - Standard Output\nYou are tasked with creating a multi-purpose application that performs various operations based on user input. The application should take the operation name from the input and execute the corresponding task.\nThe operations your application should support are as follows:\n- \nOdd number checker: Check whether the input number is odd.\n- Name: odd_num_check\n- Inputs: number:int\n- Output: \"yes\" if the number is odd, \"no\" otherwise.\n- \nPerfect square checker: Check whether the input number is a perfect square.\n- Name: perfect_square_check\n- Inputs: number:int\n- Output: \"yes\" if the number is a perfect square, \"no\" otherwise.\n- \nVowel checker: Check if a string has a vowel in it.\n- Name: vowel_check\n- Inputs: text:str\n- Output: \"yes\" if the string contains a vowel, \"no\" otherwise.\n- \nDivisibility checker: Check if a number is divisible by 2 or 3.\n- Name: divisibility_check\n- Inputs: number:int\n- Output: \"divisible by 2\" if the number is divisible by 2, \"divisible by 3\" if divisible by 3, \"divisible by 2 and 3\" if divisible by both, \"not divisible by 2 and 3\" otherwise.\n- \nPalindrominator: Takes a string and joins it with the same string reversed. Eg. \"cal\" -> \"calac\".\n- Name: palindrominator\n- Inputs: text:str\n- Output: string representing the input string joined with its reverse(the last characte should not be repeated twice)\n- \nSimple interest calculator with inputs with a higher interest rate if long term.\n- Name: simple_interest\n- Inputs: principal_amount:int, n_years:int (number of years)\n- Output: Simple interest with a 5% interest rate if less than 10 years, else 8%. Round the result to integer using round function.\nIf the operation name is not any of the above print \"Invalid Operation\".\nProblem Type: Standard Input - Standard Output\nInstructions on how to solve (Click to expand) \nNOTE: In this type of questions you have to read input from standard input(stdin) using input function in an appropriate manner and print the output in the appropriate format using print function.\nThe Three dots (...) called as Ellipsis in python are like placeholders, replace them with your answer.\nEach testcase will have the standard input and expected output your program should read the standard input and print the result to the standard output matching the expected output.\n Template Code(Click to Expand) \nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "odd_num_check\n5\n",
+              "output": "yes\n",
+              "weight": 1
+            },
+            {
+              "input": "odd_num_check\n8\n",
+              "output": "no\n",
+              "weight": 1
+            },
+            {
+              "input": "perfect_square_check\n16\n",
+              "output": "yes\n",
+              "weight": 1
+            },
+            {
+              "input": "perfect_square_check\n15\n",
+              "output": "no\n",
+              "weight": 1
+            },
+            {
+              "input": "vowel_check\nElf\n",
+              "output": "yes\n",
+              "weight": 1
+            },
+            {
+              "input": "vowel_check\nxyz\n",
+              "output": "no\n",
+              "weight": 1
+            },
+            {
+              "input": "divisibility_check\n10\n",
+              "output": "divisible by 2\n",
+              "weight": 1
+            },
+            {
+              "input": "divisibility_check\n9\n",
+              "output": "divisible by 3\n",
+              "weight": 1
+            },
+            {
+              "input": "divisibility_check\n18\n",
+              "output": "divisible by 2 and 3\n",
+              "weight": 1
+            },
+            {
+              "input": "divisibility_check\n17\n",
+              "output": "not divisible by 2 and 3\n",
+              "weight": 1
+            },
+            {
+              "input": "palindrominator\nhello\n",
+              "output": "hellolleh\n",
+              "weight": 1
+            },
+            {
+              "input": "simple_interest\n1000\n5\n",
+              "output": "250\n",
+              "weight": 1
+            },
+            {
+              "input": "simple_interest\n5000\n15\n",
+              "output": "6000\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "op = input().strip()\r\n\r\nif op == \"odd_num_check\":\r\n    number= int(input())\r\n    print(\"yes\" if number%2 !=0 else \"no\")\r\n    \r\nelif op==\"perfect_square_check\":\r\n    number = int(input())\r\n    root = int(number ** 0.5)\r\n    print(\"yes\" if root*root==number else\"no\")\r\n    \r\nelif op == \"vowel_check\":\r\n    text = input()\r\n    vowels = \"aeiouAEIOU\"\r\n    print(\"yes\" if any(ch in vowels for ch in text) else \"no\")\r\n    \r\nelif op == \"divisibility_check\":\r\n    number = int(input())\r\n    div2 = (number%2 ==0)\r\n    div3 = (number%3 == 0)\r\n    \r\n    if div2 and div3:\r\n        print(\"divisible by 2 and 3\")\r\n    elif div2:\r\n        print(\"divisible by 2\")\r\n    elif div3:\r\n        print(\"divisible by 3\")\r\n    else:\r\n        print(\"not divisible by 2 and 3\")\r\n        \r\nelif op == \"palindrominator\":\r\n    text= input();\r\n    print(text + text[-2::-1] if len(text)>0 else\"\")\r\n        \r\nelif op == \"simple_interest\":\r\n    principal_amount=int(input())\r\n    n_years = int(input())\r\n    rate = 0.05 if n_years<10 else 0.08\r\n    si = principal_amount*rate*n_years\r\n    print(round(si))\r\n    \r\nelse:\r\n    print(\"Invalid Operation\")",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 81,
+          "title": "GrPA 5 - Conditionals - Debugging - GRADED",
+          "codeTemplate": "main_dish = input()\ntime_of_day = int(input())\nhas_voucher =   ...\nis_card_payment = ...\n\nif main_dish == \"panner tikka\":\n    cost = 250\n    elif main_dissh == \"butter chikcen\":\n        cost == 240\n    elif main_dish = \"masal dosa\":\n        cost = 200\n    else: # if main dish is invalid print invalid dish and exit the code.\n       print(\"Invalid main dish\")\n       exit() \n\n    if time_of_day >= 12 and time_of_day =< 15:\n        total_cost = (1 - 0.15) * cost\n\n    eles\n        total_cost = cost\n\n    if has_voucher\n        total_cost =* 0.9  # Apply voucher discount\n\n    if is_card_payment  # service charge for card payments\n        service_charge = 0.05 * total_cost\n        total_cost =+ servcie_charge\n\n    print(f\"{total_cost:.02f}\")\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nProblem Type: Standard Input - Standard Output, Debugging, and missing\nHow to solve: To solve this problem use the Python tutor button. Paste the template(buggy) code in the python tutor, you can also include the sample input in the python tutor. This will help you identify the errors easily.\nUseful Tips while dealing with indentation\n- You can indent or detent a line using the keyboard shortcut CTRL+] and CTRL+[ respectively.\n- To indent or detent a whole block select the block and use the above short cuts.\nUseful Keyboard shortcuts for selecting\n- Use arrow keys to move the cursor in the left, right, up and down directions\n- Hold Ctrl+ left or right arrow to move the cursor by words\n- Hold shift key while moving using the above methods to select the contents.\nProblem Statement\nWrite a program to calculate the cost of a meal at a restaurant.\n- The cost of the meal depends on the main dish and the time of the day.\n- \nMain dishes available:\n- \"paneer tikka\": ₹250\n- \"butter chicken\": ₹240\n- \"masala dosa\": ₹200\n- \nAdditional discounts:\n- 15% discount for meals ordered during lunchtime (from 12 PM to 3 PM).\n- Customers can apply vouchers for an additional 10% discount on the total cost.\n- The restaurant accepts card payments.\n- For card payments, there's an additional service charge of 5% on the total cost after applying any discounts.\n- \nTake the following inputs:\n- Main dish : str\n- Time of the day: int: 24-hour format\n- Whether the customer has a voucher: bool: True/False\n- Whether the payment is by card: bool: True/False\n- Calculate and display the total cost of the meal.\n Template Code(Click to Expand) \nmain_dish = input()\ntime_of_day = int(input())\nhas_voucher = ...\nis_card_payment = ...\nif main_dish == \"panner tikka\":\n cost = 250\n elif main_dissh == \"butter chikcen\":\n cost == 240\n elif main_dish = \"masal dosa\":\n cost = 200\n else: # if main dish is invalid print invalid dish and exit the code.\n print(\"Invalid main dish\")\n exit() \n if time_of_day >= 12 and time_of_day =< 15:\n total_cost = (1 - 0.15) * cost\n eles\n total_cost = cost\n if has_voucher\n total_cost =* 0.9 # Apply voucher discount\n if is_card_payment # service charge for card payments\n service_charge = 0.05 * total_cost\n total_cost =+ servcie_charge\n print(f\"{total_cost:.02f}\")\nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "paneer tikka\n13\nTrue\nTrue\n",
+              "output": "200.81\n",
+              "weight": 1
+            },
+            {
+              "input": "butter chicken\n20\nFalse\nTrue\n",
+              "output": "252.00\n",
+              "weight": 1
+            },
+            {
+              "input": "masala dosa\n14\nTrue\nFalse\n",
+              "output": "153.00\n",
+              "weight": 1
+            },
+            {
+              "input": "paneer tikka\n10\nFalse\nFalse\n",
+              "output": "250.00\n",
+              "weight": 1
+            },
+            {
+              "input": "gobi manchurian\n15\nTrue\nTrue\n",
+              "output": "Invalid main dish\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "main_dish = input()\r\ntime_of_day = int(input())\r\nhas_voucher =  input()==\"True\"\r\nis_card_payment = input()==\"True\"\r\n\r\nif main_dish == \"paneer tikka\":\r\n    cost = 250\r\nelif main_dish == \"butter chicken\":\r\n    cost = 240\r\nelif main_dish == \"masala dosa\":\r\n    cost = 200\r\nelse: # if main dish is invalid print invalid dish and exit the code.\r\n    print(\"Invalid main dish\")\r\n    exit() \r\n\r\nif time_of_day >= 12 and time_of_day <= 15:\r\n    total_cost = (1 - 0.15) * cost\r\n\r\nelse:\r\n    total_cost = cost\r\n\r\nif has_voucher:\r\n    total_cost *= 0.9  # Apply voucher discount\r\n\r\nif is_card_payment:  # service charge for card payments\r\n    service_charge = 0.05 * total_cost\r\n    total_cost += service_charge\r\n\r\nprint(f\"{total_cost:.02f}\")\r\n",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        },
+        {
+          "id": 147,
+          "title": "GrPA 4 - Loops Application - GRADED",
+          "codeTemplate": "\n",
+          "description": "Change in eligibility criteria to write oppe1 exam:\nA1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100\nYou are tasked with writing a program that can handle various tasks based on the input. The first line of the input represents the task to be performed. The possible tasks are:\n- factors - Find the factors of a number n (including 1 and itself) in ascending order.\n- find_min - Take n numbers from the input and print the minimum number.\n- prime_check - Check whether a given number is prime or not.\n- is_sorted - Check if all characters of the given string from input are in alphabetical order. Print the output as \"True\" or \"False\" accordingly.\n- any_true - Take n numbers from input and check if any of the numbers are divisible by 3. Print the output as \"True\" or \"False\" accordingly.\n- manhattan - Take inputs directions such as \"UP\", \"DOWN\", \"LEFT\" and \"RIGHT\" from the input until the input is \"STOP\". Assume you are starting from (0,0) in a cartesian coordinate. Find the Manhattan distance between the starting point and the ending point by following the steps in the cartesian plane.\nWrite a program to solve these tasks. Use loops where necessary.\n Template Code(Click to Expand) \nPython Tutor\nStarboard Notebook\nPyodide Terminal",
+          "publicTestCases": [
+            {
+              "input": "factors\n28\n",
+              "output": "1\n2\n4\n7\n14\n28\n",
+              "weight": 1
+            },
+            {
+              "input": "find_min\n5\n10\n20\n5\n25\n15\n",
+              "output": "5\n",
+              "weight": 1
+            },
+            {
+              "input": "prime_check\n17\n",
+              "output": "True\n",
+              "weight": 1
+            },
+            {
+              "input": "is_sorted\nabcdefg\n",
+              "output": "True\n",
+              "weight": 1
+            },
+            {
+              "input": "is_sorted\nzyx\n",
+              "output": "False\n",
+              "weight": 1
+            },
+            {
+              "input": "any_true\n4\n10\n15\n20\n25\n",
+              "output": "True\n",
+              "weight": 1
+            },
+            {
+              "input": "any_true\n3\n10\n20\n25\n",
+              "output": "False\n",
+              "weight": 1
+            },
+            {
+              "input": "manhattan\nUP\nUP\nLEFT\nDOWN\nRIGHT\nRIGHT\nSTOP\n",
+              "output": "2\n",
+              "weight": 1
+            }
+          ],
+          "score": 100,
+          "maxScore": 100,
+          "savedCode": "\r\nif task == \"factors\":\r\n    n =int(input())\r\n    i=1\r\n    while i<=n:\r\n        if n%i==0:\r\n            print(i)\r\n        i+=1\r\n        \r\nelif task ==\"find_min\":\r\n    n =int(input())\r\n    i = 0\r\n    m=int(input())\r\n    while i<n-1:\r\n        x=int(input())\r\n        if x<m:\r\n            m=x\r\n        i+=1\r\n    print(m)\r\n    \r\nelif task ==\"prime_check\":\r\n    n=int(input())\r\n    i=2\r\n    c=0\r\n    while i<n:\r\n        if n%i==0:\r\n            c=1\r\n        i+=1\r\n    if n>1 and c==0:\r\n        print(\"True\")\r\n    else:\r\n        print(\"False\")\r\n\r\nelif task ==\"is_sorted\":\r\n    s=input()\r\n    i=0\r\n    ok=1\r\n    while i<len(s)-1:\r\n        if s[i]>s[i+1]:\r\n            ok=0\r\n        i+=1\r\n    if ok==1:\r\n        print(\"True\")\r\n    else:\r\n        print(\"False\")\r\n        \r\n        \r\nelif task==\"any_true\":\r\n    n=int(input())\r\n    i=0\r\n    ok=0\r\n    while i<n:\r\n        x=int(input())\r\n        if x%3==0:\r\n            ok=1\r\n        i+=1\r\n    if ok==1:\r\n        print(\"True\")\r\n    else:\r\n        print(\"False\")\r\n\r\n\r\nelif task ==\"manhattan\":\r\n    x=0\r\n    y=0\r\n    while True:\r\n        d=input()\r\n        if d==\"STOP\":\r\n            break\r\n        if d==\"UP\":\r\n            y+=1\r\n        if d==\"DOWN\":\r\n            y-=1\r\n        if d==\"LEFT\":\r\n            x-=1\r\n        if d==\"RIGHT\":\r\n            x+=1\r\n    if x<0:x=-x\r\n    if y<0:y=-y\r\n    print (x+y)",
+          "difficulty": "easy",
+          "tags": [],
+          "conceptTags": []
+        }
+      ]
+    }
+  }
+}

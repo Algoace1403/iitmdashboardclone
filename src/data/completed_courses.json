@@ -1,0 +1,17 @@
+{
+  "foundational": {
+    "completed": [
+      { "title": "Statistics for Data Science I", "grade": "C" },
+      { "title": "Mathematics for Data Science I", "grade": "A" },
+      { "title": "English I", "grade": "A" },
+      { "title": "Computational Thinking", "grade": "B" }
+    ],
+    "current": [
+      { "title": "Programming in Python" },
+      { "title": "Statistics for Data Science II" },
+      { "title": "POSH Training" },
+      { "title": "Mathematics for Data Science II" },
+      { "title": "English II" }
+    ]
+  }
+}
