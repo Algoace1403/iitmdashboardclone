@@ -105,10 +105,10 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
             gold
           />
           <SidebarLink
-            href={`/seek/courses/${courseId}`}
+            href={`/seek/courses/${courseId}/grading`}
             label="Grading Policy"
             sublabel="Lesson"
-            active={false}
+            active={pathname === `/seek/courses/${courseId}/grading`}
           />
         </AccordionSection>
 
