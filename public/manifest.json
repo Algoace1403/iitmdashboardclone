@@ -3,19 +3,28 @@
   "short_name": "IIT Madras",
   "description": "Student Dashboard - IIT Madras BS Degree Programme",
   "start_url": "/",
+  "id": "/",
   "display": "standalone",
   "background_color": "#f5f5f5",
   "theme_color": "#aa3535",
+  "orientation": "any",
   "icons": [
-    {
-      "src": "/iitm-seal.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    },
     {
       "src": "/favicon.ico",
       "sizes": "32x32",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/iitm-seal.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/iitm-seal.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }
