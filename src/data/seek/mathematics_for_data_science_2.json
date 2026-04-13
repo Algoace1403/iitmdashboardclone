@@ -6,7 +6,27 @@
     "courseId": "MA2001",
     "credits": 4,
     "type": "Foundational",
-    "department": "Department of Mathematics"
+    "prerequisites": [
+      "BSMA1001 - Mathematics for Data Science I"
+    ],
+    "faculty": "Dr. Sanjay S Kumar",
+    "department": "Department of Mathematics, IIT Madras",
+    "instructors": [
+      "Dr. Libin"
+    ],
+    "prescribedBooks": [
+      "Mathematics for Machine Learning (Author: Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong)",
+      "Vector Calculus (By Michael Corral)"
+    ],
+    "studyMaterial": "The primary study material will be the videos and the assignments posted on the course portal",
+    "courseWebsite": "https://study.iitm.ac.in/ds/course_pages/BSMA2001.html",
+    "suggestedWay": [
+      "Watch the lectures",
+      "Attempt solve with us assignments",
+      "Attempt Activity questions of each lecture",
+      "Attempt practice assignments",
+      "Attempt graded assignments"
+    ]
   },
   "weeks": [
     {

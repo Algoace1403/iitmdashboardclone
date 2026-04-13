@@ -3,10 +3,25 @@
   "seekCode": "ns_26t1_ma2002",
   "aboutCourse": {
     "title": "Statistics for Data Science II",
-    "courseId": "MA2002",
+    "courseId": "MA2002/MA1005",
     "credits": 4,
     "type": "Foundational",
-    "department": "Department of Mathematics"
+    "coRequisites": [
+      "BSMA1001 - Statistics for Data Science I",
+      "BSMA1001 - Mathematics for Data Science I"
+    ],
+    "faculty": "Dr. Andrew Thangaraj",
+    "department": "Electrical Engineering department, IIT Madras",
+    "instructors": [
+      "Sandip S Tupare",
+      "Sridhar Narayanan"
+    ],
+    "guestInstructors": [
+      "Srirang Araswady",
+      "Chinmay Jhaveri"
+    ],
+    "studyMaterial": "The primary study material for this course is the set of videos and assignments posted on this course page. The prescribed textbook for the course is Introduction to Probability and Statistics for Engineers and Scientists, by Sheldon Ross, Elsevier. There are references to the book by Siva Athreya, Deepayan Sarkar, and Steve Tanner.",
+    "courseWebsite": "https://study.iitm.ac.in/ds/course_pages/BSMA1005.html"
   },
   "weeks": [
     {

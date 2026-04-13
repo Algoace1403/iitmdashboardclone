@@ -31,20 +31,36 @@ export default function CurrentCoursesPage() {
         </p>
       </div>
 
-      {/* Course Cards — real CSS: courses-list row, courses-box col-lg-3 */}
+      {/* Course Cards — Python spans 2 rows, others in grid */}
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr 1fr",
+          gridTemplateRows: "auto auto",
           gap: 18,
-          alignItems: "flex-start",
+          alignItems: "start",
         }}
       >
-        {courses.map((course) => (
-          <div key={course.id} style={{ width: "calc(25% - 14px)", minWidth: 220 }}>
-            <CourseCard course={course} />
-          </div>
-        ))}
+        {/* Python — spans 2 rows in first column */}
+        <div style={{ gridColumn: "1", gridRow: "1 / 3" }}>
+          <CourseCard course={courses[0]} />
+        </div>
+        {/* Stats */}
+        <div style={{ gridColumn: "2", gridRow: "1" }}>
+          <CourseCard course={courses[1]} />
+        </div>
+        {/* POSH */}
+        <div style={{ gridColumn: "3", gridRow: "1" }}>
+          <CourseCard course={courses[2]} />
+        </div>
+        {/* Math */}
+        <div style={{ gridColumn: "4", gridRow: "1" }}>
+          <CourseCard course={courses[4]} />
+        </div>
+        {/* English — below POSH */}
+        <div style={{ gridColumn: "3", gridRow: "2" }}>
+          <CourseCard course={courses[3]} />
+        </div>
       </div>
 
       {/* Footer reporting text */}

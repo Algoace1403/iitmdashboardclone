@@ -11,32 +11,150 @@
     "seekCode": "ns_26t1_cs1002",
     "allowedEndTerm": true,
     "scores": {
-      "oppyEligible": 1.00,
+      "oppyEligible": 1,
       "moduleGpaAverages": [
-        { "label": "WEEK01_GrPA_AVERAGE", "value": 98.18 },
-        { "label": "WEEK02_GrPA_AVERAGE", "value": 94.29 },
-        { "label": "WEEK03_GrPA_AVERAGE", "value": 100.00 },
-        { "label": "WEEK04_GrPA_AVERAGE", "value": 0.00 }
+        {
+          "label": "WEEK01_GrPA_AVERAGE",
+          "value": 98.18
+        },
+        {
+          "label": "WEEK02_GrPA_AVERAGE",
+          "value": 94.29
+        },
+        {
+          "label": "WEEK03_GrPA_AVERAGE",
+          "value": 100
+        },
+        {
+          "label": "WEEK04_GrPA_AVERAGE",
+          "value": 0
+        }
       ],
       "quizScores": [
-        { "label": "Quiz 1", "value": 65.00 },
-        { "label": "PROGRAMMING QUIZ 1", "value": 100.00 }
+        {
+          "label": "Quiz 1",
+          "value": 65
+        },
+        {
+          "label": "PROGRAMMING QUIZ 1",
+          "value": 100
+        }
       ]
     },
-    "sctForOppe": 1.00,
+    "sctForOppe": 1,
     "weeks": [
-      { "week": 1, "assignment": 99.00, "grpas": [100, 100, 100, 91, 100] },
-      { "week": 2, "assignment": 79.00, "grpas": [100, 100, 71, 100, 100] },
-      { "week": 3, "assignment": 88.00, "grpas": [100, 100, 100, 100] },
-      { "week": 4, "assignment": 40.00, "grpas": ["Absent", "Absent", "Absent", "Absent", "Absent"] },
-      { "week": 5, "assignment": 86.00, "grpas": [100, 100, 100, 100, "Absent"] },
-      { "week": 6, "assignment": 96.00, "grpas": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100] },
-      { "week": 7, "assignment": 79.00, "grpas": [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0, 100] },
-      { "week": 8, "assignment": null },
-      { "week": 9, "assignment": null },
-      { "week": 10, "assignment": null },
-      { "week": 11, "assignment": null },
-      { "week": 12, "assignment": null }
+      {
+        "week": 1,
+        "assignment": 99,
+        "grpas": [
+          100,
+          100,
+          100,
+          91,
+          100
+        ]
+      },
+      {
+        "week": 2,
+        "assignment": 79,
+        "grpas": [
+          100,
+          100,
+          71,
+          100,
+          100
+        ]
+      },
+      {
+        "week": 3,
+        "assignment": 88,
+        "grpas": [
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      {
+        "week": 4,
+        "assignment": 40,
+        "grpas": [
+          "Absent",
+          "Absent",
+          "Absent",
+          "Absent",
+          "Absent"
+        ]
+      },
+      {
+        "week": 5,
+        "assignment": 86,
+        "grpas": [
+          100,
+          100,
+          100,
+          100,
+          "Absent"
+        ]
+      },
+      {
+        "week": 6,
+        "assignment": 96,
+        "grpas": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      {
+        "week": 7,
+        "assignment": 79,
+        "grpas": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          0,
+          100
+        ]
+      },
+      {
+        "week": 8,
+        "assignment": null
+      },
+      {
+        "week": 9,
+        "assignment": null
+      },
+      {
+        "week": 10,
+        "assignment": null
+      },
+      {
+        "week": 11,
+        "assignment": null
+      },
+      {
+        "week": 12,
+        "assignment": null
+      }
     ]
   },
   {
@@ -52,22 +170,64 @@
     "allowedEndTerm": true,
     "scores": {
       "quizScores": [
-        { "label": "Quiz 1", "value": 0.00 }
+        {
+          "label": "Quiz 1",
+          "value": 0
+        }
       ]
     },
     "weeks": [
-      { "week": 1, "assignment": 64.00, "activity": 0.00 },
-      { "week": 2, "assignment": 99.00, "activity": 0.00 },
-      { "week": 3, "assignment": 96.00, "activity": "Absent" },
-      { "week": 4, "assignment": 100.00 },
-      { "week": 5, "assignment": 100.00 },
-      { "week": 6, "assignment": 40.00 },
-      { "week": 7, "assignment": 79.00 },
-      { "week": 8, "assignment": null },
-      { "week": 9, "assignment": null },
-      { "week": 10, "assignment": null },
-      { "week": 11, "assignment": null },
-      { "week": 12, "assignment": null }
+      {
+        "week": 1,
+        "assignment": 64,
+        "activity": 0
+      },
+      {
+        "week": 2,
+        "assignment": 99,
+        "activity": 0
+      },
+      {
+        "week": 3,
+        "assignment": 96,
+        "activity": "Absent"
+      },
+      {
+        "week": 4,
+        "assignment": 100
+      },
+      {
+        "week": 5,
+        "assignment": 100
+      },
+      {
+        "week": 6,
+        "assignment": 40
+      },
+      {
+        "week": 7,
+        "assignment": 79
+      },
+      {
+        "week": 8,
+        "assignment": null
+      },
+      {
+        "week": 9,
+        "assignment": null
+      },
+      {
+        "week": 10,
+        "assignment": null
+      },
+      {
+        "week": 11,
+        "assignment": null
+      },
+      {
+        "week": 12,
+        "assignment": null
+      }
     ]
   },
   {
@@ -85,37 +245,6 @@
     "weeks": []
   },
   {
-    "id": "mathematics_for_data_science_2",
-    "code": "MA2001",
-    "title": "Mathematics for Data Science II",
-    "term": "JANUARY 2026 TERM",
-    "category": "foundation",
-    "credits": 4,
-    "status": "NEW COURSE",
-    "program": "BS in Data Science and Applications",
-    "seekCode": "ns_26t1_ma2001",
-    "allowedEndTerm": true,
-    "scores": {
-      "quizScores": [
-        { "label": "Quiz 1", "value": 55.00 }
-      ]
-    },
-    "weeks": [
-      { "week": 1, "assignment": 80.00, "activity": "Absent" },
-      { "week": 2, "assignment": 99.00 },
-      { "week": 3, "assignment": 100.00 },
-      { "week": 4, "assignment": 100.00 },
-      { "week": 5, "assignment": 91.00 },
-      { "week": 6, "assignment": 91.00 },
-      { "week": 7, "assignment": 83.00 },
-      { "week": 8, "assignment": null },
-      { "week": 9, "assignment": null },
-      { "week": 10, "assignment": null },
-      { "week": 11, "assignment": null },
-      { "week": 12, "assignment": null }
-    ]
-  },
-  {
     "id": "english_2",
     "code": "HS1002",
     "title": "English II",
@@ -128,22 +257,132 @@
     "allowedEndTerm": true,
     "scores": {
       "quizScores": [
-        { "label": "Quiz 1", "value": 60.00 }
+        {
+          "label": "Quiz 1",
+          "value": 60
+        }
       ]
     },
     "weeks": [
-      { "week": 1, "assignment": 90.00 },
-      { "week": 2, "assignment": 100.00 },
-      { "week": 3, "assignment": 100.00 },
-      { "week": 4, "assignment": 100.00 },
-      { "week": 5, "assignment": 100.00 },
-      { "week": 6, "assignment": 80.00 },
-      { "week": 7, "assignment": 100.00 },
-      { "week": 8, "assignment": null },
-      { "week": 9, "assignment": null },
-      { "week": 10, "assignment": null },
-      { "week": 11, "assignment": null },
-      { "week": 12, "assignment": null }
+      {
+        "week": 1,
+        "assignment": 90
+      },
+      {
+        "week": 2,
+        "assignment": 100
+      },
+      {
+        "week": 3,
+        "assignment": 100
+      },
+      {
+        "week": 4,
+        "assignment": 100
+      },
+      {
+        "week": 5,
+        "assignment": 100
+      },
+      {
+        "week": 6,
+        "assignment": 80
+      },
+      {
+        "week": 7,
+        "assignment": 100
+      },
+      {
+        "week": 8,
+        "assignment": null
+      },
+      {
+        "week": 9,
+        "assignment": null
+      },
+      {
+        "week": 10,
+        "assignment": null
+      },
+      {
+        "week": 11,
+        "assignment": null
+      },
+      {
+        "week": 12,
+        "assignment": null
+      }
+    ]
+  },
+  {
+    "id": "mathematics_for_data_science_2",
+    "code": "MA2001",
+    "title": "Mathematics for Data Science II",
+    "term": "JANUARY 2026 TERM",
+    "category": "foundation",
+    "credits": 4,
+    "status": "NEW COURSE",
+    "program": "BS in Data Science and Applications",
+    "seekCode": "ns_26t1_ma2001",
+    "allowedEndTerm": true,
+    "scores": {
+      "quizScores": [
+        {
+          "label": "Quiz 1",
+          "value": 55
+        }
+      ]
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "assignment": 80,
+        "activity": "Absent"
+      },
+      {
+        "week": 2,
+        "assignment": 99
+      },
+      {
+        "week": 3,
+        "assignment": 100
+      },
+      {
+        "week": 4,
+        "assignment": 100
+      },
+      {
+        "week": 5,
+        "assignment": 91
+      },
+      {
+        "week": 6,
+        "assignment": 91
+      },
+      {
+        "week": 7,
+        "assignment": 83
+      },
+      {
+        "week": 8,
+        "assignment": null
+      },
+      {
+        "week": 9,
+        "assignment": null
+      },
+      {
+        "week": 10,
+        "assignment": null
+      },
+      {
+        "week": 11,
+        "assignment": null
+      },
+      {
+        "week": 12,
+        "assignment": null
+      }
     ]
   }
 ]

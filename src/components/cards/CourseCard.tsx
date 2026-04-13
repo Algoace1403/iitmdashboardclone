@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 interface WeekData {
@@ -16,6 +18,7 @@ interface CourseData {
   program: string;
   allowedEndTerm?: boolean | null;
   coursePageUrl?: string;
+  seekCode?: string;
   sctForOppe?: number;
   scores: {
     oppyEligible?: number;
@@ -31,8 +34,14 @@ interface CourseCardProps {
 }
 
 export function CourseCard({ course }: CourseCardProps) {
+  const courseUrl = course.seekCode ? `/seek/courses/${course.id}` : `/courses/${course.id}`;
+
   return (
-    <div style={{ background: "white", borderRadius: 10, overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.1)" }}>
+    <Link href={courseUrl} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
+    <div style={{ background: "white", borderRadius: 10, overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.1)", cursor: "pointer", transition: "box-shadow 0.2s" }}
+      onMouseEnter={e => (e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)")}
+      onMouseLeave={e => (e.currentTarget.style.boxShadow = "0 1px 3px rgba(0,0,0,0.1)")}
+    >
       {/* Maroon header with dot pattern + corner gradient */}
       <div
         style={{
@@ -132,11 +141,12 @@ export function CourseCard({ course }: CourseCardProps) {
 
         {/* Course page link */}
         <div className="mt-2 pt-2 border-t border-gray-100">
-          <Link href={`/courses/${course.id}`} className="text-[#aa3535] font-medium hover:underline">
+          <span className="text-[#aa3535] font-medium">
             Go to Course page &gt;
-          </Link>
+          </span>
         </div>
       </div>
     </div>
+    </Link>
   );
 }

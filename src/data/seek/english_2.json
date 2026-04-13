@@ -3,15 +3,33 @@
   "seekCode": "ns_26t1_hs1002",
   "aboutCourse": {
     "title": "English II",
-    "subtitle": "Data Science Foundation",
+    "subtitle": "Data Science and Electronic Systems",
     "dsFoundation": {
-      "courseId": "HS1002",
+      "courseId": "BSHS1002",
       "credits": 4,
-      "type": "Foundational",
-      "prerequisites": "None"
+      "type": "Foundational"
     },
-    "department": "Department of Humanities and Social Sciences",
-    "instructors": [],
+    "esFoundation": {
+      "type": "Foundational"
+    },
+    "about": "Language proficiency is a 21st century skill and is an added advantage as a professional. This course will use insights from theories of teaching and learning to develop learners' language skills.",
+    "faculty": "Prof. Sujatha Kumar",
+    "department": "Department of Humanities and Social Sciences, IIT Madras",
+    "instructors": [
+      "Dr. Nithya Rosenbloom",
+      "S. Nithya"
+    ],
+    "learningOutcomes": [
+      "Vocabulary",
+      "Grammar",
+      "Clauses",
+      "Writing",
+      "Communication skills"
+    ],
+    "prescribedBooks": [
+      "Ghadisy, Rahmani (Ed's), English Grammar: a Course, New York, Cambridge University Press",
+      "Other references"
+    ],
     "studyMaterial": "The primary study material for this course is the set of videos and assignments posted on the course page."
   },
   "weeks": [
