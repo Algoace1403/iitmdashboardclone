@@ -8,6 +8,7 @@ import coursesData from "@/data/courses.json";
 import seekPythonData from "@/data/seek/programming_in_python.json";
 import seekEnglishData from "@/data/seek/english_2.json";
 import seekMathData from "@/data/seek/mathematics_for_data_science_2.json";
+import seekStatsData from "@/data/seek/statistics_for_data_science_2.json";
 import grpaData from "@/data/seek/grpa_data.json";
 import rawAssignments from "@/data/seek/raw_assignments.json";
 import { MathText } from "@/components/seek/MathText";
@@ -17,6 +18,7 @@ const seekCourseMap: Record<string, typeof seekPythonData> = {
   programming_in_python: seekPythonData,
   english_2: seekEnglishData as unknown as typeof seekPythonData,
   mathematics_for_data_science_2: seekMathData as unknown as typeof seekPythonData,
+  statistics_for_data_science_2: seekStatsData as unknown as typeof seekPythonData,
 };
 
 type Tab = "Overview" | "Question" | "Test Cases" | "Solution";

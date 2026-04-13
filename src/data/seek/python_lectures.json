@@ -1,0 +1,590 @@
+{
+  "week1": [
+    {
+      "title": "L1: A quick introduction to variables | programming in python",
+      "videoId": "Yg6xzi2ie5s",
+      "url": "https://www.youtube.com/watch?v=Yg6xzi2ie5s",
+      "thumbnail": "https://img.youtube.com/vi/Yg6xzi2ie5s/mqdefault.jpg"
+    },
+    {
+      "title": "L2: Introduction to programming basics in python",
+      "videoId": "8ndsDXohLMQ",
+      "url": "https://www.youtube.com/watch?v=8ndsDXohLMQ",
+      "thumbnail": "https://img.youtube.com/vi/8ndsDXohLMQ/mqdefault.jpg"
+    },
+    {
+      "title": "L3: Introduction to REPLIT | programming in python",
+      "videoId": "NgZZ0HIUqbs",
+      "url": "https://www.youtube.com/watch?v=NgZZ0HIUqbs",
+      "thumbnail": "https://img.youtube.com/vi/NgZZ0HIUqbs/mqdefault.jpg"
+    },
+    {
+      "title": "L4: More on REPLIT, print command & common python mistakes",
+      "videoId": "As7_aq6XGfI",
+      "url": "https://www.youtube.com/watch?v=As7_aq6XGfI",
+      "thumbnail": "https://img.youtube.com/vi/As7_aq6XGfI/mqdefault.jpg"
+    },
+    {
+      "title": "L5: Variables & literals in python",
+      "videoId": "tDaXdoKfX0k",
+      "url": "https://www.youtube.com/watch?v=tDaXdoKfX0k",
+      "thumbnail": "https://img.youtube.com/vi/tDaXdoKfX0k/mqdefault.jpg"
+    },
+    {
+      "title": "L6: Data types part 1 | programming in python",
+      "videoId": "8n4MBjuDBu4",
+      "url": "https://www.youtube.com/watch?v=8n4MBjuDBu4",
+      "thumbnail": "https://img.youtube.com/vi/8n4MBjuDBu4/mqdefault.jpg"
+    },
+    {
+      "title": "L7: Data types part 2 | programming in python",
+      "videoId": "xQXxufhEJHw",
+      "url": "https://www.youtube.com/watch?v=xQXxufhEJHw",
+      "thumbnail": "https://img.youtube.com/vi/xQXxufhEJHw/mqdefault.jpg"
+    },
+    {
+      "title": "L8: Introduction to strings & string slicing in python",
+      "videoId": "sS89tiDuqoM",
+      "url": "https://www.youtube.com/watch?v=sS89tiDuqoM",
+      "thumbnail": "https://img.youtube.com/vi/sS89tiDuqoM/mqdefault.jpg"
+    },
+    {
+      "title": "L9: Operators & expressions | part 1 | programming in python",
+      "videoId": "8pu73HKzNOE",
+      "url": "https://www.youtube.com/watch?v=8pu73HKzNOE",
+      "thumbnail": "https://img.youtube.com/vi/8pu73HKzNOE/mqdefault.jpg"
+    },
+    {
+      "title": "L10: Operators & expressions | part 2 | programming in python",
+      "videoId": "Y53K9FFu97Q",
+      "url": "https://www.youtube.com/watch?v=Y53K9FFu97Q",
+      "thumbnail": "https://img.youtube.com/vi/Y53K9FFu97Q/mqdefault.jpg"
+    },
+    {
+      "title": "L11: More on strings | programming in python",
+      "videoId": "e45MVXwya7A",
+      "url": "https://www.youtube.com/watch?v=e45MVXwya7A",
+      "thumbnail": "https://img.youtube.com/vi/e45MVXwya7A/mqdefault.jpg"
+    },
+    {
+      "title": "L13: Variables & input statement | programming in python",
+      "videoId": "ruQb8jzkGyQ",
+      "url": "https://www.youtube.com/watch?v=ruQb8jzkGyQ",
+      "thumbnail": "https://img.youtube.com/vi/ruQb8jzkGyQ/mqdefault.jpg"
+    },
+    {
+      "title": "L19: Conclusion | FAQs & tips for beginner python programmers",
+      "videoId": "_Ccezy5hlc8",
+      "url": "https://www.youtube.com/watch?v=_Ccezy5hlc8",
+      "thumbnail": "https://img.youtube.com/vi/_Ccezy5hlc8/mqdefault.jpg"
+    }
+  ],
+  "week2": [
+    {
+      "title": "L12: Variables - a programmer's perspective | programming in python",
+      "videoId": "XZSnqseRbZY",
+      "url": "https://www.youtube.com/watch?v=XZSnqseRbZY",
+      "thumbnail": "https://img.youtube.com/vi/XZSnqseRbZY/mqdefault.jpg"
+    },
+    {
+      "title": "L15: Variables revisited dynamic typing | programming in python",
+      "videoId": "2OFZY77eOjw",
+      "url": "https://www.youtube.com/watch?v=2OFZY77eOjw",
+      "thumbnail": "https://img.youtube.com/vi/2OFZY77eOjw/mqdefault.jpg"
+    },
+    {
+      "title": "L16: Introduction | programming in python",
+      "videoId": "aEPFZSzZ6VQ",
+      "url": "https://www.youtube.com/watch?v=aEPFZSzZ6VQ",
+      "thumbnail": "https://img.youtube.com/vi/aEPFZSzZ6VQ/mqdefault.jpg"
+    },
+    {
+      "title": "L17: Mastering string methods in python",
+      "videoId": "bRAo6TJJjCU",
+      "url": "https://www.youtube.com/watch?v=bRAo6TJJjCU",
+      "thumbnail": "https://img.youtube.com/vi/bRAo6TJJjCU/mqdefault.jpg"
+    },
+    {
+      "title": "L18: Escape characters & types of quotes in python strings",
+      "videoId": "4vWM2oTGEio",
+      "url": "https://www.youtube.com/watch?v=4vWM2oTGEio",
+      "thumbnail": "https://img.youtube.com/vi/4vWM2oTGEio/mqdefault.jpg"
+    },
+    {
+      "title": "L20: An interesting cipher | more on strings | programming in python",
+      "videoId": "oxFYdHVNpg8",
+      "url": "https://www.youtube.com/watch?v=oxFYdHVNpg8",
+      "thumbnail": "https://img.youtube.com/vi/oxFYdHVNpg8/mqdefault.jpg"
+    },
+    {
+      "title": "L21: Introduction to the if statement | programming in python",
+      "videoId": "FTX5wF_3J9Q",
+      "url": "https://www.youtube.com/watch?v=FTX5wF_3J9Q",
+      "thumbnail": "https://img.youtube.com/vi/FTX5wF_3J9Q/mqdefault.jpg"
+    },
+    {
+      "title": "L23: Different ways to import a library | programming in python",
+      "videoId": "eW58_ky7oc8",
+      "url": "https://www.youtube.com/watch?v=eW58_ky7oc8",
+      "thumbnail": "https://img.youtube.com/vi/eW58_ky7oc8/mqdefault.jpg"
+    },
+    {
+      "title": "L25: Conclusion python syntax variables if statements & libraries",
+      "videoId": "DK16M8EvOLE",
+      "url": "https://www.youtube.com/watch?v=DK16M8EvOLE",
+      "thumbnail": "https://img.youtube.com/vi/DK16M8EvOLE/mqdefault.jpg"
+    },
+    {
+      "title": "L27: Introduction to import library | programming in python",
+      "videoId": "OdjXL5U95eI",
+      "url": "https://www.youtube.com/watch?v=OdjXL5U95eI",
+      "thumbnail": "https://img.youtube.com/vi/OdjXL5U95eI/mqdefault.jpg"
+    },
+    {
+      "title": "More on Variables, Operators and Expressions",
+      "videoId": "-f833WH_cVo",
+      "url": "https://www.youtube.com/watch?v=-f833WH_cVo",
+      "thumbnail": "https://img.youtube.com/vi/-f833WH_cVo/mqdefault.jpg"
+    },
+    {
+      "title": "Tutorial on if, else and else-if (elif) conditions",
+      "videoId": "-dBqiRCHbNw",
+      "url": "https://www.youtube.com/watch?v=-dBqiRCHbNw",
+      "thumbnail": "https://img.youtube.com/vi/-dBqiRCHbNw/mqdefault.jpg"
+    }
+  ],
+  "week3": [
+    {
+      "title": "L24: Introduction | programming in python",
+      "videoId": "xiEzc_m2izc",
+      "url": "https://www.youtube.com/watch?v=xiEzc_m2izc",
+      "thumbnail": "https://img.youtube.com/vi/xiEzc_m2izc/mqdefault.jpg"
+    },
+    {
+      "title": "L26: Introduction to while loop | programming in python",
+      "videoId": "KTvVNN7ia8o",
+      "url": "https://www.youtube.com/watch?v=KTvVNN7ia8o",
+      "thumbnail": "https://img.youtube.com/vi/KTvVNN7ia8o/mqdefault.jpg"
+    },
+    {
+      "title": "L28: FOR loop to calculate sum of first n numbers in python",
+      "videoId": "lrbqrxIZcaQ",
+      "url": "https://www.youtube.com/watch?v=lrbqrxIZcaQ",
+      "thumbnail": "https://img.youtube.com/vi/lrbqrxIZcaQ/mqdefault.jpg"
+    },
+    {
+      "title": "L30: Introduction to for loop in python with examples",
+      "videoId": "lvXuQ_x7EsI",
+      "url": "https://www.youtube.com/watch?v=lvXuQ_x7EsI",
+      "thumbnail": "https://img.youtube.com/vi/lvXuQ_x7EsI/mqdefault.jpg"
+    },
+    {
+      "title": "L32: For loop for multiplication tables | programming in python",
+      "videoId": "SMASd0rbt0g",
+      "url": "https://www.youtube.com/watch?v=SMASd0rbt0g",
+      "thumbnail": "https://img.youtube.com/vi/SMASd0rbt0g/mqdefault.jpg"
+    },
+    {
+      "title": "L33: More on range & for loop without range | programming in python",
+      "videoId": "ihL3Eac9tFc",
+      "url": "https://www.youtube.com/watch?v=ihL3Eac9tFc",
+      "thumbnail": "https://img.youtube.com/vi/ihL3Eac9tFc/mqdefault.jpg"
+    },
+    {
+      "title": "L34: Nested for loops & string operations in python",
+      "videoId": "-4MRaWABCuo",
+      "url": "https://www.youtube.com/watch?v=-4MRaWABCuo",
+      "thumbnail": "https://img.youtube.com/vi/-4MRaWABCuo/mqdefault.jpg"
+    },
+    {
+      "title": "L36: Conclusion | programming in python",
+      "videoId": "DhjvmkGgw8U",
+      "url": "https://www.youtube.com/watch?v=DhjvmkGgw8U",
+      "thumbnail": "https://img.youtube.com/vi/DhjvmkGgw8U/mqdefault.jpg"
+    },
+    {
+      "title": "L38: Formatted printing",
+      "videoId": "DR0BhSzGnPo",
+      "url": "https://www.youtube.com/watch?v=DR0BhSzGnPo",
+      "thumbnail": "https://img.youtube.com/vi/DR0BhSzGnPo/mqdefault.jpg"
+    },
+    {
+      "title": "L41: Break continue & pass in python explained with examples",
+      "videoId": "SVAVQHfJbE0",
+      "url": "https://www.youtube.com/watch?v=SVAVQHfJbE0",
+      "thumbnail": "https://img.youtube.com/vi/SVAVQHfJbE0/mqdefault.jpg"
+    },
+    {
+      "title": "while to Compute Factorial",
+      "videoId": "-ZMw8D-Xapk",
+      "url": "https://www.youtube.com/watch?v=-ZMw8D-Xapk",
+      "thumbnail": "https://img.youtube.com/vi/-ZMw8D-Xapk/mqdefault.jpg"
+    },
+    {
+      "title": "Tutorial on while loop | programming in python",
+      "videoId": "SqMeT9caxpE",
+      "url": "https://www.youtube.com/watch?v=SqMeT9caxpE",
+      "thumbnail": "https://img.youtube.com/vi/SqMeT9caxpE/mqdefault.jpg"
+    },
+    {
+      "title": "Tutorial on for loop & difference between while loop & for loop",
+      "videoId": "7D2SFKSiiLg",
+      "url": "https://www.youtube.com/watch?v=7D2SFKSiiLg",
+      "thumbnail": "https://img.youtube.com/vi/7D2SFKSiiLg/mqdefault.jpg"
+    },
+    {
+      "title": "Tutorial on nested loops | programming in python",
+      "videoId": "590mjTALkj0",
+      "url": "https://www.youtube.com/watch?v=590mjTALkj0",
+      "thumbnail": "https://img.youtube.com/vi/590mjTALkj0/mqdefault.jpg"
+    }
+  ],
+  "week4": [
+    {
+      "title": "L39: Introduction to problem solving practice in python",
+      "videoId": "02BCThws054",
+      "url": "https://www.youtube.com/watch?v=02BCThws054",
+      "thumbnail": "https://img.youtube.com/vi/02BCThws054/mqdefault.jpg"
+    },
+    {
+      "title": "L40: Warmup with lists | programming in python",
+      "videoId": "toMhJJHSIYk",
+      "url": "https://www.youtube.com/watch?v=toMhJJHSIYk",
+      "thumbnail": "https://img.youtube.com/vi/toMhJJHSIYk/mqdefault.jpg"
+    },
+    {
+      "title": "L42: Birthday paradox in python with random module",
+      "videoId": "wpM41ZYLt0k",
+      "url": "https://www.youtube.com/watch?v=wpM41ZYLt0k",
+      "thumbnail": "https://img.youtube.com/vi/wpM41ZYLt0k/mqdefault.jpg"
+    },
+    {
+      "title": "L43: Dot product of vectors in python using for loops",
+      "videoId": "qSOoiWNplGo",
+      "url": "https://www.youtube.com/watch?v=qSOoiWNplGo",
+      "thumbnail": "https://img.youtube.com/vi/qSOoiWNplGo/mqdefault.jpg"
+    },
+    {
+      "title": "L44: The obvious sorting in python",
+      "videoId": "hkDAafi09yo",
+      "url": "https://www.youtube.com/watch?v=hkDAafi09yo",
+      "thumbnail": "https://img.youtube.com/vi/hkDAafi09yo/mqdefault.jpg"
+    },
+    {
+      "title": "L45: Matrix addition in python from scratch",
+      "videoId": "CRhUooqcvcU",
+      "url": "https://www.youtube.com/watch?v=CRhUooqcvcU",
+      "thumbnail": "https://img.youtube.com/vi/CRhUooqcvcU/mqdefault.jpg"
+    },
+    {
+      "title": "L46: Matrix multiplication | part 1 in python step by step",
+      "videoId": "seYP1F6Ct2g",
+      "url": "https://www.youtube.com/watch?v=seYP1F6Ct2g",
+      "thumbnail": "https://img.youtube.com/vi/seYP1F6Ct2g/mqdefault.jpg"
+    },
+    {
+      "title": "L47: Naive search in a list | programming in python",
+      "videoId": "3huwiAPi-_I",
+      "url": "https://www.youtube.com/watch?v=3huwiAPi-_I",
+      "thumbnail": "https://img.youtube.com/vi/3huwiAPi-_I/mqdefault.jpg"
+    },
+    {
+      "title": "L48: Matrix multiplication | part 2 | programming in python",
+      "videoId": "mtRRS_ssl3s",
+      "url": "https://www.youtube.com/watch?v=mtRRS_ssl3s",
+      "thumbnail": "https://img.youtube.com/vi/mtRRS_ssl3s/mqdefault.jpg"
+    },
+    {
+      "title": "L49: More examples of functions | programming in pPython",
+      "videoId": "TBFTFusLIco",
+      "url": "https://www.youtube.com/watch?v=TBFTFusLIco",
+      "thumbnail": "https://img.youtube.com/vi/TBFTFusLIco/mqdefault.jpg"
+    },
+    {
+      "title": "L51: Introduction to functions | hands-on coding with examples",
+      "videoId": "zDZRfWWetg0",
+      "url": "https://www.youtube.com/watch?v=zDZRfWWetg0",
+      "thumbnail": "https://img.youtube.com/vi/zDZRfWWetg0/mqdefault.jpg"
+    },
+    {
+      "title": "L52: Conclusion | mastering fundamentals & preparing for challenges",
+      "videoId": "Z-1CxNrmRR4",
+      "url": "https://www.youtube.com/watch?v=Z-1CxNrmRR4",
+      "thumbnail": "https://img.youtube.com/vi/Z-1CxNrmRR4/mqdefault.jpg"
+    },
+    {
+      "title": "L53: Lists & sets | understanding trade-offs & efficiency",
+      "videoId": "WQNxG2B85rc",
+      "url": "https://www.youtube.com/watch?v=WQNxG2B85rc",
+      "thumbnail": "https://img.youtube.com/vi/WQNxG2B85rc/mqdefault.jpg"
+    },
+    {
+      "title": "L54: Tuples | immutable data structures explained",
+      "videoId": "z-n9yQaWr7o",
+      "url": "https://www.youtube.com/watch?v=z-n9yQaWr7o",
+      "thumbnail": "https://img.youtube.com/vi/z-n9yQaWr7o/mqdefault.jpg"
+    },
+    {
+      "title": "L57: More on lists | advanced operations & methods",
+      "videoId": "aaaENpVGS5U",
+      "url": "https://www.youtube.com/watch?v=aaaENpVGS5U",
+      "thumbnail": "https://img.youtube.com/vi/aaaENpVGS5U/mqdefault.jpg"
+    },
+    {
+      "title": "L58: More on tuples | immutability, packing & hashable tuples",
+      "videoId": "V7r6DB3a6_o",
+      "url": "https://www.youtube.com/watch?v=V7r6DB3a6_o",
+      "thumbnail": "https://img.youtube.com/vi/V7r6DB3a6_o/mqdefault.jpg"
+    },
+    {
+      "title": "L61: Types of function arguments",
+      "videoId": "NqjnCY2qQWU",
+      "url": "https://www.youtube.com/watch?v=NqjnCY2qQWU",
+      "thumbnail": "https://img.youtube.com/vi/NqjnCY2qQWU/mqdefault.jpg"
+    },
+    {
+      "title": "L63: Types of functions | built-in, library, string & user-defined",
+      "videoId": "F9xeVMToUJ8",
+      "url": "https://www.youtube.com/watch?v=F9xeVMToUJ8",
+      "thumbnail": "https://img.youtube.com/vi/F9xeVMToUJ8/mqdefault.jpg"
+    }
+  ],
+  "week5": [
+    {
+      "title": "L50: Sorting in python using functions refactoring the obvious sort",
+      "videoId": "8MQBieBCRFA",
+      "url": "https://www.youtube.com/watch?v=8MQBieBCRFA",
+      "thumbnail": "https://img.youtube.com/vi/8MQBieBCRFA/mqdefault.jpg"
+    },
+    {
+      "title": "L55: Dictionaries | efficient data storage & retrieval",
+      "videoId": "X8Nj5cxaP9E",
+      "url": "https://www.youtube.com/watch?v=X8Nj5cxaP9E",
+      "thumbnail": "https://img.youtube.com/vi/X8Nj5cxaP9E/mqdefault.jpg"
+    },
+    {
+      "title": "L56: Matrix multiplication using functions | modular & clean approach",
+      "videoId": "HJetH-CCOGY",
+      "url": "https://www.youtube.com/watch?v=HJetH-CCOGY",
+      "thumbnail": "https://img.youtube.com/vi/HJetH-CCOGY/mqdefault.jpg"
+    },
+    {
+      "title": "L59: More on dictionaries | keys, values & essential methods",
+      "videoId": "gTpPI3SMnAA",
+      "url": "https://www.youtube.com/watch?v=gTpPI3SMnAA",
+      "thumbnail": "https://img.youtube.com/vi/gTpPI3SMnAA/mqdefault.jpg"
+    },
+    {
+      "title": "L60: More on sets | operations, properties & methods",
+      "videoId": "qoV4tdDD8zE",
+      "url": "https://www.youtube.com/watch?v=qoV4tdDD8zE",
+      "thumbnail": "https://img.youtube.com/vi/qoV4tdDD8zE/mqdefault.jpg"
+    },
+    {
+      "title": "L62: Functional programming | part 2 | inline statements & list comprehensions",
+      "videoId": "MNe03MfOLto",
+      "url": "https://www.youtube.com/watch?v=MNe03MfOLto",
+      "thumbnail": "https://img.youtube.com/vi/MNe03MfOLto/mqdefault.jpg"
+    },
+    {
+      "title": "L64: Scope of variables",
+      "videoId": "4q5rGHfR-ic",
+      "url": "https://www.youtube.com/watch?v=4q5rGHfR-ic",
+      "thumbnail": "https://img.youtube.com/vi/4q5rGHfR-ic/mqdefault.jpg"
+    },
+    {
+      "title": "L68: Functional programming | part 1 | iterators, generators, & yield",
+      "videoId": "29A7HhnzxPU",
+      "url": "https://www.youtube.com/watch?v=29A7HhnzxPU",
+      "thumbnail": "https://img.youtube.com/vi/29A7HhnzxPU/mqdefault.jpg"
+    },
+    {
+      "title": "L69: Functional programming | part 3 | lambda, enumerate, zip, map, filter",
+      "videoId": "ueIignqReDY",
+      "url": "https://www.youtube.com/watch?v=ueIignqReDY",
+      "thumbnail": "https://img.youtube.com/vi/ueIignqReDY/mqdefault.jpg"
+    },
+    {
+      "title": "Tutorial on functions",
+      "videoId": "mkAbfQM2OJY",
+      "url": "https://www.youtube.com/watch?v=mkAbfQM2OJY",
+      "thumbnail": "https://img.youtube.com/vi/mkAbfQM2OJY/mqdefault.jpg"
+    }
+  ],
+  "week8": [
+    {
+      "title": "L67: Reading & writing to a file | basics of file handling",
+      "videoId": "rYLJaAdgLhI",
+      "url": "https://www.youtube.com/watch?v=rYLJaAdgLhI",
+      "thumbnail": "https://img.youtube.com/vi/rYLJaAdgLhI/mqdefault.jpg"
+    },
+    {
+      "title": "L70: Very big files a tip",
+      "videoId": "NwFpo_KGvOA",
+      "url": "https://www.youtube.com/watch?v=NwFpo_KGvOA",
+      "thumbnail": "https://img.youtube.com/vi/NwFpo_KGvOA/mqdefault.jpg"
+    },
+    {
+      "title": "L71: Caesar cipher | file encryption example with sherlock holmes",
+      "videoId": "MkqFvnC2naE",
+      "url": "https://www.youtube.com/watch?v=MkqFvnC2naE",
+      "thumbnail": "https://img.youtube.com/vi/MkqFvnC2naE/mqdefault.jpg"
+    },
+    {
+      "title": "L72: Big text file handling | searching & error management",
+      "videoId": "9eOxi7smTKg",
+      "url": "https://www.youtube.com/watch?v=9eOxi7smTKg",
+      "thumbnail": "https://img.youtube.com/vi/9eOxi7smTKg/mqdefault.jpg"
+    },
+    {
+      "title": "L73: Introduction to file handling | basics & pandas overview",
+      "videoId": "o5MBF0yo6lA",
+      "url": "https://www.youtube.com/watch?v=o5MBF0yo6lA",
+      "thumbnail": "https://img.youtube.com/vi/o5MBF0yo6lA/mqdefault.jpg"
+    },
+    {
+      "title": "L74: File handling, genetic sequences | f.seek, f.read & knuth morris pratt algorithm",
+      "videoId": "df8FxNd27Dg",
+      "url": "https://www.youtube.com/watch?v=df8FxNd27Dg",
+      "thumbnail": "https://img.youtube.com/vi/df8FxNd27Dg/mqdefault.jpg"
+    }
+  ],
+  "week9": [
+    {
+      "title": "L75: Introduction to the week & recursion | concepts & applications",
+      "videoId": "SGCy1yBLbsg",
+      "url": "https://www.youtube.com/watch?v=SGCy1yBLbsg",
+      "thumbnail": "https://img.youtube.com/vi/SGCy1yBLbsg/mqdefault.jpg"
+    },
+    {
+      "title": "L76: Theoretical introduction to recursion",
+      "videoId": "htu4ZCW7hzA",
+      "url": "https://www.youtube.com/watch?v=htu4ZCW7hzA",
+      "thumbnail": "https://img.youtube.com/vi/htu4ZCW7hzA/mqdefault.jpg"
+    },
+    {
+      "title": "L77: Recursion - an illustration | sum of n numbers, factorial & more",
+      "videoId": "PAUlGa9wAxA",
+      "url": "https://www.youtube.com/watch?v=PAUlGa9wAxA",
+      "thumbnail": "https://img.youtube.com/vi/PAUlGa9wAxA/mqdefault.jpg"
+    },
+    {
+      "title": "L78: Recursion: a simple question | checking lLists with recursive logic",
+      "videoId": "wkglgM6uUmI",
+      "url": "https://www.youtube.com/watch?v=wkglgM6uUmI",
+      "thumbnail": "https://img.youtube.com/vi/wkglgM6uUmI/mqdefault.jpg"
+    },
+    {
+      "title": "L79: Recursion: find 0 in a list | practical example & vim/ipython setup",
+      "videoId": "eNARY_uyLqo",
+      "url": "https://www.youtube.com/watch?v=eNARY_uyLqo",
+      "thumbnail": "https://img.youtube.com/vi/eNARY_uyLqo/mqdefault.jpg"
+    },
+    {
+      "title": "L80: Sorting recursively | recursive sorting algorithm explained",
+      "videoId": "vRajQuHdlBE",
+      "url": "https://www.youtube.com/watch?v=vRajQuHdlBE",
+      "thumbnail": "https://img.youtube.com/vi/vRajQuHdlBE/mqdefault.jpg"
+    },
+    {
+      "title": "L81: Binary search implementation | efficient searching explained",
+      "videoId": "1l83L1ZKF5k",
+      "url": "https://www.youtube.com/watch?v=1l83L1ZKF5k",
+      "thumbnail": "https://img.youtube.com/vi/1l83L1ZKF5k/mqdefault.jpg"
+    },
+    {
+      "title": "L83: Binary search recursion way | recursive algorithm explained",
+      "videoId": "v_WYTBhHONo",
+      "url": "https://www.youtube.com/watch?v=v_WYTBhHONo",
+      "thumbnail": "https://img.youtube.com/vi/v_WYTBhHONo/mqdefault.jpg"
+    },
+    {
+      "title": "L85: Warm up for binary search | obvious search & time complexity",
+      "videoId": "Bb7oymEgX_I",
+      "url": "https://www.youtube.com/watch?v=Bb7oymEgX_I",
+      "thumbnail": "https://img.youtube.com/vi/Bb7oymEgX_I/mqdefault.jpg"
+    },
+    {
+      "title": "L86: Introduction to binary search | halving technique & real-world examples",
+      "videoId": "WEJt1L7YTpM",
+      "url": "https://www.youtube.com/watch?v=WEJt1L7YTpM",
+      "thumbnail": "https://img.youtube.com/vi/WEJt1L7YTpM/mqdefault.jpg"
+    }
+  ],
+  "week10": [
+    {
+      "title": "L66: Introduction | advanced concepts & exception handling",
+      "videoId": "4HgUCharOBw",
+      "url": "https://www.youtube.com/watch?v=4HgUCharOBw",
+      "thumbnail": "https://img.youtube.com/vi/4HgUCharOBw/mqdefault.jpg"
+    },
+    {
+      "title": "L82: Exception handling | try, except, finally & custom errors",
+      "videoId": "me3_XR7Iz60",
+      "url": "https://www.youtube.com/watch?v=me3_XR7Iz60",
+      "thumbnail": "https://img.youtube.com/vi/me3_XR7Iz60/mqdefault.jpg"
+    },
+    {
+      "title": "L84: Introduction to OOP | object-oriented programming basics",
+      "videoId": "X1mOrCwZUgQ",
+      "url": "https://www.youtube.com/watch?v=X1mOrCwZUgQ",
+      "thumbnail": "https://img.youtube.com/vi/X1mOrCwZUgQ/mqdefault.jpg"
+    },
+    {
+      "title": "L87: Inheritance & method overriding | types of inheritance & file importing",
+      "videoId": "RrFvcDjJptY",
+      "url": "https://www.youtube.com/watch?v=RrFvcDjJptY",
+      "thumbnail": "https://img.youtube.com/vi/RrFvcDjJptY/mqdefault.jpg"
+    },
+    {
+      "title": "L88: Introduction to numpy library | arrays vs lists explained",
+      "videoId": "O0IrNk1qoUE",
+      "url": "https://www.youtube.com/watch?v=O0IrNk1qoUE",
+      "thumbnail": "https://img.youtube.com/vi/O0IrNk1qoUE/mqdefault.jpg"
+    },
+    {
+      "title": "L89: Why pandas | data analysis made easy",
+      "videoId": "HCxhHo8tV4U",
+      "url": "https://www.youtube.com/watch?v=HCxhHo8tV4U",
+      "thumbnail": "https://img.youtube.com/vi/HCxhHo8tV4U/mqdefault.jpg"
+    },
+    {
+      "title": "L90: Attributes & methods | OOP, init, self, and behavior explained",
+      "videoId": "n_jPQlWhGhM",
+      "url": "https://www.youtube.com/watch?v=n_jPQlWhGhM",
+      "thumbnail": "https://img.youtube.com/vi/n_jPQlWhGhM/mqdefault.jpg"
+    },
+    {
+      "title": "L91: Classes & objects | object oriented programming fundamentals explained",
+      "videoId": "ZPtRsQrZLcE",
+      "url": "https://www.youtube.com/watch?v=ZPtRsQrZLcE",
+      "thumbnail": "https://img.youtube.com/vi/ZPtRsQrZLcE/mqdefault.jpg"
+    },
+    {
+      "title": "L92: Pandas series, dataframe & more | data analysis made easy",
+      "videoId": "aPjiMs7CR7s",
+      "url": "https://www.youtube.com/watch?v=aPjiMs7CR7s",
+      "thumbnail": "https://img.youtube.com/vi/aPjiMs7CR7s/mqdefault.jpg"
+    },
+    {
+      "title": "L93: Course summary | review of core python concepts & next steps",
+      "videoId": "XYDiGqzVKyo",
+      "url": "https://www.youtube.com/watch?v=XYDiGqzVKyo",
+      "thumbnail": "https://img.youtube.com/vi/XYDiGqzVKyo/mqdefault.jpg"
+    },
+    {
+      "title": "L94: Introduction to matplotlib library | data visualization with charts & plots",
+      "videoId": "hk6NsCfvftY",
+      "url": "https://www.youtube.com/watch?v=hk6NsCfvftY",
+      "thumbnail": "https://img.youtube.com/vi/hk6NsCfvftY/mqdefault.jpg"
+    }
+  ],
+  "extras": [
+    {
+      "title": "L95: How to submit a programming assignment",
+      "videoId": "5XFoXlIwNe0",
+      "url": "https://www.youtube.com/watch?v=5XFoXlIwNe0",
+      "thumbnail": "https://img.youtube.com/vi/5XFoXlIwNe0/mqdefault.jpg"
+    }
+  ]
+}

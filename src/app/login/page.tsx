@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/lib/auth";
 
 const announcements = [
@@ -21,10 +21,11 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
 
   // If already logged in, redirect
-  if (isLoggedIn) {
-    router.replace("/");
-    return null;
-  }
+  useEffect(() => {
+    if (isLoggedIn) router.replace("/");
+  }, [isLoggedIn, router]);
+
+  if (isLoggedIn) return null;
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();

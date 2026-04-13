@@ -1,0 +1,251 @@
+{
+  "courseId": "statistics_for_data_science_2",
+  "seekCode": "ns_26t1_ma2002",
+  "aboutCourse": {
+    "title": "Statistics for Data Science II",
+    "courseId": "MA2002",
+    "credits": 4,
+    "type": "Foundational",
+    "department": "Department of Mathematics"
+  },
+  "weeks": [
+    {
+      "weekNumber": 0,
+      "title": "Week 0",
+      "items": []
+    },
+    {
+      "weekNumber": 1,
+      "title": "Week 1",
+      "items": [
+        { "title": "Orientation Session for Statistics II Course", "type": "Lesson" },
+        { "title": "L1.1: Joint PMF of two discrete random variables", "type": "Video" },
+        { "title": "AQ1.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L1.2: Marginal PMF of discrete random variables", "type": "Video" },
+        { "title": "AQ1.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L1.3: Conditional distribution of one random variable given another", "type": "Video" },
+        { "title": "AQ1.3: Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L1.4: Examples on joint, marginal and conditional probabilities", "type": "Video" },
+        { "title": "AQ1.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L1.5: Joint PMF of more than two discrete random variable", "type": "Video" },
+        { "title": "AQ1.5: Activity Question 5 - Not Graded", "type": "Assignment" },
+        { "title": "L1.6: Marginal PMF of multiple discrete random variable", "type": "Video" },
+        { "title": "AQ1.6: Activity Question 6 - Not Graded", "type": "Assignment" },
+        { "title": "L1.7: Conditioning with multiple discrete random variables", "type": "Video" },
+        { "title": "AQ1.7: Activity Question 7 - Not Graded", "type": "Assignment" },
+        { "title": "Week 1 - Tutorial 1 - Not Graded", "type": "Assignment" },
+        { "title": "Week 1 - Tutorial 2 - Not Graded", "type": "Assignment" },
+        { "title": "Practice Assignment 1 - Not Graded", "type": "Assignment" },
+        { "title": "Graded Assignment - 1", "type": "Assignment", "graded": true },
+        { "title": "Week 1 - Practice Questions", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "title": "Week 2",
+      "items": [
+        { "title": "L2.1: Independence of two random variables", "type": "Video" },
+        { "title": "AQ2.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L2.2: Independence of multiple random variables", "type": "Video" },
+        { "title": "AQ2.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L2.3: Visualizing functions of one random variables, one-to-one functions", "type": "Video" },
+        { "title": "L2.4: Visualizing functions of one random variable, many-to-one functions", "type": "Video" },
+        { "title": "AQ2.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L2.5: Examples on functions of one random variables", "type": "Video" },
+        { "title": "AQ2.5: Activity Question 5 - Not Graded", "type": "Assignment" },
+        { "title": "L2.6: Introduction to functions of two random variables", "type": "Video" },
+        { "title": "L2.7: Visualizing functions of two random variables", "type": "Video" },
+        { "title": "L2.8: Sum of two random variables", "type": "Video" },
+        { "title": "L2.9: Maximum of two random variables", "type": "Video" },
+        { "title": "L2.10: Functions of random variables", "type": "Video" },
+        { "title": "AQ2.10: Activity Question 10 - Not Graded", "type": "Assignment" },
+        { "title": "L2.11: Minimum and maximum of two random variables", "type": "Video" },
+        { "title": "AQ2.11: Activity Question 11 - Not Graded", "type": "Assignment" },
+        { "title": "Week 2 - Tutorial 1 - Not graded", "type": "Assignment" },
+        { "title": "Week 2 - Tutorial 2 - Not Graded", "type": "Assignment" },
+        { "title": "Practice Assignment 2 - Not Graded", "type": "Assignment" },
+        { "title": "Week 2 - Graded Assignment 2", "type": "Assignment", "graded": true },
+        { "title": "Week 2 - Practice Questions", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "title": "Week 3",
+      "items": [
+        { "title": "L3.1: Expected value of random variable", "type": "Video" },
+        { "title": "AQ3.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L3.2: Properties of expected value", "type": "Video" },
+        { "title": "AQ3.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L3.3: Simulation of expected value using Python", "type": "Video" },
+        { "title": "L3.4: Variance and standard deviation", "type": "Video" },
+        { "title": "AQ3.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L3.5: Covariance and its properties", "type": "Video" },
+        { "title": "AQ3.5: Activity Question 5 - Not Graded", "type": "Assignment" },
+        { "title": "L3.6: Correlation coefficient", "type": "Video" },
+        { "title": "AQ3.6: Activity Question 6 - Not Graded", "type": "Assignment" },
+        { "title": "L3.7: Bounds in probabilities using mean and variance", "type": "Video" },
+        { "title": "AQ3.7: Activity Question 7 - Not Graded", "type": "Assignment" },
+        { "title": "Week 3 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 3 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice Assignment 3 - Not Graded", "type": "Assignment" },
+        { "title": "Week 3 - Graded Assignment 3", "type": "Assignment", "graded": true },
+        { "title": "Week 3 - Practice Questions", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "title": "Week 4",
+      "items": [
+        { "title": "L4.1: Introduction", "type": "Video" },
+        { "title": "L4.2: Cumulative distribution function", "type": "Video" },
+        { "title": "AQ4.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L4.3: Approximation of CDF from discrete to continuous", "type": "Video" },
+        { "title": "AQ4.3: Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L4.4: General random variables and continuous random variables", "type": "Video" },
+        { "title": "AQ4.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L4.5: Probability density function", "type": "Video" },
+        { "title": "AQ4.5: Activity Question 5 - Not Graded", "type": "Assignment" },
+        { "title": "L4.6: Common distributions", "type": "Video" },
+        { "title": "AQ4.6: Activity Question 6 - Not Graded", "type": "Assignment" },
+        { "title": "L4.7: Illustration in Colab", "type": "Video" },
+        { "title": "Week 4 -Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 4 - Graded Assignment 4", "type": "Assignment", "graded": true },
+        { "title": "Week 4 Practice Question", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "title": "Week 5",
+      "items": [
+        { "title": "L5.1: Functions of a continuous random variable", "type": "Video" },
+        { "title": "AQ5.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L5.2: Expectations of continuous random variable", "type": "Video" },
+        { "title": "AQ5.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L5.3: Motivation", "type": "Video" },
+        { "title": "L5.4: Joint distributions: discrete and continuous", "type": "Video" },
+        { "title": "AQ5.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 5 Tutorial 1", "type": "Video" },
+        { "title": "Week 5 Tutorial 2", "type": "Video" },
+        { "title": "Week 5 Tutorial 3", "type": "Video" },
+        { "title": "Week 5 Tutorial 4", "type": "Video" },
+        { "title": "Week 5 Tutorial 5", "type": "Video" },
+        { "title": "Week 5 Tutorial 6", "type": "Video" },
+        { "title": "Week 5 Tutorial 7", "type": "Video" },
+        { "title": "Week 5 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 5 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Week 5 - Tutorial 3 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 5 - Not Graded", "type": "Assignment" },
+        { "title": "Week 5 - Graded Assignment 5", "type": "Assignment", "graded": true },
+        { "title": "Week 5 - Practice Questions", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "title": "Week 6",
+      "items": [
+        { "title": "L6.1: Jointly continuous random variables", "type": "Video" },
+        { "title": "AQ6.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L6.2: Marginal densities", "type": "Video" },
+        { "title": "AQ6.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L6.3: Independence", "type": "Video" },
+        { "title": "AQ6.3: Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L6.4: Conditional density", "type": "Video" },
+        { "title": "AQ6.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L6.5: From data to distribution", "type": "Video" },
+        { "title": "L6.6: Summarizing data and plotting 1D/2D histograms in Colab", "type": "Video" },
+        { "title": "Week 6 -Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 6 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 6 - Not Graded", "type": "Assignment" },
+        { "title": "Week 6 - Graded Assignment 6", "type": "Assignment", "graded": true },
+        { "title": "Week 6 - Practice Question", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "title": "Week 7",
+      "items": [
+        { "title": "Data Set - Week 7", "type": "Lesson" },
+        { "title": "L7.1: Statistics from i.i.d. samples", "type": "Video" },
+        { "title": "L7.2: Empirical distribution and descriptive statistics", "type": "Video" },
+        { "title": "AQ7.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L7.3: Illustrations with data", "type": "Video" },
+        { "title": "L7.4: Sum of independent random variables I", "type": "Video" },
+        { "title": "AQ7.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 7 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 7 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 7 - Not Graded", "type": "Assignment" },
+        { "title": "Graded Assignment 7", "type": "Assignment", "graded": true },
+        { "title": "Additional Content", "type": "Lesson" },
+        { "title": "Week 7 - Practice Question", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "title": "Week 8",
+      "items": [
+        { "title": "L8.1: Moment Generating functions", "type": "Video" },
+        { "title": "AQ8.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L8.2: Central Limit Theorem", "type": "Video" },
+        { "title": "AQ 8.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L8.3: Distribution, properties and connections", "type": "Video" },
+        { "title": "AQ 8.3 : Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L8.4: Descriptive statistics of normal samples", "type": "Video" },
+        { "title": "AQ 8.4 : Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 8 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 8 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 8 - Not Graded", "type": "Assignment" },
+        { "title": "week 8 - Graded Assignment 8", "type": "Assignment", "graded": true },
+        { "title": "Week 8 - Practice Question", "type": "Lesson" }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "title": "Week 9",
+      "items": [
+        { "title": "L9.1: Statistical problems in real life", "type": "Video" },
+        { "title": "L9.2: Introduction to parameter estimation", "type": "Video" },
+        { "title": "AQ9.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L9.3: Error in estimation", "type": "Video" },
+        { "title": "AQ9.3: Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L9.4: Bias, Variance and Risk of an estimator", "type": "Video" },
+        { "title": "AQ9.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "L9.5: Estimator design approach: Method of moments", "type": "Video" },
+        { "title": "AQ9.5: Activity Question 5 - Not Graded", "type": "Assignment" },
+        { "title": "L9.6: Estimator design approach: Maximum likelihood", "type": "Video" },
+        { "title": "AQ9.6: Activity Question 6 - Not Graded", "type": "Assignment" },
+        { "title": "L9.7: Evaluation of ML estimators", "type": "Video" },
+        { "title": "AQ9.7: Activity Question 7 - Not Graded", "type": "Assignment" },
+        { "title": "L9.8: Finding MME and ML estimators", "type": "Video" },
+        { "title": "AQ9.8: Activity Question 8 - Not Graded", "type": "Assignment" },
+        { "title": "Week 9 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 9 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 9 - Not Graded", "type": "Assignment" },
+        { "title": "Additional Content", "type": "Lesson" },
+        { "title": "Activity Question Lecture 1 - Not Graded", "type": "Assignment" },
+        { "title": "Activity Question Lecture 2 - Not Graded", "type": "Assignment" },
+        { "title": "Week 9 - Graded Assignment 9", "type": "Assignment", "graded": true }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "title": "Week 10",
+      "items": [
+        { "title": "L10.1: Bayesian estimation", "type": "Video" },
+        { "title": "AQ10.1: Activity Question 1 - Not Graded", "type": "Assignment" },
+        { "title": "L10.2: Choice of prior and examples", "type": "Video" },
+        { "title": "AQ10.2: Activity Question 2 - Not Graded", "type": "Assignment" },
+        { "title": "L10.3: Problems: Finding estimators", "type": "Video" },
+        { "title": "AQ10.3: Activity Question 3 - Not Graded", "type": "Assignment" },
+        { "title": "L10.4: Problems: Model estimation", "type": "Video" },
+        { "title": "AQ10.4: Activity Question 4 - Not Graded", "type": "Assignment" },
+        { "title": "Week 10 - Tutorial 1 - Non graded", "type": "Assignment" },
+        { "title": "Week 10 - Tutorial 2 - Non graded", "type": "Assignment" },
+        { "title": "Practice assignment 10 - Not Graded", "type": "Assignment" },
+        { "title": "Additional Content", "type": "Lesson" },
+        { "title": "Activity Question Lecture 1 - Not Graded", "type": "Assignment" },
+        { "title": "Graded Assignment 10", "type": "Assignment", "graded": true }
+      ]
+    }
+  ]
+}

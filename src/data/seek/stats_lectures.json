@@ -1,0 +1,626 @@
+{
+  "week1": [
+    {
+      "title": "W1_L3: Conditional distribution of one random variable given another",
+      "videoId": "6eQxA6ElXOo",
+      "url": "https://www.youtube.com/watch?v=6eQxA6ElXOo",
+      "thumbnail": "https://img.youtube.com/vi/6eQxA6ElXOo/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L4: Examples on joint, marginal and conditional probabilities",
+      "videoId": "B0-W5xQa5GE",
+      "url": "https://www.youtube.com/watch?v=B0-W5xQa5GE",
+      "thumbnail": "https://img.youtube.com/vi/B0-W5xQa5GE/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L5: Joint PMF of more than two discrete random variables",
+      "videoId": "1d-6FI33HmY",
+      "url": "https://www.youtube.com/watch?v=1d-6FI33HmY",
+      "thumbnail": "https://img.youtube.com/vi/1d-6FI33HmY/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L6: Marginal PMF of multiple discrete random variables",
+      "videoId": "t5GR3Eq1mLI",
+      "url": "https://www.youtube.com/watch?v=t5GR3Eq1mLI",
+      "thumbnail": "https://img.youtube.com/vi/t5GR3Eq1mLI/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L7: Conditioning with multiple discrete random variables",
+      "videoId": "4a5rbPTqbOg",
+      "url": "https://www.youtube.com/watch?v=4a5rbPTqbOg",
+      "thumbnail": "https://img.youtube.com/vi/4a5rbPTqbOg/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Examples on conditional probability",
+      "videoId": "b2bBLAxqcKM",
+      "url": "https://www.youtube.com/watch?v=b2bBLAxqcKM",
+      "thumbnail": "https://img.youtube.com/vi/b2bBLAxqcKM/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Definition of conditional probability",
+      "videoId": "E-A8dfr9zgA",
+      "url": "https://www.youtube.com/watch?v=E-A8dfr9zgA",
+      "thumbnail": "https://img.youtube.com/vi/E-A8dfr9zgA/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Random variable and events",
+      "videoId": "OS18JR_E0NY",
+      "url": "https://www.youtube.com/watch?v=OS18JR_E0NY",
+      "thumbnail": "https://img.youtube.com/vi/OS18JR_E0NY/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Discrete random variable and it's PMF",
+      "videoId": "FaoiSf-Y8dM",
+      "url": "https://www.youtube.com/watch?v=FaoiSf-Y8dM",
+      "thumbnail": "https://img.youtube.com/vi/FaoiSf-Y8dM/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Properties of probability mass function",
+      "videoId": "n3Xv6MIzwhA",
+      "url": "https://www.youtube.com/watch?v=n3Xv6MIzwhA",
+      "thumbnail": "https://img.youtube.com/vi/n3Xv6MIzwhA/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Common distributions",
+      "videoId": "KMXY2Tq5vVU",
+      "url": "https://www.youtube.com/watch?v=KMXY2Tq5vVU",
+      "thumbnail": "https://img.youtube.com/vi/KMXY2Tq5vVU/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Poisson random variable",
+      "videoId": "s5JMtuibjfQ",
+      "url": "https://www.youtube.com/watch?v=s5JMtuibjfQ",
+      "thumbnail": "https://img.youtube.com/vi/s5JMtuibjfQ/mqdefault.jpg"
+    },
+    {
+      "title": "Discrete random variable : Functions of one random variable",
+      "videoId": "8HzrW7m08D4",
+      "url": "https://www.youtube.com/watch?v=8HzrW7m08D4",
+      "thumbnail": "https://img.youtube.com/vi/8HzrW7m08D4/mqdefault.jpg"
+    },
+    {
+      "title": "Mutiple random variables : Joint PMF of two discrete random variables",
+      "videoId": "MNwap6ewego",
+      "url": "https://www.youtube.com/watch?v=MNwap6ewego",
+      "thumbnail": "https://img.youtube.com/vi/MNwap6ewego/mqdefault.jpg"
+    },
+    {
+      "title": "Mutiple random variables : Marginal PMF of discrete random variables",
+      "videoId": "exwWKHFV3GA",
+      "url": "https://www.youtube.com/watch?v=exwWKHFV3GA",
+      "thumbnail": "https://img.youtube.com/vi/exwWKHFV3GA/mqdefault.jpg"
+    },
+    {
+      "title": "Lecture 4.1- Expectation, variance and Covariance: Expected value of random variable",
+      "videoId": "q6Zj54UZqYg",
+      "url": "https://www.youtube.com/watch?v=q6Zj54UZqYg",
+      "thumbnail": "https://img.youtube.com/vi/q6Zj54UZqYg/mqdefault.jpg"
+    },
+    {
+      "title": "Continuous random variable - Uniform distribution",
+      "videoId": "kU_SOfgoIJw",
+      "url": "https://www.youtube.com/watch?v=kU_SOfgoIJw",
+      "thumbnail": "https://img.youtube.com/vi/kU_SOfgoIJw/mqdefault.jpg"
+    },
+    {
+      "title": "Continuous random variable - Uniform distribution: applications",
+      "videoId": "tjfwTCJd8qI",
+      "url": "https://www.youtube.com/watch?v=tjfwTCJd8qI",
+      "thumbnail": "https://img.youtube.com/vi/tjfwTCJd8qI/mqdefault.jpg"
+    },
+    {
+      "title": "Continuous random variable - Non uniform and triangular distribution",
+      "videoId": "PB1OZmo2_p4",
+      "url": "https://www.youtube.com/watch?v=PB1OZmo2_p4",
+      "thumbnail": "https://img.youtube.com/vi/PB1OZmo2_p4/mqdefault.jpg"
+    },
+    {
+      "title": "Continuous random variable - Exponential distribution",
+      "videoId": "TTVToWdBpYY",
+      "url": "https://www.youtube.com/watch?v=TTVToWdBpYY",
+      "thumbnail": "https://img.youtube.com/vi/TTVToWdBpYY/mqdefault.jpg"
+    },
+    {
+      "title": "Mutiple random variables : Visualizing functions of two random variables",
+      "videoId": "eyPW1iX66oI",
+      "url": "https://www.youtube.com/watch?v=eyPW1iX66oI",
+      "thumbnail": "https://img.youtube.com/vi/eyPW1iX66oI/mqdefault.jpg"
+    }
+  ],
+  "week2": [
+    {
+      "title": "W2_L1: Independence of two random variables",
+      "videoId": "YXaYJths2Ts",
+      "url": "https://www.youtube.com/watch?v=YXaYJths2Ts",
+      "thumbnail": "https://img.youtube.com/vi/YXaYJths2Ts/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L2: Independence of multiple random variables",
+      "videoId": "Ndy0KTpmJAI",
+      "url": "https://www.youtube.com/watch?v=Ndy0KTpmJAI",
+      "thumbnail": "https://img.youtube.com/vi/Ndy0KTpmJAI/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L10: Functions of random variables | PMF convolution & key distributions",
+      "videoId": "I2S7nlCBkA8",
+      "url": "https://www.youtube.com/watch?v=I2S7nlCBkA8",
+      "thumbnail": "https://img.youtube.com/vi/I2S7nlCBkA8/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L11: Minimum & maximum of two random variables",
+      "videoId": "sgzr8rTaAcI",
+      "url": "https://www.youtube.com/watch?v=sgzr8rTaAcI",
+      "thumbnail": "https://img.youtube.com/vi/sgzr8rTaAcI/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L4: Visualizing functions of one random variable, many-to-one functions",
+      "videoId": "4nMkqSG9-_s",
+      "url": "https://www.youtube.com/watch?v=4nMkqSG9-_s",
+      "thumbnail": "https://img.youtube.com/vi/4nMkqSG9-_s/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L3: Visualizing functions of one random variable, one-to-one functions",
+      "videoId": "vQ8nsT6RH1I",
+      "url": "https://www.youtube.com/watch?v=vQ8nsT6RH1I",
+      "thumbnail": "https://img.youtube.com/vi/vQ8nsT6RH1I/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L6: Introduction to functions of two random variables",
+      "videoId": "a0EHS19ZY0Y",
+      "url": "https://www.youtube.com/watch?v=a0EHS19ZY0Y",
+      "thumbnail": "https://img.youtube.com/vi/a0EHS19ZY0Y/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L8: Sum of two random variables | probability mass function explained with dice example",
+      "videoId": "qWnGC_Jg0Qs",
+      "url": "https://www.youtube.com/watch?v=qWnGC_Jg0Qs",
+      "thumbnail": "https://img.youtube.com/vi/qWnGC_Jg0Qs/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L9: Maximum of two random variables",
+      "videoId": "CyhOZjX5Ch8",
+      "url": "https://www.youtube.com/watch?v=CyhOZjX5Ch8",
+      "thumbnail": "https://img.youtube.com/vi/CyhOZjX5Ch8/mqdefault.jpg"
+    }
+  ],
+  "week3": [
+    {
+      "title": "W3_L2: Properties of expected value",
+      "videoId": "r1-n85hdJUw",
+      "url": "https://www.youtube.com/watch?v=r1-n85hdJUw",
+      "thumbnail": "https://img.youtube.com/vi/r1-n85hdJUw/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L3: Simulation of expected value using python",
+      "videoId": "hUidLbV0fNo",
+      "url": "https://www.youtube.com/watch?v=hUidLbV0fNo",
+      "thumbnail": "https://img.youtube.com/vi/hUidLbV0fNo/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L5: Covariance & its properties",
+      "videoId": "UoZc81wNK4I",
+      "url": "https://www.youtube.com/watch?v=UoZc81wNK4I",
+      "thumbnail": "https://img.youtube.com/vi/UoZc81wNK4I/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L6: Correlation coefficient",
+      "videoId": "BtZXJohBrno",
+      "url": "https://www.youtube.com/watch?v=BtZXJohBrno",
+      "thumbnail": "https://img.youtube.com/vi/BtZXJohBrno/mqdefault.jpg"
+    },
+    {
+      "title": "Lecture 4.7-Expectation, variance and Covariance: Bounds in probabilities using mean and variance",
+      "videoId": "dUw1OaWc7MU",
+      "url": "https://www.youtube.com/watch?v=dUw1OaWc7MU",
+      "thumbnail": "https://img.youtube.com/vi/dUw1OaWc7MU/mqdefault.jpg"
+    }
+  ],
+  "week4": [
+    {
+      "title": "W4_L1: Introduction to continuous random variables with examples",
+      "videoId": "VfmiCE67QrE",
+      "url": "https://www.youtube.com/watch?v=VfmiCE67QrE",
+      "thumbnail": "https://img.youtube.com/vi/VfmiCE67QrE/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L2: Cumulative distribution function | definition properties & examples",
+      "videoId": "bjQmbMOIL4Q",
+      "url": "https://www.youtube.com/watch?v=bjQmbMOIL4Q",
+      "thumbnail": "https://img.youtube.com/vi/bjQmbMOIL4Q/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L3: Approximating discrete CDF with a continuous function",
+      "videoId": "3vpKxQjm0l8",
+      "url": "https://www.youtube.com/watch?v=3vpKxQjm0l8",
+      "thumbnail": "https://img.youtube.com/vi/3vpKxQjm0l8/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L4: General random variables & continuous random variables",
+      "videoId": "bEPwrTc6-m4",
+      "url": "https://www.youtube.com/watch?v=bEPwrTc6-m4",
+      "thumbnail": "https://img.youtube.com/vi/bEPwrTc6-m4/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L5: Probability density function | definition properties & examples",
+      "videoId": "YgCBemBF3pg",
+      "url": "https://www.youtube.com/watch?v=YgCBemBF3pg",
+      "thumbnail": "https://img.youtube.com/vi/YgCBemBF3pg/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L6: Common distributions of continuous random variables | uniform exponential & normal statistics",
+      "videoId": "Sr_oC-iaXIs",
+      "url": "https://www.youtube.com/watch?v=Sr_oC-iaXIs",
+      "thumbnail": "https://img.youtube.com/vi/Sr_oC-iaXIs/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L7: Illustration of continuous random variable in colab",
+      "videoId": "QFd8KeaY4Tk",
+      "url": "https://www.youtube.com/watch?v=QFd8KeaY4Tk",
+      "thumbnail": "https://img.youtube.com/vi/QFd8KeaY4Tk/mqdefault.jpg"
+    }
+  ],
+  "week5": [
+    {
+      "title": "W5_L1: Functions of continuous random variables | PDF & CDF methods with examples",
+      "videoId": "EJjvm7rXswU",
+      "url": "https://www.youtube.com/watch?v=EJjvm7rXswU",
+      "thumbnail": "https://img.youtube.com/vi/EJjvm7rXswU/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L2: Expectations of continuous random variables | mean variance & inequalities",
+      "videoId": "cyu51WEwo7w",
+      "url": "https://www.youtube.com/watch?v=cyu51WEwo7w",
+      "thumbnail": "https://img.youtube.com/vi/cyu51WEwo7w/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L3: Motivation for multiple discrete/continuous random variables",
+      "videoId": "PGKH0mFlOAg",
+      "url": "https://www.youtube.com/watch?v=PGKH0mFlOAg",
+      "thumbnail": "https://img.youtube.com/vi/PGKH0mFlOAg/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L4: Joint distribution of discrete & continuous random variables",
+      "videoId": "s_VmvOWnPWs",
+      "url": "https://www.youtube.com/watch?v=s_VmvOWnPWs",
+      "thumbnail": "https://img.youtube.com/vi/s_VmvOWnPWs/mqdefault.jpg"
+    }
+  ],
+  "week6": [
+    {
+      "title": "W6_L6: Summarizing discrete/continuous random variable data & data in python colab",
+      "videoId": "tpeP4uxybYY",
+      "url": "https://www.youtube.com/watch?v=tpeP4uxybYY",
+      "thumbnail": "https://img.youtube.com/vi/tpeP4uxybYY/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L5: From data to distribution",
+      "videoId": "RD-NtteZjzY",
+      "url": "https://www.youtube.com/watch?v=RD-NtteZjzY",
+      "thumbnail": "https://img.youtube.com/vi/RD-NtteZjzY/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L4: Conditional density of multiple continuous random variables",
+      "videoId": "lTCc9oYRwr8",
+      "url": "https://www.youtube.com/watch?v=lTCc9oYRwr8",
+      "thumbnail": "https://img.youtube.com/vi/lTCc9oYRwr8/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L3: Independence of multiple continuous random variables",
+      "videoId": "cms_2NGMiHY",
+      "url": "https://www.youtube.com/watch?v=cms_2NGMiHY",
+      "thumbnail": "https://img.youtube.com/vi/cms_2NGMiHY/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L2: Marginal densities of multiple continuous random variables",
+      "videoId": "TirRvH4PiiA",
+      "url": "https://www.youtube.com/watch?v=TirRvH4PiiA",
+      "thumbnail": "https://img.youtube.com/vi/TirRvH4PiiA/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L1: Joint continuous random variables",
+      "videoId": "CIyqDJG-U9Q",
+      "url": "https://www.youtube.com/watch?v=CIyqDJG-U9Q",
+      "thumbnail": "https://img.youtube.com/vi/CIyqDJG-U9Q/mqdefault.jpg"
+    }
+  ],
+  "week7": [
+    {
+      "title": "W7_L1: Statistics from samples and limit theorems: statistics from i.i.d. samples",
+      "videoId": "vcsSO5Gs2NE",
+      "url": "https://www.youtube.com/watch?v=vcsSO5Gs2NE",
+      "thumbnail": "https://img.youtube.com/vi/vcsSO5Gs2NE/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L2: Statistics from samples and limit theorems: empirical distribution and...",
+      "videoId": "7pEE9GSZuIg",
+      "url": "https://www.youtube.com/watch?v=7pEE9GSZuIg",
+      "thumbnail": "https://img.youtube.com/vi/7pEE9GSZuIg/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L3: Statistics from samples and limit theorems: Illustrations with data",
+      "videoId": "6jPW0M4ruX4",
+      "url": "https://www.youtube.com/watch?v=6jPW0M4ruX4",
+      "thumbnail": "https://img.youtube.com/vi/6jPW0M4ruX4/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L4: Statistics from samples & limit theorems: sum of independent random variables I",
+      "videoId": "z2TrKozjcAk",
+      "url": "https://www.youtube.com/watch?v=z2TrKozjcAk",
+      "thumbnail": "https://img.youtube.com/vi/z2TrKozjcAk/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L5: Statistics from samples and limit theorems: concentration phenomenon",
+      "videoId": "kPaqp72La2o",
+      "url": "https://www.youtube.com/watch?v=kPaqp72La2o",
+      "thumbnail": "https://img.youtube.com/vi/kPaqp72La2o/mqdefault.jpg"
+    },
+    {
+      "title": "Lecture 7.6-  Statistics from samples and limit theorems: Central Limit Theorem",
+      "videoId": "MK53HNG6Gys",
+      "url": "https://www.youtube.com/watch?v=MK53HNG6Gys",
+      "thumbnail": "https://img.youtube.com/vi/MK53HNG6Gys/mqdefault.jpg"
+    }
+  ],
+  "week8": [
+    {
+      "title": "W8_L3: Statistics from samples & limit theorems: distribution, properties & connections",
+      "videoId": "ArkKg5F1x38",
+      "url": "https://www.youtube.com/watch?v=ArkKg5F1x38",
+      "thumbnail": "https://img.youtube.com/vi/ArkKg5F1x38/mqdefault.jpg"
+    },
+    {
+      "title": "W8_L4: Statistics from samples & limit theorems: descriptive statistics of normal samples",
+      "videoId": "Jrw7dyC4D4I",
+      "url": "https://www.youtube.com/watch?v=Jrw7dyC4D4I",
+      "thumbnail": "https://img.youtube.com/vi/Jrw7dyC4D4I/mqdefault.jpg"
+    }
+  ],
+  "week9": [
+    {
+      "title": "W9_L5: Estimator design approach: method of moments",
+      "videoId": "XMX3lesags8",
+      "url": "https://www.youtube.com/watch?v=XMX3lesags8",
+      "thumbnail": "https://img.youtube.com/vi/XMX3lesags8/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L4: Bias, variance & risk of an estimator",
+      "videoId": "fZjMovn18YE",
+      "url": "https://www.youtube.com/watch?v=fZjMovn18YE",
+      "thumbnail": "https://img.youtube.com/vi/fZjMovn18YE/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L3: Parameter estimation: error in estimation",
+      "videoId": "73F6lceo6iM",
+      "url": "https://www.youtube.com/watch?v=73F6lceo6iM",
+      "thumbnail": "https://img.youtube.com/vi/73F6lceo6iM/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L2: Parameter estimation: introduction to parameter estimation",
+      "videoId": "NPmDCjN9s7A",
+      "url": "https://www.youtube.com/watch?v=NPmDCjN9s7A",
+      "thumbnail": "https://img.youtube.com/vi/NPmDCjN9s7A/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L1: Parameter estimation: statistical problems in real life",
+      "videoId": "iY6u-gh6324",
+      "url": "https://www.youtube.com/watch?v=iY6u-gh6324",
+      "thumbnail": "https://img.youtube.com/vi/iY6u-gh6324/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L6: Parameter estimation: estimator design approach: maximum likelihood",
+      "videoId": "0qnRu8GNxBg",
+      "url": "https://www.youtube.com/watch?v=0qnRu8GNxBg",
+      "thumbnail": "https://img.youtube.com/vi/0qnRu8GNxBg/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L7: Parameter estimation: evaluation of ML estimators",
+      "videoId": "0hbUXNPVrro",
+      "url": "https://www.youtube.com/watch?v=0hbUXNPVrro",
+      "thumbnail": "https://img.youtube.com/vi/0hbUXNPVrro/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L8: Parameter estimation: finding MME & ML estimators",
+      "videoId": "R1k74Kk7dbM",
+      "url": "https://www.youtube.com/watch?v=R1k74Kk7dbM",
+      "thumbnail": "https://img.youtube.com/vi/R1k74Kk7dbM/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L9: Parameter estimation: properties of estimators",
+      "videoId": "MY577tygpRU",
+      "url": "https://www.youtube.com/watch?v=MY577tygpRU",
+      "thumbnail": "https://img.youtube.com/vi/MY577tygpRU/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L10: Parameter estimation: confidence intervals",
+      "videoId": "Yq1YQawB2VY",
+      "url": "https://www.youtube.com/watch?v=Yq1YQawB2VY",
+      "thumbnail": "https://img.youtube.com/vi/Yq1YQawB2VY/mqdefault.jpg"
+    }
+  ],
+  "week10": [
+    {
+      "title": "W10_L1: Bayesian estimation - bayesian estimation",
+      "videoId": "iMjDOTIb3-Q",
+      "url": "https://www.youtube.com/watch?v=iMjDOTIb3-Q",
+      "thumbnail": "https://img.youtube.com/vi/iMjDOTIb3-Q/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L2: Bayesian estimation: choice of prior & examples",
+      "videoId": "SFlzn-0YgV0",
+      "url": "https://www.youtube.com/watch?v=SFlzn-0YgV0",
+      "thumbnail": "https://img.youtube.com/vi/SFlzn-0YgV0/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L3: Bayesian estimation: problems: finding estimators",
+      "videoId": "2owMxamj-Tc",
+      "url": "https://www.youtube.com/watch?v=2owMxamj-Tc",
+      "thumbnail": "https://img.youtube.com/vi/2owMxamj-Tc/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L4: Bayesian estimation: problems: fitting distributions",
+      "videoId": "QvLHiTpfzgY",
+      "url": "https://www.youtube.com/watch?v=QvLHiTpfzgY",
+      "thumbnail": "https://img.youtube.com/vi/QvLHiTpfzgY/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L5: Bayesian estimation: problems: model estimation",
+      "videoId": "c-N6tSRb_-0",
+      "url": "https://www.youtube.com/watch?v=c-N6tSRb_-0",
+      "thumbnail": "https://img.youtube.com/vi/c-N6tSRb_-0/mqdefault.jpg"
+    }
+  ],
+  "week11": [
+    {
+      "title": "W11_L1: Hypothesis testing: introduction to hypothesis testing",
+      "videoId": "F9lk8tlkDXI",
+      "url": "https://www.youtube.com/watch?v=F9lk8tlkDXI",
+      "thumbnail": "https://img.youtube.com/vi/F9lk8tlkDXI/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L2: Hypothesis testing: size & power of a test (problems)",
+      "videoId": "4__hxeWOs5w",
+      "url": "https://www.youtube.com/watch?v=4__hxeWOs5w",
+      "thumbnail": "https://img.youtube.com/vi/4__hxeWOs5w/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L3: Hypothesis testing: types of hypothesis testing",
+      "videoId": "gvvWghxz9SU",
+      "url": "https://www.youtube.com/watch?v=gvvWghxz9SU",
+      "thumbnail": "https://img.youtube.com/vi/gvvWghxz9SU/mqdefault.jpg"
+    },
+    {
+      "title": "W11_4: Hypothesis testing: answering questions using data",
+      "videoId": "LP11xjRaL4k",
+      "url": "https://www.youtube.com/watch?v=LP11xjRaL4k",
+      "thumbnail": "https://img.youtube.com/vi/LP11xjRaL4k/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L5: Hypothesis testing: standard testing methods: z-test",
+      "videoId": "ZLj66E1Ue5Q",
+      "url": "https://www.youtube.com/watch?v=ZLj66E1Ue5Q",
+      "thumbnail": "https://img.youtube.com/vi/ZLj66E1Ue5Q/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L6: Hypothesis testing: p-value",
+      "videoId": "RfJBrqRljEg",
+      "url": "https://www.youtube.com/watch?v=RfJBrqRljEg",
+      "thumbnail": "https://img.youtube.com/vi/RfJBrqRljEg/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L8: Hypothesis testing: more problems on z-test",
+      "videoId": "bcm0eYB2ZyQ",
+      "url": "https://www.youtube.com/watch?v=bcm0eYB2ZyQ",
+      "thumbnail": "https://img.youtube.com/vi/bcm0eYB2ZyQ/mqdefault.jpg"
+    },
+    {
+      "title": "W11_L7: Hypothesis testing: z-test problems",
+      "videoId": "RvQqGzHzKgo",
+      "url": "https://www.youtube.com/watch?v=RvQqGzHzKgo",
+      "thumbnail": "https://img.youtube.com/vi/RvQqGzHzKgo/mqdefault.jpg"
+    }
+  ],
+  "extras": [
+    {
+      "title": "Introduction to Course : Data, Statistics and Probability",
+      "videoId": "k4oWqYT6tjk",
+      "url": "https://www.youtube.com/watch?v=k4oWqYT6tjk",
+      "thumbnail": "https://img.youtube.com/vi/k4oWqYT6tjk/mqdefault.jpg"
+    },
+    {
+      "title": "Explore IPL data: Format of match data in spreadsheet",
+      "videoId": "NrkT8OIO6NU",
+      "url": "https://www.youtube.com/watch?v=NrkT8OIO6NU",
+      "thumbnail": "https://img.youtube.com/vi/NrkT8OIO6NU/mqdefault.jpg"
+    },
+    {
+      "title": "Explore IPL data: Summarising powerplay overs data",
+      "videoId": "inIzLErsaYw",
+      "url": "https://www.youtube.com/watch?v=inIzLErsaYw",
+      "thumbnail": "https://img.youtube.com/vi/inIzLErsaYw/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Experiment, outcome, and sample space",
+      "videoId": "nJbwqRyf-CU",
+      "url": "https://www.youtube.com/watch?v=nJbwqRyf-CU",
+      "thumbnail": "https://img.youtube.com/vi/nJbwqRyf-CU/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Events(Part1)",
+      "videoId": "QvhnR4g6SKo",
+      "url": "https://www.youtube.com/watch?v=QvhnR4g6SKo",
+      "thumbnail": "https://img.youtube.com/vi/QvhnR4g6SKo/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Events(Part2)",
+      "videoId": "E7VhAVeKUk8",
+      "url": "https://www.youtube.com/watch?v=E7VhAVeKUk8",
+      "thumbnail": "https://img.youtube.com/vi/E7VhAVeKUk8/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Events(Part3)",
+      "videoId": "AngkZkkcE0w",
+      "url": "https://www.youtube.com/watch?v=AngkZkkcE0w",
+      "thumbnail": "https://img.youtube.com/vi/AngkZkkcE0w/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Introduction to probability",
+      "videoId": "Wt26Z6fnTn0",
+      "url": "https://www.youtube.com/watch?v=Wt26Z6fnTn0",
+      "thumbnail": "https://img.youtube.com/vi/Wt26Z6fnTn0/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Basic properties of probability",
+      "videoId": "jvo3MBMmLgE",
+      "url": "https://www.youtube.com/watch?v=jvo3MBMmLgE",
+      "thumbnail": "https://img.youtube.com/vi/jvo3MBMmLgE/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Working with probability spaces",
+      "videoId": "RQJ3DICglYU",
+      "url": "https://www.youtube.com/watch?v=RQJ3DICglYU",
+      "thumbnail": "https://img.youtube.com/vi/RQJ3DICglYU/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Distributions",
+      "videoId": "5sjOZRtEbOI",
+      "url": "https://www.youtube.com/watch?v=5sjOZRtEbOI",
+      "thumbnail": "https://img.youtube.com/vi/5sjOZRtEbOI/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Law of total probability",
+      "videoId": "MWQzYq8TBSA",
+      "url": "https://www.youtube.com/watch?v=MWQzYq8TBSA",
+      "thumbnail": "https://img.youtube.com/vi/MWQzYq8TBSA/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Bayes' theorem",
+      "videoId": "edZs_X1YCAY",
+      "url": "https://www.youtube.com/watch?v=edZs_X1YCAY",
+      "thumbnail": "https://img.youtube.com/vi/edZs_X1YCAY/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Independence of events",
+      "videoId": "LDMEzJDAf7w",
+      "url": "https://www.youtube.com/watch?v=LDMEzJDAf7w",
+      "thumbnail": "https://img.youtube.com/vi/LDMEzJDAf7w/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Repeated indepedent trial and Bernoulli distribution",
+      "videoId": "HfbF8kg8r9Y",
+      "url": "https://www.youtube.com/watch?v=HfbF8kg8r9Y",
+      "thumbnail": "https://img.youtube.com/vi/HfbF8kg8r9Y/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Binomial distribution",
+      "videoId": "FFQ1LY3_wTU",
+      "url": "https://www.youtube.com/watch?v=FFQ1LY3_wTU",
+      "thumbnail": "https://img.youtube.com/vi/FFQ1LY3_wTU/mqdefault.jpg"
+    },
+    {
+      "title": "Events and probabilities : Geometric distribution",
+      "videoId": "-b5yWSQ_9Sw",
+      "url": "https://www.youtube.com/watch?v=-b5yWSQ_9Sw",
+      "thumbnail": "https://img.youtube.com/vi/-b5yWSQ_9Sw/mqdefault.jpg"
+    }
+  ]
+}

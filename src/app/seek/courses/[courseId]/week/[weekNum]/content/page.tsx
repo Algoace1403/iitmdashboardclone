@@ -5,7 +5,17 @@ import { SeekSidebar } from "@/components/seek/SeekSidebar";
 import { useParams, useSearchParams } from "next/navigation";
 import coursesData from "@/data/courses.json";
 import mathLectures from "@/data/seek/math_lectures.json";
+import englishLectures from "@/data/seek/english_lectures.json";
+import pythonLectures from "@/data/seek/python_lectures.json";
+import statsLectures from "@/data/seek/stats_lectures.json";
 import Link from "next/link";
+
+const lectureMap: Record<string, Record<string, { title: string; videoId: string; url: string; thumbnail: string }[]>> = {
+  mathematics_for_data_science_2: mathLectures as Record<string, { title: string; videoId: string; url: string; thumbnail: string }[]>,
+  english_2: englishLectures as Record<string, { title: string; videoId: string; url: string; thumbnail: string }[]>,
+  programming_in_python: pythonLectures as Record<string, { title: string; videoId: string; url: string; thumbnail: string }[]>,
+  statistics_for_data_science_2: statsLectures as Record<string, { title: string; videoId: string; url: string; thumbnail: string }[]>,
+};
 
 export default function ContentViewerPage() {
   const params = useParams();
@@ -17,25 +27,31 @@ export default function ContentViewerPage() {
   const title = searchParams.get("title") || "Content";
   const type = searchParams.get("type") || "Video";
 
-  // Find YouTube video for this lecture
+  // Find YouTube video for this lecture from any course
   let videoData: { videoId: string; url: string; thumbnail: string } | null = null;
-  if (courseId === "mathematics_for_data_science_2") {
-    const weekKey = `week${weekNum}` as keyof typeof mathLectures;
-    const weekVideos = mathLectures[weekKey] as { title: string; videoId: string; url: string; thumbnail: string }[] | undefined;
+  const courseLectures = lectureMap[courseId];
+  if (courseLectures) {
+    const weekKey = `week${weekNum}`;
+    const weekVideos = courseLectures[weekKey];
     if (weekVideos) {
-      // Match by lecture number (L1.1 matches W1_L1, etc.)
+      // Match by lecture number (L1.1 matches W1_L1, L1.2, etc.)
       const lectureMatch = title.match(/L(\d+)\.(\d+)/);
       if (lectureMatch) {
         const lNum = parseInt(lectureMatch[2]);
-        // Find by lecture number within the week
-        const lectures = weekVideos.filter(v => v.title.includes("_L"));
+        const lectures = weekVideos.filter(v => v.title.match(/_L\d+|L\d+/));
         if (lectures[lNum - 1]) videoData = lectures[lNum - 1];
       }
-      // Also try matching tutorial
+      // Match by "Lecture N:" pattern
+      const lecNumMatch = title.match(/Lecture\s*(\d+)/i);
+      if (!videoData && lecNumMatch) {
+        const lNum = parseInt(lecNumMatch[1]);
+        if (weekVideos[lNum - 1]) videoData = weekVideos[lNum - 1];
+      }
+      // Match tutorial
       const tutMatch = title.match(/Tutorial\s*(\d+)/i);
-      if (tutMatch) {
+      if (!videoData && tutMatch) {
         const tNum = parseInt(tutMatch[1]);
-        const tutorials = weekVideos.filter(v => v.title.includes("Tutorial") || v.title.includes("tutorial"));
+        const tutorials = weekVideos.filter(v => v.title.toLowerCase().includes("tutorial"));
         if (tutorials[tNum - 1]) videoData = tutorials[tNum - 1];
       }
       // Fallback: fuzzy title match
@@ -43,7 +59,11 @@ export default function ContentViewerPage() {
         const titleLower = title.toLowerCase();
         videoData = weekVideos.find(v => {
           const vLower = v.title.toLowerCase();
-          return titleLower.split(":").some(part => vLower.includes(part.trim().substring(0, 15)));
+          // Match by keywords after the colon
+          const colonPart = titleLower.split(":").slice(1).join(":").trim();
+          if (colonPart.length > 5 && vLower.includes(colonPart.substring(0, 20))) return true;
+          // Match by significant words
+          return titleLower.split(/\s+/).filter(w => w.length > 4).some(w => vLower.includes(w));
         }) || null;
       }
     }

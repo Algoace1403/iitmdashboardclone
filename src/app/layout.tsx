@@ -13,7 +13,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "My Dashboard - IIT Madras BS Online Degree Programme",
   description: "Student Dashboard - IIT Madras BS Degree in Data Science and Applications",
-  icons: { icon: "/iitm-seal.svg" },
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
