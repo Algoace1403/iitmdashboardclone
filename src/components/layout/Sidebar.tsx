@@ -30,97 +30,127 @@ const icons = [
   <svg key="9" width="22" height="22" fill="none" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>,
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  isMobile: boolean;
+  open: boolean;
+  onClose: () => void;
+}
+
+export function Sidebar({ isMobile, open, onClose }: SidebarProps) {
   const pathname = usePathname();
   const [expanded, setExpanded] = useState(false);
 
+  // On mobile: hidden by default, shown as overlay when open
+  if (isMobile && !open) {
+    return null;
+  }
+
   return (
-    <div
-      style={{
-        position: "fixed",
-        top: 56,
-        left: 0,
-        width: expanded ? 230 : 60,
-        minHeight: "calc(100vh - 56px)",
-        zIndex: 10,
-        transition: "width 0.3s",
-        overflow: "hidden",
-      }}
-    >
-      <ul
+    <>
+      {/* Backdrop for mobile overlay */}
+      {isMobile && open && (
+        <div
+          onClick={onClose}
+          style={{
+            position: "fixed",
+            inset: 0,
+            top: 56,
+            background: "rgba(0,0,0,0.4)",
+            zIndex: 9,
+          }}
+        />
+      )}
+      <div
         style={{
-          listStyle: "none",
-          padding: "8px 0",
-          margin: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          color: "white",
+          position: "fixed",
+          top: 56,
+          left: 0,
+          width: isMobile ? 260 : (expanded ? 230 : 60),
           minHeight: "calc(100vh - 56px)",
+          zIndex: 10,
+          transition: "width 0.3s",
+          overflow: "hidden",
         }}
       >
-        {navItems.map((item, i) => {
-          const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-          return (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                title={item.label}
+        <ul
+          style={{
+            listStyle: "none",
+            padding: "8px 0",
+            margin: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            color: "white",
+            minHeight: "calc(100vh - 56px)",
+          }}
+        >
+          {navItems.map((item, i) => {
+            const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+            const showLabel = isMobile || expanded;
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  title={item.label}
+                  onClick={isMobile ? onClose : undefined}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 12,
+                    padding: "12px 16px",
+                    color: "white",
+                    textDecoration: "none",
+                    whiteSpace: "nowrap",
+                    fontSize: 14,
+                    fontWeight: 500,
+                    background: isActive ? "rgba(255,255,255,0.1)" : "transparent",
+                  }}
+                >
+                  <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>{icons[i]}</span>
+                  {showLabel && <span>{item.label}</span>}
+                </Link>
+              </li>
+            );
+          })}
+
+          {/* Collapse/Expand toggle — only on desktop */}
+          {!isMobile && (
+            <li>
+              <button
+                onClick={() => setExpanded(!expanded)}
                 style={{
                   display: "flex",
                   alignItems: "center",
                   gap: 12,
                   padding: "12px 16px",
                   color: "white",
-                  textDecoration: "none",
-                  whiteSpace: "nowrap",
+                  background: "none",
+                  border: "none",
+                  borderTop: "1px solid rgba(255,255,255,0.1)",
+                  cursor: "pointer",
+                  width: "100%",
                   fontSize: 14,
                   fontWeight: 500,
-                  background: isActive ? "rgba(255,255,255,0.1)" : "transparent",
+                  marginTop: 8,
                 }}
               >
-                <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>{icons[i]}</span>
-                {expanded && <span>{item.label}</span>}
-              </Link>
+                <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="white"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                    style={{ transform: expanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s" }}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                  </svg>
+                </span>
+                {expanded && <span>Collapse</span>}
+              </button>
             </li>
-          );
-        })}
-
-        {/* Collapse/Expand toggle */}
-        <li>
-          <button
-            onClick={() => setExpanded(!expanded)}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              padding: "12px 16px",
-              color: "white",
-              background: "none",
-              border: "none",
-              borderTop: "1px solid rgba(255,255,255,0.1)",
-              cursor: "pointer",
-              width: "100%",
-              fontSize: 14,
-              fontWeight: 500,
-              marginTop: 8,
-            }}
-          >
-            <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <svg
-                width="20"
-                height="20"
-                fill="none"
-                stroke="white"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-                style={{ transform: expanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s" }}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-              </svg>
-            </span>
-            {expanded && <span>Collapse</span>}
-          </button>
-        </li>
-      </ul>
-    </div>
+          )}
+        </ul>
+      </div>
+    </>
   );
 }

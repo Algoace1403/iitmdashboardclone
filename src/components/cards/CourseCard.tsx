@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 interface WeekData {
   week: number;
@@ -35,6 +36,7 @@ interface CourseCardProps {
 
 export function CourseCard({ course }: CourseCardProps) {
   const courseUrl = course.seekCode ? `/seek/courses/${course.id}` : `/courses/${course.id}`;
+  const isMobile = useIsMobile();
 
   return (
     <Link href={courseUrl} style={{ textDecoration: "none", color: "inherit", display: "block" }}>
@@ -51,26 +53,26 @@ export function CourseCard({ course }: CourseCardProps) {
           `,
           backgroundSize: "100% 100%, 16px 16px",
           backgroundColor: "#aa3535",
-          padding: "12px 14px",
+          padding: isMobile ? "10px 12px" : "12px 14px",
           color: "white",
-          minHeight: 90,
+          minHeight: isMobile ? 76 : 90,
           borderTopLeftRadius: 10,
           borderTopRightRadius: 10,
         }}
       >
-        <h3 style={{ fontSize: 15, fontWeight: 700, fontStyle: "italic", lineHeight: 1.3, margin: 0 }}>
+        <h3 style={{ fontSize: isMobile ? 14 : 15, fontWeight: 700, fontStyle: "italic", lineHeight: 1.3, margin: 0 }}>
           {course.title}
         </h3>
-        <p style={{ fontSize: 11, marginTop: 3, marginBottom: 0, color: "rgba(255,255,255,0.85)", fontStyle: "italic" }}>
+        <p style={{ fontSize: isMobile ? 10 : 11, marginTop: 3, marginBottom: 0, color: "rgba(255,255,255,0.85)", fontStyle: "italic" }}>
           {course.status}
         </p>
-        <p style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginTop: 6, marginBottom: 0 }}>
+        <p style={{ fontSize: isMobile ? 10 : 11, color: "rgba(255,255,255,0.65)", marginTop: 6, marginBottom: 0 }}>
           {course.program}
         </p>
       </div>
 
       {/* Body: Scores */}
-      <div style={{ padding: "8px 12px", fontSize: 11, color: "#525f7f", lineHeight: 1.6, maxHeight: 500, overflowY: "auto" }}>
+      <div style={{ padding: isMobile ? "6px 10px" : "8px 12px", fontSize: isMobile ? 10 : 11, color: "#525f7f", lineHeight: 1.6, maxHeight: isMobile ? 300 : 500, overflowY: "auto" }}>
         {/* OPPE Eligible */}
         {course.scores.oppyEligible !== undefined && (
           <p className="font-semibold text-[#32325d]">

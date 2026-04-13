@@ -1,5 +1,4 @@
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import { QuestionBlock } from "@/components/seek/QuestionBlock";
 import coursesData from "@/data/courses.json";
 import { notFound } from "next/navigation";
@@ -26,11 +25,8 @@ export default async function ActivityQuestionsPage({ params }: Props) {
   } catch { /* no data */ }
 
   return (
-    <div>
-      <SeekToolbar courseName={course.title} />
-      <div className="flex">
-        <SeekSidebar courseId={courseId} />
-        <main className="flex-1 p-6 bg-[#fafafa] min-h-[calc(100vh-4rem)]">
+    <SeekLayout courseName={course.title} courseId={courseId}>
+      <div>
           <div className="mb-6">
             <h1 className="text-xl font-medium text-[#212121]">
               Week {weekNumber} | Activity Questions
@@ -52,8 +48,7 @@ export default async function ActivityQuestionsPage({ params }: Props) {
               ))}
             </div>
           )}
-        </main>
       </div>
-    </div>
+    </SeekLayout>
   );
 }

@@ -1,5 +1,4 @@
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import coursesData from "@/data/courses.json";
 import { notFound } from "next/navigation";
 
@@ -13,11 +12,7 @@ export default async function GradingPolicyPage({ params }: Props) {
   if (!course) notFound();
 
   return (
-    <div>
-      <SeekToolbar courseName={course.title} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ flex: 1, padding: "16px 24px", background: "#fafafa", minHeight: "calc(100vh - 64px)" }}>
+    <SeekLayout courseName={course.title} courseId={courseId}>
           <h1 style={{ fontSize: 22, fontWeight: 400, color: "#212121", marginBottom: 8, marginTop: 8 }}>Grading Policy</h1>
           <div style={{ background: "white", border: "1px solid #e0e0e0", borderRadius: 4, padding: 24, fontSize: 14, color: "#212121", lineHeight: 1.8 }}>
             {courseId === "statistics_for_data_science_2" && <StatsGradingContent />}
@@ -28,9 +23,7 @@ export default async function GradingPolicyPage({ params }: Props) {
               <p>Grading policy information for this course is not yet available.</p>
             )}
           </div>
-        </main>
-      </div>
-    </div>
+    </SeekLayout>
   );
 }
 

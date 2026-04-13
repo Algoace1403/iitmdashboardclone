@@ -1,7 +1,6 @@
 "use client";
 
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import { RawHtmlRenderer } from "@/components/seek/RawHtmlRenderer";
 import { useParams, useSearchParams } from "next/navigation";
 import coursesData from "@/data/courses.json";
@@ -21,11 +20,8 @@ export default function AssignmentViewPage() {
   const html = courseRaw[title] || "";
 
   return (
-    <div>
-      <SeekToolbar courseName={course?.title || ""} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ flex: 1, padding: "16px 24px", background: "#fafafa", minHeight: "calc(100vh - 64px)", fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
+    <SeekLayout courseName={course?.title || ""} courseId={courseId}>
+      <div style={{ fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
           <Link
             href={`/seek/courses/${courseId}/week/${weekNum}`}
             style={{ fontSize: 13, color: "#7b1f1f", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 4, marginBottom: 16 }}
@@ -46,8 +42,7 @@ export default function AssignmentViewPage() {
               </p>
             </div>
           )}
-        </main>
       </div>
-    </div>
+    </SeekLayout>
   );
 }

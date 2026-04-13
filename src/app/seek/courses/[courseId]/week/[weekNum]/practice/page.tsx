@@ -1,7 +1,6 @@
 "use client";
 
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import coursesData from "@/data/courses.json";
@@ -99,11 +98,8 @@ export default function PracticeAssignmentPage() {
   const scoredPoints = checked ? practice?.questions.reduce((s, q) => s + (isCorrect(q) === true ? q.points : 0), 0) || 0 : 0;
 
   return (
-    <div>
-      <SeekToolbar courseName={course?.title || ""} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ flex: 1, padding: "16px 24px", background: "#fafafa", minHeight: "calc(100vh - 64px)", fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
+    <SeekLayout courseName={course?.title || ""} courseId={courseId}>
+      <div style={{ fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
           <h1 style={{ fontSize: 22, fontWeight: 400, color: "rgba(0,0,0,0.87)", marginBottom: 4, marginTop: 8 }}>
             {practice?.title || `Week ${weekNum} | Practice Assignment`}
           </h1>
@@ -192,8 +188,7 @@ export default function PracticeAssignmentPage() {
               <p style={{ color: "rgba(0,0,0,0.54)", fontSize: 14 }}>No practice questions loaded for this week.</p>
             </div>
           )}
-        </main>
       </div>
-    </div>
+    </SeekLayout>
   );
 }

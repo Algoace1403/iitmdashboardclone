@@ -71,7 +71,7 @@ export default function LoginPage() {
           padding: "32px 16px",
         }}
       >
-        <div style={{ width: "100%", maxWidth: 960, display: "flex", gap: 32, alignItems: "flex-start", flexWrap: "wrap" }}>
+        <div style={{ width: "100%", maxWidth: 960, display: "flex", gap: 24, alignItems: "flex-start", flexWrap: "wrap", justifyContent: "center" }}>
           {/* Login Card */}
           <div
             style={{
@@ -81,7 +81,9 @@ export default function LoginPage() {
               boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
               width: "100%",
               maxWidth: 380,
+              minWidth: 280,
               flexShrink: 0,
+              flex: "1 1 320px",
             }}
           >
             <h2 style={{ fontSize: 20, fontWeight: 700, color: "#32325d", marginBottom: 8, marginTop: 0 }}>

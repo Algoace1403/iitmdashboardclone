@@ -1,12 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 interface SeekToolbarProps {
   courseName?: string;
+  onMenuToggle?: () => void;
+  showMenuButton?: boolean;
 }
 
-export function SeekToolbar({ courseName }: SeekToolbarProps) {
+export function SeekToolbar({ courseName, onMenuToggle, showMenuButton }: SeekToolbarProps) {
+  const isMobile = useIsMobile();
+
   return (
     <header
       style={{
@@ -15,30 +20,64 @@ export function SeekToolbar({ courseName }: SeekToolbarProps) {
         color: "#ffffff",
         display: "flex",
         alignItems: "center",
-        paddingLeft: 16,
-        paddingRight: 16,
+        paddingLeft: isMobile ? 8 : 16,
+        paddingRight: isMobile ? 8 : 16,
         position: "sticky",
         top: 0,
         zIndex: 50,
         boxShadow: "0px 2px 4px -1px rgba(0,0,0,.2), 0px 4px 5px 0px rgba(0,0,0,.14), 0px 1px 10px 0px rgba(0,0,0,.12)",
         fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
+        gap: 8,
       }}
     >
+      {/* Hamburger (mobile) */}
+      {showMenuButton && (
+        <button
+          onClick={onMenuToggle}
+          style={{
+            background: "none",
+            border: "none",
+            color: "#ffffff",
+            cursor: "pointer",
+            padding: 4,
+            flexShrink: 0,
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      )}
+
       {/* Left: Logo + Brand */}
-      <Link href="/seek" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "inherit" }}>
-        <img src="/iitm-seal.svg" alt="IIT Madras" style={{ width: 40, height: 40, flexShrink: 0, borderRadius: "50%" }} />
+      <Link
+        href="/seek"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: isMobile ? 8 : 12,
+          textDecoration: "none",
+          color: "inherit",
+          minWidth: 0,
+          overflow: "hidden",
+        }}
+      >
+        <img src="/iitm-seal.svg" alt="IIT Madras" style={{ width: isMobile ? 32 : 40, height: isMobile ? 32 : 40, flexShrink: 0, borderRadius: "50%" }} />
         <span
           style={{
-            fontSize: 20,
+            fontSize: isMobile ? 16 : 20,
             fontWeight: 500,
             letterSpacing: "0.0125em",
             lineHeight: "32px",
             color: "#ffffff",
+            flexShrink: 0,
           }}
         >
           IIT Madras
         </span>
-        {courseName && (
+        {courseName && !isMobile && (
           <>
             <span style={{ color: "rgba(255,255,255,0.4)" }}>|</span>
             <span
@@ -47,6 +86,9 @@ export function SeekToolbar({ courseName }: SeekToolbarProps) {
                 fontWeight: 400,
                 color: "rgba(255,255,255,0.8)",
                 letterSpacing: "0.0125em",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
               }}
             >
               {courseName}
@@ -58,7 +100,7 @@ export function SeekToolbar({ courseName }: SeekToolbarProps) {
       <div style={{ flex: 1 }} />
 
       {/* Right: Icons */}
-      <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 4, flexShrink: 0 }}>
         {/* Bell icon */}
         <button
           style={{

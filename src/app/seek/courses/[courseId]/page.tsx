@@ -1,5 +1,4 @@
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import coursesData from "@/data/courses.json";
 import { notFound } from "next/navigation";
 
@@ -23,11 +22,8 @@ export default async function SeekCoursePage({ params }: Props) {
   const esDiploma = about?.esDiploma as Record<string, unknown> | undefined;
 
   return (
-    <div>
-      <SeekToolbar courseName={course.title} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ flex: 1, padding: 24, background: "#fafafa", minHeight: "calc(100vh - 64px)" }}>
+    <SeekLayout courseName={course.title} courseId={courseId}>
+        <div>
           <h1 style={{ fontSize: 20, fontWeight: 500, color: "#212121", marginBottom: 24 }}>About the Course</h1>
 
           <div style={{ background: "white", border: "1px solid #e0e0e0", borderRadius: 4, padding: 24 }}>
@@ -110,9 +106,8 @@ export default async function SeekCoursePage({ params }: Props) {
               </div>
             )}
           </div>
-        </main>
-      </div>
-    </div>
+        </div>
+    </SeekLayout>
   );
 }
 

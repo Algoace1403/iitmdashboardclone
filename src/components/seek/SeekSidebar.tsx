@@ -7,9 +7,12 @@ import { useState } from "react";
 interface SeekSidebarProps {
   courseId: string;
   weekCount?: number;
+  isMobile?: boolean;
+  open?: boolean;
+  onClose?: () => void;
 }
 
-export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
+export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open = true, onClose }: SeekSidebarProps) {
   const pathname = usePathname();
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
     "course-intro": true,
@@ -42,145 +45,182 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
     },
   ];
 
+  // On mobile: hidden unless open, shown as overlay
+  if (isMobile && !open) {
+    return null;
+  }
+
   return (
-    <div style={{ display: "flex", position: "sticky", top: 64, height: "calc(100vh - 64px)" }}>
-      {/* Left icon bar */}
+    <>
+      {/* Backdrop for mobile overlay */}
+      {isMobile && open && (
+        <div
+          onClick={onClose}
+          style={{
+            position: "fixed",
+            inset: 0,
+            top: 64,
+            background: "rgba(0,0,0,0.4)",
+            zIndex: 39,
+          }}
+        />
+      )}
       <div
         style={{
-          width: 64,
-          background: "#fafafa",
-          borderRight: "1px solid rgba(0,0,0,0.12)",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          paddingTop: 8,
-          gap: 4,
-          fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
+          position: isMobile ? "fixed" : "sticky",
+          top: 64,
+          left: 0,
+          height: "calc(100vh - 64px)",
+          zIndex: isMobile ? 40 : undefined,
+          ...(isMobile ? { width: 280 } : {}),
         }}
       >
-        {iconBarItems.map((item) => (
-          <Link
-            key={item.label}
-            href={item.href || `/seek/courses/${courseId}`}
+        {/* Left icon bar -- hidden on mobile */}
+        {!isMobile && (
+          <div
             style={{
+              width: 64,
+              background: "#fafafa",
+              borderRight: "1px solid rgba(0,0,0,0.12)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 2,
-              padding: "8px 4px",
-              color: item.active ? "#7b1f1f" : "rgba(0,0,0,0.54)",
-              textDecoration: "none",
-              fontSize: 10,
-              fontWeight: 500,
-              borderRadius: 4,
-              width: 56,
-              textAlign: "center",
+              paddingTop: 8,
+              gap: 4,
+              fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
             }}
           >
-            {item.icon}
-            <span>{item.label}</span>
-          </Link>
-        ))}
-      </div>
+            {iconBarItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href || `/seek/courses/${courseId}`}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: 2,
+                  padding: "8px 4px",
+                  color: item.active ? "#7b1f1f" : "rgba(0,0,0,0.54)",
+                  textDecoration: "none",
+                  fontSize: 10,
+                  fontWeight: 500,
+                  borderRadius: 4,
+                  width: 56,
+                  textAlign: "center",
+                }}
+              >
+                {item.icon}
+                <span>{item.label}</span>
+              </Link>
+            ))}
+          </div>
+        )}
 
-      {/* Accordion panel */}
-      <div
-        style={{
-          width: 260,
-          background: "#ffffff",
-          borderRight: "1px solid rgba(0,0,0,0.12)",
-          overflowY: "auto",
-          fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
-        }}
-      >
-        {/* Course Introduction */}
-        <AccordionSection
-          title="Course Introduction"
-          expanded={expandedSections["course-intro"]}
-          onToggle={() => toggle("course-intro")}
+        {/* Accordion panel */}
+        <div
+          style={{
+            width: isMobile ? 280 : 260,
+            background: "#ffffff",
+            borderRight: "1px solid rgba(0,0,0,0.12)",
+            overflowY: "auto",
+            fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
+          }}
         >
-          <SidebarLink
-            href={`/seek/courses/${courseId}`}
-            label="About the Course"
-            sublabel="Lesson"
-            active={pathname === `/seek/courses/${courseId}`}
-            gold
-          />
-          <SidebarLink
-            href={`/seek/courses/${courseId}/grading`}
-            label="Grading Policy"
-            sublabel="Lesson"
-            active={pathname === `/seek/courses/${courseId}/grading`}
-          />
-        </AccordionSection>
-
-        {/* Disciplinary */}
-        <AccordionSection
-          title="Disciplinary & Non Academic Conduct"
-          expanded={expandedSections["disciplinary"]}
-          onToggle={() => toggle("disciplinary")}
-        />
-
-        {/* Malpractice */}
-        <AccordionSection
-          title="Malpractice Rules"
-          expanded={expandedSections["malpractice"]}
-          onToggle={() => toggle("malpractice")}
-        />
-
-        {/* Weeks */}
-        {weeks.map((w) => {
-          const weekPath = `/seek/courses/${courseId}/week/${w}`;
-          const isActive = pathname.startsWith(weekPath);
-          const isCompleted = w >= 1 && w <= 8;
-
-          return (
-            <AccordionSection
-              key={w}
-              title={`Week ${w}`}
-              expanded={expandedSections[`week-${w}`] || isActive}
-              onToggle={() => toggle(`week-${w}`)}
-              href={weekPath}
-              active={isActive}
-              completed={isCompleted}
+          {/* Course Introduction */}
+          <AccordionSection
+            title="Course Introduction"
+            expanded={expandedSections["course-intro"]}
+            onToggle={() => toggle("course-intro")}
+          >
+            <SidebarLink
+              href={`/seek/courses/${courseId}`}
+              label="About the Course"
+              sublabel="Lesson"
+              active={pathname === `/seek/courses/${courseId}`}
+              gold
+              onClick={isMobile ? onClose : undefined}
             />
-          );
-        })}
+            <SidebarLink
+              href={`/seek/courses/${courseId}/grading`}
+              label="Grading Policy"
+              sublabel="Lesson"
+              active={pathname === `/seek/courses/${courseId}/grading`}
+              onClick={isMobile ? onClose : undefined}
+            />
+          </AccordionSection>
 
-        {/* Practice Tests */}
-        <AccordionSection
-          title="Practice Tests (Objective)"
-          expanded={expandedSections["practice"]}
-          onToggle={() => toggle("practice")}
-        />
+          {/* Disciplinary */}
+          <AccordionSection
+            title="Disciplinary & Non Academic Conduct"
+            expanded={expandedSections["disciplinary"]}
+            onToggle={() => toggle("disciplinary")}
+          />
 
-        {/* Supplementary Contents */}
-        <AccordionSection
-          title="Supplementary Contents"
-          expanded={expandedSections["supplementary"]}
-          onToggle={() => toggle("supplementary")}
-        >
-          <SidebarLink
-            href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
-            label="Lecture PPTs/Slides"
-            sublabel="Lesson"
-            active={false}
+          {/* Malpractice */}
+          <AccordionSection
+            title="Malpractice Rules"
+            expanded={expandedSections["malpractice"]}
+            onToggle={() => toggle("malpractice")}
           />
-          <SidebarLink
-            href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
-            label="Lecture Transcripts"
-            sublabel="Lesson"
-            active={false}
+
+          {/* Weeks */}
+          {weeks.map((w) => {
+            const weekPath = `/seek/courses/${courseId}/week/${w}`;
+            const isActive = pathname.startsWith(weekPath);
+            const isCompleted = w >= 1 && w <= 8;
+
+            return (
+              <AccordionSection
+                key={w}
+                title={`Week ${w}`}
+                expanded={expandedSections[`week-${w}`] || isActive}
+                onToggle={() => toggle(`week-${w}`)}
+                href={weekPath}
+                active={isActive}
+                completed={isCompleted}
+              />
+            );
+          })}
+
+          {/* Practice Tests */}
+          <AccordionSection
+            title="Practice Tests (Objective)"
+            expanded={expandedSections["practice"]}
+            onToggle={() => toggle("practice")}
           />
-          <SidebarLink
-            href="#"
-            label="Quiz 1 - Question Paper and Answer key"
-            sublabel="Lesson"
-            active={false}
-          />
-        </AccordionSection>
+
+          {/* Supplementary Contents */}
+          <AccordionSection
+            title="Supplementary Contents"
+            expanded={expandedSections["supplementary"]}
+            onToggle={() => toggle("supplementary")}
+          >
+            <SidebarLink
+              href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
+              label="Lecture PPTs/Slides"
+              sublabel="Lesson"
+              active={false}
+              onClick={isMobile ? onClose : undefined}
+            />
+            <SidebarLink
+              href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
+              label="Lecture Transcripts"
+              sublabel="Lesson"
+              active={false}
+              onClick={isMobile ? onClose : undefined}
+            />
+            <SidebarLink
+              href="#"
+              label="Quiz 1 - Question Paper and Answer key"
+              sublabel="Lesson"
+              active={false}
+              onClick={isMobile ? onClose : undefined}
+            />
+          </AccordionSection>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -280,16 +320,19 @@ function SidebarLink({
   sublabel,
   active,
   gold,
+  onClick,
 }: {
   href: string;
   label: string;
   sublabel?: string;
   active: boolean;
   gold?: boolean;
+  onClick?: () => void;
 }) {
   return (
     <a
       href={href}
+      onClick={onClick}
       style={{
         display: "flex",
         alignItems: "center",

@@ -65,3 +65,27 @@ body {
   background: rgba(255,255,255,0.2);
   border-radius: 2px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.9375rem;
+  }
+
+  /* Ensure tables scroll horizontally on mobile */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent horizontal overflow */
+  main {
+    overflow-x: hidden;
+  }
+
+  /* Better touch targets */
+  a, button {
+    min-height: 36px;
+  }
+}

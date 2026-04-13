@@ -1,7 +1,6 @@
 "use client";
 
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import { useState } from "react";
 import { useParams } from "next/navigation";
 import coursesData from "@/data/courses.json";
@@ -93,11 +92,8 @@ export default function GradedAssignmentPage() {
   const tabs: Tab[] = ["Overview", "Question", "Test Cases", "Solution"];
 
   return (
-    <div>
-      <SeekToolbar courseName={course?.title || ""} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ display: "flex", flex: 1, minHeight: "calc(100vh - 64px)" }}>
+    <SeekLayout courseName={course?.title || ""} courseId={courseId}>
+        <div style={{ display: "flex", flex: 1, minHeight: "calc(100vh - 64px)" }}>
           {/* Assignment list sub-sidebar */}
           <div style={{ width: 260, background: "#ffffff", borderRight: "1px solid rgba(0,0,0,0.12)", overflowY: "auto", flexShrink: 0, fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
             <div style={{ padding: "12px 16px", borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
@@ -706,9 +702,8 @@ export default function GradedAssignmentPage() {
               )}
             </div>
           </div>
-        </main>
-      </div>
-    </div>
+        </div>
+    </SeekLayout>
   );
 }
 

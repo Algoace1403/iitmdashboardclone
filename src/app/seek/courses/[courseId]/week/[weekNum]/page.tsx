@@ -1,5 +1,4 @@
-import { SeekToolbar } from "@/components/seek/SeekToolbar";
-import { SeekSidebar } from "@/components/seek/SeekSidebar";
+import { SeekLayout } from "@/components/seek/SeekLayout";
 import Link from "next/link";
 import coursesData from "@/data/courses.json";
 import mathLectures from "@/data/seek/math_lectures.json";
@@ -93,11 +92,7 @@ export default async function SeekWeekPage({ params }: Props) {
   const items = rawItems;
 
   return (
-    <div>
-      <SeekToolbar courseName={course.title} />
-      <div style={{ display: "flex" }}>
-        <SeekSidebar courseId={courseId} />
-        <main style={{ flex: 1, padding: "16px 24px", background: "#fafafa", minHeight: "calc(100vh - 64px)" }}>
+    <SeekLayout courseName={course.title} courseId={courseId}>
           <h1 style={{ fontSize: 22, fontWeight: 400, color: "#212121", marginBottom: 16, marginTop: 8 }}>
             Week {weekNumber}
           </h1>
@@ -181,8 +176,6 @@ export default async function SeekWeekPage({ params }: Props) {
               })}
             </div>
           )}
-        </main>
-      </div>
-    </div>
+    </SeekLayout>
   );
 }
