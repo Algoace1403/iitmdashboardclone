@@ -139,8 +139,8 @@ export default function HallTicketPage() {
           <button
             style={{
               background: '#fff',
-              border: '1px solid #800020',
-              color: '#800020',
+              border: '1px solid #aa3535',
+              color: '#aa3535',
               padding: '8px 20px',
               borderRadius: 4,
               fontSize: 13,

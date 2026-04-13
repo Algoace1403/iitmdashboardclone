@@ -32,7 +32,7 @@ interface CourseCardProps {
 
 export function CourseCard({ course }: CourseCardProps) {
   return (
-    <div className="bg-white rounded-sm shadow-sm border border-gray-200 overflow-hidden">
+    <div style={{ background: "white", borderRadius: 10, overflow: "hidden", boxShadow: "0 1px 3px rgba(0,0,0,0.1)" }}>
       {/* Maroon header with dot pattern + corner gradient */}
       <div
         style={{
@@ -41,10 +41,12 @@ export function CourseCard({ course }: CourseCardProps) {
             radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)
           `,
           backgroundSize: "100% 100%, 16px 16px",
-          backgroundColor: "#800020",
+          backgroundColor: "#aa3535",
           padding: "12px 14px",
           color: "white",
           minHeight: 90,
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
         }}
       >
         <h3 style={{ fontSize: 15, fontWeight: 700, fontStyle: "italic", lineHeight: 1.3, margin: 0 }}>
@@ -134,7 +136,7 @@ export function CourseCard({ course }: CourseCardProps) {
 
         {/* Course page link */}
         <div className="mt-2 pt-2 border-t border-gray-100">
-          <Link href={`/courses/${course.id}`} className="text-[#800020] font-medium hover:underline">
+          <Link href={`/courses/${course.id}`} className="text-[#aa3535] font-medium hover:underline">
             Go to Course page &gt;
           </Link>
         </div>

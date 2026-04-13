@@ -1,0 +1,828 @@
+{
+  "courseId": "mathematics_for_data_science_2",
+  "seekCode": "ns_26t1_ma2001",
+  "aboutCourse": {
+    "title": "Mathematics for Data Science II",
+    "courseId": "MA2001",
+    "credits": 4,
+    "type": "Foundational",
+    "department": "Department of Mathematics"
+  },
+  "weeks": [
+    {
+      "weekNumber": 0,
+      "title": "Week 0",
+      "items": []
+    },
+    {
+      "weekNumber": 1,
+      "title": "Week 1",
+      "items": [
+        {
+          "title": "Orientation Session for Maths II Course - Jan Term",
+          "type": "Lesson"
+        },
+        {
+          "title": "L1.1: Vectors",
+          "type": "Video"
+        },
+        {
+          "title": "AQ1.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L1.2: Matrices",
+          "type": "Video"
+        },
+        {
+          "title": "AQ1.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L1.3: Systems of Linear Equations",
+          "type": "Video"
+        },
+        {
+          "title": "AQ1.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L1.4: Determinants (part 1)",
+          "type": "Video"
+        },
+        {
+          "title": "AQ1.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L1.5: Determinants (part 2)",
+          "type": "Video"
+        },
+        {
+          "title": "AQ1.5: Activity Questions 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 01 - Tutorial 01",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 02",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 03",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 04",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 05",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 06",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 07",
+          "type": "Video"
+        },
+        {
+          "title": "Week 01 - Tutorial 08",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 1.1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice assignment 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 1 - Graded Assignment 1",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 1 - Question Bank",
+          "type": "Lesson",
+          "url": "https://drive.google.com/file/d/1pnPHLhoRG1lwaN_-U_Vk4k-dQGuzgJeK/view"
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "title": "Week 2",
+      "items": [
+        {
+          "title": "L2.1 Determinants (part 3)",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L2.2 Cramer's Rule",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.2: Activity Questions 2- Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L2.3 Solutions to a system of linear equations with an invertible coefficient matrix",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L2.4 The echelon form",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L2.5 Row reduction",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.5: Activity Questions 5- Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L2.6 The Gaussian elimination method",
+          "type": "Video"
+        },
+        {
+          "title": "AQ2.6: Activity Questions 6 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 02 - Tutorial 01",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 02",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 03",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 04",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 05",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 06",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 07",
+          "type": "Video"
+        },
+        {
+          "title": "Week 02 - Tutorial 08",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 2.1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Solve with us 2.2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Assignment 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 2 Graded Assignment 2",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 2 - Question bank",
+          "type": "Lesson",
+          "url": "https://drive.google.com/file/d/11xlzMOMsGcw9o6fsFZmlS-xn8RW6yeQ0/view"
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "title": "Week 3",
+      "items": [
+        {
+          "title": "L3.1 Introduction to vector spaces",
+          "type": "Video"
+        },
+        {
+          "title": "AQ3.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L3.2 Some properties of vector spaces",
+          "type": "Video"
+        },
+        {
+          "title": "AQ3.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L3.3 Linear dependence",
+          "type": "Video"
+        },
+        {
+          "title": "AQ3.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L3.4 Linear independence - Part 1",
+          "type": "Video"
+        },
+        {
+          "title": "AQ3.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L3.5 Linear independence - Part 2",
+          "type": "Video"
+        },
+        {
+          "title": "AQ3.5: Activity Questions 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Solve with us 3.1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Solve with us 3.2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 03 - Tutorial 01",
+          "type": "Video"
+        },
+        {
+          "title": "Week 03 - Tutorial 02",
+          "type": "Video"
+        },
+        {
+          "title": "Week 03 - Tutorial 03",
+          "type": "Video"
+        },
+        {
+          "title": "Week 03 - Tutorial 04",
+          "type": "Video"
+        },
+        {
+          "title": "Week 03 - Tutorial 05",
+          "type": "Video"
+        },
+        {
+          "title": "Week 03 - Tutorial 06",
+          "type": "Video"
+        },
+        {
+          "title": "Practice Assignment 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Activity: Extended Matching Questions (Not Graded)",
+          "type": "Programming Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 3",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 3 - Graded Assignment - 3",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 3 - Question bank",
+          "type": "Lesson",
+          "url": "https://drive.google.com/file/d/1b6TU94tMLJmHxWiYwvYBXCjS6ltBYeLS/view"
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "title": "Week 4",
+      "items": [
+        {
+          "title": "L4.1 What is a basis for a vector space?",
+          "type": "Video"
+        },
+        {
+          "title": "AQ4.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L4.2 Finding bases for vector spaces",
+          "type": "Video"
+        },
+        {
+          "title": "AQ4.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L4.3: What is the rank/dimension for a vector space",
+          "type": "Video"
+        },
+        {
+          "title": "AQ4.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L4.4: Rank and dimension using Gaussian elimination",
+          "type": "Video"
+        },
+        {
+          "title": "AQ4.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 04 - Tutorial 01",
+          "type": "Video"
+        },
+        {
+          "title": "Week 04 - Tutorial 02",
+          "type": "Video"
+        },
+        {
+          "title": "Week 04 - Tutorial 03",
+          "type": "Video"
+        },
+        {
+          "title": "Week 04 - Tutorial 04",
+          "type": "Video"
+        },
+        {
+          "title": "Week 04 - Tutorial 05",
+          "type": "Video"
+        },
+        {
+          "title": "Week 04 - Tutorial 06",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 4",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Assignment 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Activity: Extended Matching Question (Not Graded)",
+          "type": "Programming Assignment"
+        },
+        {
+          "title": "Week 4 - Graded Assignment 4",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 4 - Question Bank",
+          "type": "Lesson",
+          "url": "https://drive.google.com/file/d/1Ow5hY3xN4-DzQ3ENKxQJOr4k1YzTXVo8/view"
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "title": "Week 5",
+      "items": [
+        {
+          "title": "L5.1: The null space of a matrix : finding nullity and a basis - Part 1",
+          "type": "Video"
+        },
+        {
+          "title": "AQ5.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L5.2: The null space of a matrix : finding nullity and a basis - Part 2",
+          "type": "Video"
+        },
+        {
+          "title": "AQ5.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L5.3: What is a linear mapping - Part 1",
+          "type": "Video"
+        },
+        {
+          "title": "AQ5.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L5.4: What is a linear mapping - Part 2",
+          "type": "Video"
+        },
+        {
+          "title": "AQ5.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L5.5: What is a linear transformation",
+          "type": "Video"
+        },
+        {
+          "title": "AQ5.5: Activity Questions 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 05 - Tutorial 01 through 05",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 5",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Assignment 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Activity: Extended Matching Questions (Not Graded)",
+          "type": "Programming Assignment"
+        },
+        {
+          "title": "Week 5 - Graded Assignment - 5",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 5 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "title": "Week 6",
+      "items": [
+        {
+          "title": "L6.1: Linear transformations, ordered bases and matrices",
+          "type": "Video"
+        },
+        {
+          "title": "AQ6.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L6.2: Image and kernel of linear transformations",
+          "type": "Video"
+        },
+        {
+          "title": "AQ6.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L6.3: Examples of finding bases for the kernel and image of a linear transformation",
+          "type": "Video"
+        },
+        {
+          "title": "AQ6.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 06 - Tutorial 01",
+          "type": "Video"
+        },
+        {
+          "title": "Week 06 - Tutorial 02",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 6.1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Solve with us 6.2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Assignment 6 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 6",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 6 - Graded Assignment 6",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Bonus Practice Activity: Extended Matching Questions (Not Graded)",
+          "type": "Programming Assignment"
+        },
+        {
+          "title": "Week 6 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "title": "Week 7",
+      "items": [
+        {
+          "title": "L7.1: Equivalence and similarity of matrices",
+          "type": "Video"
+        },
+        {
+          "title": "AQ7.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L7.2: Affine subspaces and affine mappings",
+          "type": "Video"
+        },
+        {
+          "title": "AQ7.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L7.3: Lengths and angles",
+          "type": "Video"
+        },
+        {
+          "title": "AQ7.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L7.4: Inner products and norms on a vector space",
+          "type": "Video"
+        },
+        {
+          "title": "AQ7.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 07 - Tutorial 01 through 06",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with Instructor Session Slides",
+          "type": "Lesson"
+        },
+        {
+          "title": "Solve with us 7 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 7",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice Assignment 7 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 7 - Graded Assignment 7",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 7 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "title": "Week 8",
+      "items": [
+        {
+          "title": "L8.1: Orthogonality and linear independence",
+          "type": "Video"
+        },
+        {
+          "title": "AQ8.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L8.2: What is an orthonormal basis?",
+          "type": "Video"
+        },
+        {
+          "title": "AQ8.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L8.3: Projections using inner products",
+          "type": "Video"
+        },
+        {
+          "title": "AQ8.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L8.4: The Gram-Schmidt process",
+          "type": "Video"
+        },
+        {
+          "title": "AQ8.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L8.5: Orthogonal transformations and rotations",
+          "type": "Video"
+        },
+        {
+          "title": "AQ8.5: Activity Questions 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 08 - Tutorial 01 through 05",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 8 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Reflect with us - Week 8",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice assignment 8 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 8 - Graded Assignment 8",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 8 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "title": "Week 9",
+      "items": [
+        {
+          "title": "L9.1: Multivariable functions : visualization",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L9.2: Partial derivatives",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L9.3: Directional derivatives",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L9.4: Limits for scalar-valued multivariable functions",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L9.5: Continuity for multivariable functions",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.5: Activity Questions 5 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L9.6: Directional derivatives in terms of the gradient",
+          "type": "Video"
+        },
+        {
+          "title": "AQ9.6: Activity Questions 6 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 9 - Tutorial 01 through 06",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 9 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice assignment 9 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 9 - Graded Assignment 9",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 9 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "title": "Week 10",
+      "items": [
+        {
+          "title": "L10.1: The directional of steepest ascent/descent",
+          "type": "Video"
+        },
+        {
+          "title": "AQ10.1: Activity Questions 1 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L10.2: Tangents for scalar-valued multivariable functions",
+          "type": "Video"
+        },
+        {
+          "title": "AQ10.2: Activity Questions 2 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L10.3: Finding the tangent hyper(plane)",
+          "type": "Video"
+        },
+        {
+          "title": "AQ10.3: Activity Questions 3 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "L10.4: Critical points for multivariable functions",
+          "type": "Video"
+        },
+        {
+          "title": "AQ10.4: Activity Questions 4 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 10 - Tutorial 01 through 06",
+          "type": "Video"
+        },
+        {
+          "title": "Solve with us 10 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Practice assignment 10 - Not Graded",
+          "type": "Assignment"
+        },
+        {
+          "title": "Week 10 - Graded Assignment 10",
+          "type": "Assignment",
+          "graded": true
+        },
+        {
+          "title": "Week 10 - Question Bank",
+          "type": "Lesson"
+        }
+      ]
+    }
+  ]
+}

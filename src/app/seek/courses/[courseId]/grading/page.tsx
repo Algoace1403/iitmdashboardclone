@@ -21,7 +21,7 @@ export default async function GradingPolicyPage({ params }: Props) {
           <h1 style={{ fontSize: 22, fontWeight: 400, color: "#212121", marginBottom: 8, marginTop: 8 }}>Grading Policy</h1>
 
           <div style={{ background: "white", border: "1px solid #e0e0e0", borderRadius: 4, padding: 24, fontSize: 14, color: "#212121", lineHeight: 1.8 }}>
-            <h2 style={{ fontSize: 18, color: "#1976d2", margin: "0 0 16px" }}>Intro to python programming</h2>
+            <h2 style={{ fontSize: 18, color: "#7b1f1f", margin: "0 0 16px" }}>Intro to python programming</h2>
 
             <h3 style={{ fontSize: 16, fontWeight: 700, margin: "24px 0 8px", textDecoration: "underline" }}>Academic policies</h3>
             <ol style={{ paddingLeft: 20, margin: "0 0 16px" }}>

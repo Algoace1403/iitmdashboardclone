@@ -13,7 +13,7 @@ export default function StudentCoursesPage() {
         <div className="space-y-1">
           {data.foundational.completed.map((c) => (
             <div key={c.title} className="py-3 border-b border-gray-200">
-              <p className="text-sm text-[#800020] font-medium hover:underline cursor-pointer">
+              <p className="text-sm text-[#aa3535] font-medium hover:underline cursor-pointer">
                 {c.title}
               </p>
               <p className="text-sm text-gray-700">Grade Letter: {c.grade}</p>
@@ -30,7 +30,7 @@ export default function StudentCoursesPage() {
         <div className="space-y-1">
           {data.foundational.current.map((c) => (
             <div key={c.title} className="py-3 border-b border-gray-200">
-              <p className="text-sm text-[#800020] font-medium hover:underline cursor-pointer">
+              <p className="text-sm text-[#aa3535] font-medium hover:underline cursor-pointer">
                 {c.title}
               </p>
               <p className="text-sm text-gray-700">Current Course</p>

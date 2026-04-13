@@ -112,7 +112,7 @@ export default function DocumentsPage() {
                   <a
                     href="#"
                     download
-                    style={{ color: '#800020', textDecoration: 'none' }}
+                    style={{ color: '#aa3535', textDecoration: 'none' }}
                   >
                     {doc.name}
                   </a>
@@ -148,8 +148,8 @@ export default function DocumentsPage() {
             </button>
             <button
               style={{
-                background: '#800020',
-                border: '1px solid #800020',
+                background: '#aa3535',
+                border: '1px solid #aa3535',
                 padding: '4px 12px',
                 borderRadius: 4,
                 fontSize: 12,

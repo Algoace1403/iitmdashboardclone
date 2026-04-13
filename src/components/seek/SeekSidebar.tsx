@@ -48,13 +48,14 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
       <div
         style={{
           width: 64,
-          background: "#f5f5f5",
-          borderRight: "1px solid #e0e0e0",
+          background: "#fafafa",
+          borderRight: "1px solid rgba(0,0,0,0.12)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           paddingTop: 8,
           gap: 4,
+          fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
         }}
       >
         {iconBarItems.map((item) => (
@@ -67,7 +68,7 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
               alignItems: "center",
               gap: 2,
               padding: "8px 4px",
-              color: item.active ? "#3f51b5" : "#616161",
+              color: item.active ? "#7b1f1f" : "rgba(0,0,0,0.54)",
               textDecoration: "none",
               fontSize: 10,
               fontWeight: 500,
@@ -86,9 +87,10 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
       <div
         style={{
           width: 260,
-          background: "white",
-          borderRight: "1px solid #e0e0e0",
+          background: "#ffffff",
+          borderRight: "1px solid rgba(0,0,0,0.12)",
           overflowY: "auto",
+          fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
         }}
       >
         {/* Course Introduction */}
@@ -130,6 +132,7 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
         {weeks.map((w) => {
           const weekPath = `/seek/courses/${courseId}/week/${w}`;
           const isActive = pathname.startsWith(weekPath);
+          const isCompleted = w >= 1 && w <= 8;
 
           return (
             <AccordionSection
@@ -139,6 +142,7 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
               onToggle={() => toggle(`week-${w}`)}
               href={weekPath}
               active={isActive}
+              completed={isCompleted}
             />
           );
         })}
@@ -149,6 +153,32 @@ export function SeekSidebar({ courseId, weekCount = 10 }: SeekSidebarProps) {
           expanded={expandedSections["practice"]}
           onToggle={() => toggle("practice")}
         />
+
+        {/* Supplementary Contents */}
+        <AccordionSection
+          title="Supplementary Contents"
+          expanded={expandedSections["supplementary"]}
+          onToggle={() => toggle("supplementary")}
+        >
+          <SidebarLink
+            href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
+            label="Lecture PPTs/Slides"
+            sublabel="Lesson"
+            active={false}
+          />
+          <SidebarLink
+            href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
+            label="Lecture Transcripts"
+            sublabel="Lesson"
+            active={false}
+          />
+          <SidebarLink
+            href="#"
+            label="Quiz 1 - Question Paper and Answer key"
+            sublabel="Lesson"
+            active={false}
+          />
+        </AccordionSection>
       </div>
     </div>
   );
@@ -161,6 +191,7 @@ function AccordionSection({
   children,
   href,
   active,
+  completed,
 }: {
   title: string;
   expanded?: boolean;
@@ -168,6 +199,7 @@ function AccordionSection({
   children?: React.ReactNode;
   href?: string;
   active?: boolean;
+  completed?: boolean;
 }) {
   const header = (
     <div
@@ -176,24 +208,34 @@ function AccordionSection({
         display: "flex",
         alignItems: "center",
         gap: 12,
-        padding: "16px 16px",
-        borderBottom: "1px solid #eeeeee",
+        padding: "0 16px",
+        height: expanded ? 64 : 48,
+        borderBottom: "1px solid rgba(0,0,0,0.12)",
         cursor: "pointer",
         background: active ? "#f0f0ff" : "transparent",
+        fontFamily: "Roboto, 'Helvetica Neue', sans-serif",
+        transition: "height 0.2s ease",
       }}
     >
-      {/* Circle indicator */}
-      <div
-        style={{
-          width: 14,
-          height: 14,
-          borderRadius: "50%",
-          border: `2px solid ${active ? "#3f51b5" : "#bdbdbd"}`,
-          background: active ? "#3f51b5" : "transparent",
-          flexShrink: 0,
-        }}
-      />
-      <span style={{ flex: 1, fontSize: 14, fontWeight: 400, color: "#212121" }}>
+      {/* Circle indicator / green tick */}
+      {completed ? (
+        <svg style={{ width: 18, height: 18, flexShrink: 0 }} viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#4caf50" />
+          <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      ) : (
+        <div
+          style={{
+            width: 14,
+            height: 14,
+            borderRadius: "50%",
+            border: `2px solid ${active ? "#7b1f1f" : "#bdbdbd"}`,
+            background: active ? "#7b1f1f" : "transparent",
+            flexShrink: 0,
+          }}
+        />
+      )}
+      <span style={{ flex: 1, fontSize: 14, fontWeight: 500, color: "rgba(0,0,0,0.87)" }}>
         {title}
       </span>
       {/* Chevron */}
@@ -201,7 +243,7 @@ function AccordionSection({
         style={{
           width: 20,
           height: 20,
-          color: "#9e9e9e",
+          color: "rgba(0,0,0,0.54)",
           transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
           transition: "transform 0.2s",
           flexShrink: 0,
@@ -224,7 +266,7 @@ function AccordionSection({
         header
       )}
       {expanded && children && (
-        <div style={{ borderBottom: "1px solid #eeeeee" }}>
+        <div style={{ borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
           {children}
         </div>
       )}
@@ -254,7 +296,7 @@ function SidebarLink({
         gap: 12,
         padding: "12px 16px 12px 28px",
         textDecoration: "none",
-        borderLeft: active ? "3px solid #3f51b5" : "3px solid transparent",
+        borderLeft: active ? "3px solid #7b1f1f" : "3px solid transparent",
         background: active ? "#f5f5ff" : "transparent",
       }}
     >
@@ -268,7 +310,7 @@ function SidebarLink({
         }}
       />
       <div>
-        <p style={{ fontSize: 13, color: active ? "#3f51b5" : "#494f69", margin: 0, fontWeight: active ? 500 : 400 }}>
+        <p style={{ fontSize: 13, color: active ? "#7b1f1f" : "rgba(0,0,0,0.87)", margin: 0, fontWeight: active ? 500 : 400, fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
           {label}
         </p>
         {sublabel && (

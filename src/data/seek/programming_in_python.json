@@ -298,8 +298,8 @@
     { "title": "Mock - End Term", "type": "Assignment" }
   ],
   "supplementary": [
-    { "title": "Lecture PPTs/Slides", "type": "Lesson" },
-    { "title": "Lecture Transcripts", "type": "Lesson" },
-    { "title": "Quiz 1 - Question Paper and Answer key", "type": "Lesson" }
+    { "title": "Lecture PPTs/Slides", "type": "Lesson", "url": "https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_" },
+    { "title": "Lecture Transcripts", "type": "Lesson", "url": "https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_" },
+    { "title": "Quiz 1 - Question Paper and Answer key", "type": "Lesson", "url": "https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_" }
   ]
 }

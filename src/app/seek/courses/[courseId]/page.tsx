@@ -42,7 +42,7 @@ export default async function SeekCoursePage({ params }: Props) {
             </div>
 
             {/* DS Foundation info */}
-            {dsFoundation && (
+            {dsFoundation != null && (
               <div style={{ marginBottom: 20 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>For Data Science Foundation:</h3>
                 <InfoLine label="Course ID" value={dsFoundation.courseId as string} />
@@ -53,7 +53,7 @@ export default async function SeekCoursePage({ params }: Props) {
             )}
 
             {/* ES Diploma info */}
-            {esDiploma && (
+            {esDiploma != null && (
               <div style={{ marginBottom: 20 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>For Electronic System Diploma:</h3>
                 <InfoLine label="Course ID" value={esDiploma.courseId as string} />
@@ -64,7 +64,7 @@ export default async function SeekCoursePage({ params }: Props) {
             )}
 
             {/* Faculty */}
-            {about?.faculty && (
+            {about?.faculty != null && (
               <div style={{ marginBottom: 20 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>Faculty Name:</h3>
                 <p style={{ fontSize: 13, color: "#494f69", margin: 0, lineHeight: 1.6 }}>
@@ -77,7 +77,7 @@ export default async function SeekCoursePage({ params }: Props) {
             )}
 
             {/* Instructors */}
-            {about?.instructors && (
+            {about?.instructors != null && (
               <div style={{ marginBottom: 20 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>Course Instructors</h3>
                 <ol style={{ margin: 0, paddingLeft: 20, fontSize: 13, color: "#494f69", lineHeight: 1.8 }}>
@@ -89,7 +89,7 @@ export default async function SeekCoursePage({ params }: Props) {
             )}
 
             {/* Study Material */}
-            {about?.studyMaterial && (
+            {about?.studyMaterial != null && (
               <div style={{ marginBottom: 20 }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>Study Material:</h3>
                 <p style={{ fontSize: 13, color: "#494f69", margin: 0, lineHeight: 1.6 }}>
@@ -99,12 +99,12 @@ export default async function SeekCoursePage({ params }: Props) {
             )}
 
             {/* Website Links */}
-            {about?.websiteLinks && (
+            {about?.websiteLinks != null && (
               <div>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: "#212121", marginBottom: 8 }}>Course Website Link:</h3>
                 {Object.entries(about.websiteLinks as Record<string, string>).map(([key, url]) => (
                   <p key={key} style={{ fontSize: 13, color: "#494f69", margin: "4px 0" }}>
-                    {key}: <span style={{ color: "#1976d2" }}>{url}</span>
+                    {key}: <span style={{ color: "#7b1f1f" }}>{url}</span>
                   </p>
                 ))}
               </div>

@@ -110,7 +110,22 @@ export default async function SeekWeekPage({ params }: Props) {
                 if (isGradedAssignment || isGradedProgramming) {
                   href = `/seek/courses/${courseId}/week/${weekNumber}/graded`;
                 } else if (isPracticeAssignment || isPracticeProgramming) {
-                  href = `/seek/courses/${courseId}/week/${weekNumber}/practice`;
+                  // Check if this specific assignment has rendered HTML
+                  const titleLower = item.title.toLowerCase();
+                  if (titleLower.includes("practice assignment") || titleLower.includes("practice assignment")) {
+                    href = `/seek/courses/${courseId}/week/${weekNumber}/practice`;
+                  } else {
+                    // Activity questions, Solve with us, etc. — link to individual assignment page
+                    href = `/seek/courses/${courseId}/week/${weekNumber}/assignment?title=${encodeURIComponent(item.title)}`;
+                  }
+                } else if (item.type === "Video" || item.type === "Lesson") {
+                  // Check if it's a Question Bank with URL
+                  const itemWithUrl = item as { title: string; type: string; url?: string };
+                  if (itemWithUrl.url) {
+                    href = itemWithUrl.url;
+                  } else {
+                    href = `/seek/courses/${courseId}/week/${weekNumber}/content?title=${encodeURIComponent(item.title)}&type=${item.type}`;
+                  }
                 }
 
                 const inner = (
@@ -127,8 +142,14 @@ export default async function SeekWeekPage({ params }: Props) {
                   >
                     <TypeIcon type={item.type} />
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontSize: 14, fontWeight: 400, color: "#212121", margin: 0 }}>
+                      <p style={{ fontSize: 14, fontWeight: 400, color: "#212121", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>
                         {item.title}
+                        {weekNumber <= 8 && (item.type === "Assignment" || item.type === "Programming Assignment") && (
+                          <svg style={{ width: 14, height: 14, flexShrink: 0 }} viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" fill="#4caf50" />
+                            <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        )}
                       </p>
                       <p style={{ fontSize: 12, color: typeColor(item.type), margin: "2px 0 0", fontWeight: 500 }}>
                         {item.type}

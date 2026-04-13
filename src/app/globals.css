@@ -2,7 +2,7 @@
 
 :root {
   /* App Portal Colors (from Argon Design System) */
-  --primary: #800020;
+  --primary: #aa3535;
   --primary-dark: #8F0700;
   --secondary: #D6A64F;
   --logo-maroon: #781e19;
@@ -23,8 +23,8 @@
   --login-gradient: linear-gradient(207deg, #A0322C 0%, #EBC133 100%);
 
   /* SEEK Portal Colors */
-  --seek-primary: #3f51b5;
-  --seek-theme: #1976d2;
+  --seek-primary: #7b1f1f;
+  --seek-theme: #7b1f1f;
   --seek-accent: #ff4081;
   --seek-bg: #fafafa;
   --seek-text: #212121;

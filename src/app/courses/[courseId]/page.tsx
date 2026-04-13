@@ -75,12 +75,12 @@ export default async function CourseDetailPage({ params }: Props) {
       </div>
 
       <div style={{ marginTop: 16, display: "flex", justifyContent: "space-between" }}>
-        <Link href="/" className="text-[#800020] text-sm font-medium hover:underline">
+        <Link href="/" className="text-[#aa3535] text-sm font-medium hover:underline">
           &larr; Back to Current Courses
         </Link>
         <Link
           href={`/seek/courses/${courseId}`}
-          style={{ background: "#800020", color: "white", padding: "8px 20px", borderRadius: 4, fontSize: 13, fontWeight: 600, textDecoration: "none" }}
+          style={{ background: "#aa3535", color: "white", padding: "8px 20px", borderRadius: 4, fontSize: 13, fontWeight: 600, textDecoration: "none" }}
         >
           View Course Content &rarr;
         </Link>

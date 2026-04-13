@@ -56,12 +56,7 @@ export default function LoginPage() {
           flexShrink: 0,
         }}
       >
-        <svg viewBox="0 0 60 60" style={{ width: 48, height: 48 }}>
-          <circle cx="30" cy="30" r="28" fill="#781e19" stroke="#d5a44f" strokeWidth="2" />
-          <text x="30" y="24" textAnchor="middle" fill="white" fontSize="9" fontWeight="700" fontFamily="serif">IIT</text>
-          <text x="30" y="36" textAnchor="middle" fill="#d5a44f" fontSize="6.5" fontWeight="600" fontFamily="serif">MADRAS</text>
-          <text x="30" y="46" textAnchor="middle" fill="white" fontSize="4" fontFamily="sans-serif">Degree in DS</text>
-        </svg>
+        <img src="/iitm-logo.svg" alt="IIT Madras BS Degree Programme" style={{ height: 48 }} />
       </header>
 
       {/* Gradient background */}
@@ -116,7 +111,7 @@ export default function LoginPage() {
                     boxSizing: "border-box",
                     transition: "border-color 0.15s",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "#800020")}
+                  onFocus={(e) => (e.target.style.borderColor = "#aa3535")}
                   onBlur={(e) => (e.target.style.borderColor = "#d1d5db")}
                 />
               </div>
@@ -141,7 +136,7 @@ export default function LoginPage() {
                     boxSizing: "border-box",
                     transition: "border-color 0.15s",
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = "#800020")}
+                  onFocus={(e) => (e.target.style.borderColor = "#aa3535")}
                   onBlur={(e) => (e.target.style.borderColor = "#d1d5db")}
                 />
               </div>
@@ -170,7 +165,7 @@ export default function LoginPage() {
                 style={{
                   width: "100%",
                   padding: "10px 16px",
-                  background: loading ? "#c0756f" : "#800020",
+                  background: loading ? "#c0756f" : "#aa3535",
                   color: "white",
                   border: "none",
                   borderRadius: 6,
@@ -237,7 +232,7 @@ export default function LoginPage() {
       {/* Footer */}
       <footer
         style={{
-          background: "#800020",
+          background: "#aa3535",
           color: "white",
           padding: "16px 24px",
           flexShrink: 0,

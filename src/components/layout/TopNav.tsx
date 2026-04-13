@@ -4,6 +4,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { useAuth } from "@/lib/auth";
 
+/*
+ * Matches real portal CSS:
+ *   header { display:flex; align-items:center; justify-content:space-between;
+ *            padding:16px 36px; background-color:#efefef; }
+ *   .header-info-container { display:flex; gap:16px; }
+ *   .header-info-container p { font-weight:600; margin-bottom:0; font-size:18px; }
+ */
+
 interface TopNavProps {
   studentName: string;
 }
@@ -15,82 +23,69 @@ export function TopNav({ studentName }: TopNavProps) {
   return (
     <header
       style={{
-        height: 56,
-        background: "#f8f8f8",
         display: "flex",
         alignItems: "center",
-        padding: "0 12px",
+        justifyContent: "space-between",
+        padding: "10px 36px",
+        backgroundColor: "#efefef",
+        boxShadow: "0 1px 1px 1px lightgray",
         position: "sticky",
         top: 0,
-        zIndex: 50,
-        boxShadow: "0 1px 1px 1px lightgray",
+        zIndex: 20,
+        height: 56,
       }}
     >
-      {/* Left: Logo in bordered box — matches real portal */}
-      <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0 }}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            border: "1px solid #ccc",
-            borderRadius: 4,
-            padding: "2px 8px",
-            background: "white",
-          }}
-        >
-          <img
-            src="/iitm-logo.svg"
-            alt="IIT Madras"
-            style={{ height: 40 }}
-          />
-        </div>
+      {/* Left: Logo */}
+      <Link href="/" style={{ marginRight: "auto", flexShrink: 0 }}>
+        <img
+          src="/iitm-logo.svg"
+          alt="IIT Madras BS Degree Programme"
+          style={{ height: 58 }}
+        />
       </Link>
 
-      {/* Hamburger icon */}
+      {/* Hamburger (mobile) */}
       <button
-        style={{
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: 8,
-          marginLeft: 8,
-          display: "flex",
-          alignItems: "center",
-        }}
+        style={{ background: "none", border: "1px solid #ddd", borderRadius: 4, padding: "4px 8px", cursor: "pointer", display: "none" }}
       >
-        <svg style={{ width: 20, height: 20, color: "#525f7f" }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <svg width="20" height="20" fill="none" stroke="#525f7f" strokeWidth={2} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
 
-      {/* Center: Student Name */}
-      <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+      {/* Right: Student name + links */}
+      <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
+        {/* Student name with dropdown */}
         <div style={{ position: "relative" }}>
           <button
             onClick={() => setProfileOpen(!profileOpen)}
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 8,
+              gap: 6,
               background: "none",
               border: "none",
               cursor: "pointer",
-              padding: "4px 8px",
-              borderRadius: 4,
+              padding: 0,
+              fontWeight: 600,
+              fontSize: 16,
+              color: "#000",
             }}
           >
-            <svg style={{ width: 16, height: 16, color: "#6A6A6A" }} fill="currentColor" viewBox="0 0 20 20">
+            <svg width="16" height="16" fill="#525f7f" viewBox="0 0 20 20">
               <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
             </svg>
-            <span style={{ fontSize: 14, fontWeight: 600, color: "#323232" }}>{studentName}</span>
+            {studentName}
+            <svg width="10" height="10" fill="#525f7f" viewBox="0 0 20 20" style={{ marginLeft: 2 }}>
+              <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
           </button>
           {profileOpen && (
             <div
               style={{
                 position: "absolute",
                 top: "100%",
-                left: "50%",
-                transform: "translateX(-50%)",
+                right: 0,
                 marginTop: 4,
                 background: "white",
                 border: "1px solid #e0e0e0",
@@ -103,7 +98,7 @@ export function TopNav({ studentName }: TopNavProps) {
             >
               <Link
                 href="/profile"
-                style={{ display: "block", padding: "8px 16px", fontSize: 13, color: "#525f7f", textDecoration: "none" }}
+                style={{ display: "block", padding: "8px 16px", fontSize: 14, color: "#525f7f", textDecoration: "none" }}
                 onClick={() => setProfileOpen(false)}
               >
                 View or Edit Profile
@@ -111,22 +106,25 @@ export function TopNav({ studentName }: TopNavProps) {
             </div>
           )}
         </div>
-      </div>
 
-      {/* Right */}
-      <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 13, flexShrink: 0 }}>
-        <Link href="/updates" style={{ color: "#800020", fontWeight: 600, textDecoration: "none" }}>
+        <span style={{ color: "#ccc" }}>|</span>
+
+        <Link href="/updates" style={{ fontWeight: 600, fontSize: 14, color: "#aa3535", textDecoration: "none" }}>
           Latest Updates
         </Link>
+
+        <span style={{ color: "#ccc" }}>|</span>
+
         <button
           onClick={logout}
           style={{
-            color: "#800020",
             fontWeight: 600,
+            fontSize: 14,
+            color: "#aa3535",
             background: "none",
             border: "none",
             cursor: "pointer",
-            fontSize: 13,
+            padding: 0,
           }}
         >
           SIGN OUT

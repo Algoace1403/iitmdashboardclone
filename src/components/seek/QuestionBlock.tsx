@@ -8,7 +8,7 @@ interface QuestionBlockProps {
 
 export function QuestionBlock({ question: q }: QuestionBlockProps) {
   return (
-    <div className="bg-white border border-[#e0e0e0] rounded p-5">
+    <div className="p-5" style={{ background: "#ffffff", borderRadius: 4, boxShadow: "0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12)", fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
       {/* Header: question number + marks + score */}
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs font-medium text-[#7d8698]">
@@ -35,7 +35,7 @@ export function QuestionBlock({ question: q }: QuestionBlockProps) {
       </div>
 
       {/* Question text */}
-      <div className="text-sm text-[#212121] mb-4 leading-relaxed whitespace-pre-wrap">
+      <div className="mb-4 whitespace-pre-wrap" style={{ fontSize: 14, lineHeight: "20px", color: "rgba(0,0,0,0.87)", fontWeight: 400 }}>
         {q.text}
       </div>
 
@@ -54,24 +54,24 @@ export function QuestionBlock({ question: q }: QuestionBlockProps) {
             return (
               <label
                 key={opt.id}
-                className={`flex items-start gap-3 p-3 rounded border text-sm cursor-default transition ${
-                  isCorrect
-                    ? "border-[#039855] bg-[#e8f5e9]"
-                    : isSelected && !isCorrect
-                    ? "border-[#d92d20] bg-[#fef3f2]"
-                    : "border-[#e0e0e0] bg-[#fafafa]"
-                }`}
+                className="flex items-start gap-3 p-3 rounded cursor-default transition"
+                style={{
+                  fontSize: 14,
+                  border: `1px solid ${isCorrect ? "#039855" : isSelected && !isCorrect ? "#d92d20" : "rgba(0,0,0,0.12)"}`,
+                  background: isCorrect ? "#e8f5e9" : isSelected && !isCorrect ? "#fef3f2" : "#fafafa",
+                }}
               >
                 <input
                   type={inputType}
                   checked={!!isSelected}
                   readOnly
-                  className="mt-0.5 accent-[#1976d2]"
+                  className="mt-0.5"
+                  style={{ accentColor: "#ff4081" }}
                 />
                 <span className="font-medium text-[#494f69] min-w-[1.5rem]">
                   {opt.label}.
                 </span>
-                <span className="text-[#212121] flex-1">{opt.text}</span>
+                <span className="flex-1" style={{ color: "rgba(0,0,0,0.87)" }}>{opt.text}</span>
                 {isCorrect && (
                   <svg className="w-5 h-5 text-[#039855] shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
