@@ -2,6 +2,7 @@ import { SeekToolbar } from "@/components/seek/SeekToolbar";
 import { SeekSidebar } from "@/components/seek/SeekSidebar";
 import Link from "next/link";
 import coursesData from "@/data/courses.json";
+import mathLectures from "@/data/seek/math_lectures.json";
 import { notFound } from "next/navigation";
 
 interface ContentItem {
@@ -82,7 +83,26 @@ export default async function SeekWeekPage({ params }: Props) {
     weekData = weeks?.find((w) => w.weekNumber === weekNumber) || null;
   } catch { /* no data */ }
 
-  const items = weekData?.items || [];
+  const rawItems = weekData?.items || [];
+
+  // For Math: remove video/lesson items that don't have a YouTube link
+  const mathWeekKey = `week${weekNumber}` as keyof typeof mathLectures;
+  const mathVideos = courseId === "mathematics_for_data_science_2" ? (mathLectures[mathWeekKey] as { title: string; videoId: string }[] | undefined) : null;
+
+  const items = courseId === "mathematics_for_data_science_2"
+    ? rawItems.filter(item => {
+        if (item.type !== "Video" && item.type !== "Lesson") return true; // keep assignments
+        if ((item as { url?: string }).url) return true; // keep items with URLs (question banks)
+        if (item.type === "Lesson") return true; // keep lessons
+        // For videos: only keep if YouTube link exists
+        if (!mathVideos) return false;
+        const titleLower = item.title.toLowerCase();
+        return mathVideos.some(v => {
+          const vLower = v.title.toLowerCase();
+          return titleLower.split(":").some(part => part.trim().length > 3 && vLower.includes(part.trim().substring(0, 12)));
+        });
+      })
+    : rawItems;
 
   return (
     <div>
