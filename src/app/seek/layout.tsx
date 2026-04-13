@@ -20,8 +20,8 @@ export default function SeekLayout({
       {/* SEEK question CSS */}
       <style>{`
         .qt-hidden { /* visible in clone */ }
-        .qt-question { margin-bottom: 24px; padding: 16px 0; border-bottom: 1px solid #e0e0e0; }
-        .qt-question:last-child { border-bottom: none; }
+        .qt-question { margin-bottom: 16px; padding: 16px 20px; border: 1px solid rgba(0,0,0,0.08); border-radius: 6px; background: #fafafa; }
+        .qt-question:hover { border-color: rgba(0,0,0,0.15); }
         .qt-introduction { margin-bottom: 12px; font-size: 14px; line-height: 1.7; }
         .qt-points { float: right; font-size: 13px; color: rgba(0,0,0,0.54); font-weight: 500; }
         .qt-choices { list-style: none; padding: 0; margin: 8px 0; }

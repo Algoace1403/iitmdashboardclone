@@ -73,6 +73,17 @@ function hideCapturedFeedback(container: HTMLElement) {
   container.querySelectorAll(".qt-grade-report").forEach(el => {
     (el as HTMLElement).style.display = "none";
   });
+  // Hide any element containing answer hints like "Hence Option X is correct/not correct"
+  container.querySelectorAll("div, p, span, b, strong, em").forEach(el => {
+    const t = (el as HTMLElement).innerText || "";
+    if (t.match(/Hence\s+Option\s+\d+/i) ||
+        t.match(/option\s+\d+\s+is\s+(not\s+)?correct/i) ||
+        t.includes("This will help you") ||
+        t.includes("Correct answer") ||
+        t.includes("Your score")) {
+      (el as HTMLElement).style.display = "none";
+    }
+  });
   // Hide any elements that show "Correct", "Incorrect", "Partially Correct", "Score", "Accepted Answers"
   container.querySelectorAll(".qt-correct, .qt-incorrect, .qt-partially-correct").forEach(el => {
     (el as HTMLElement).style.display = "none";
@@ -114,9 +125,15 @@ function hideCapturedFeedback(container: HTMLElement) {
     if ((text.includes("Yes, the answer is correct") ||
          text.includes("Partially Correct") ||
          text.includes("Accepted Answers:") ||
+         text.match(/^Hence Option \d+/) ||
+         text.includes("Hence Option") ||
+         text.includes("is not correct") ||
+         text.includes("is correct.") ||
+         text.includes("This will help") ||
          text.match(/^Score:\s*[\d.]+$/)) &&
         !el.classList.contains("qt-question") &&
         !el.classList.contains("qt-introduction") &&
+        !el.classList.contains("qt-mc-question") &&
         el.children.length === 0) {
       (el as HTMLElement).style.display = "none";
     }
