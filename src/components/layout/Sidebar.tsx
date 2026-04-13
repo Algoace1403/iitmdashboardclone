@@ -2,15 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-/*
- * Sidebar matching real portal CSS (new_dashboard.css):
- *   - width: 60px collapsed, 215px on hover
- *   - background: rgba(0,0,0,0.7)
- *   - position: fixed, min-height: 100vh
- *   - hover color: #d6a64f (gold)
- *   - icon-box padding-right: 0.4rem, max-height: 25px
- */
+import { useState } from "react";
 
 const navItems = [
   { label: "My Current Courses", href: "/" },
@@ -25,7 +17,6 @@ const navItems = [
   { label: "Disciplinary Action", href: "/disciplinary" },
 ];
 
-// SVG icons matching sidebar icon style
 const icons = [
   <svg key="0" width="22" height="22" fill="none" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>,
   <svg key="1" width="22" height="22" fill="none" stroke="white" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
@@ -41,79 +32,95 @@ const icons = [
 
 export function Sidebar() {
   const pathname = usePathname();
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <>
-      <style>{`
-        .iitm-sidebar {
-          position: fixed;
-          top: 56px;
-          left: 0;
-          min-height: calc(100vh - 56px);
-          z-index: 10;
-          width: 60px;
-          overflow: hidden;
-          transition: width 0.3s;
-        }
-        .iitm-sidebar:hover {
-          width: 215px;
-        }
-        .iitm-sidebar ul {
-          list-style: none;
-          padding: 16px 0;
-          margin: 0;
-          background-color: rgba(0, 0, 0, 0.7);
-          color: white;
-          min-height: calc(100vh - 56px);
-        }
-        .iitm-sidebar li {
-          padding: 0;
-        }
-        .iitm-sidebar a {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          padding: 12px 16px;
-          color: white;
-          text-decoration: none;
-          white-space: nowrap;
-          font-size: 14px;
-          font-weight: 500;
-          transition: color 0.15s;
-        }
-        .iitm-sidebar a:hover {
-          color: #d6a64f;
-        }
-        .iitm-sidebar a.active {
-          background: rgba(255,255,255,0.1);
-        }
-        .iitm-sidebar .icon-wrap {
-          min-width: 28px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      `}</style>
-      <div className="iitm-sidebar">
-        <ul>
-          {navItems.map((item, i) => {
-            const isActive =
-              item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            return (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className={isActive ? "active" : ""}
-                  title={item.label}
-                >
-                  <span className="icon-wrap">{icons[i]}</span>
-                  <span>{item.label}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </>
+    <div
+      style={{
+        position: "fixed",
+        top: 56,
+        left: 0,
+        width: expanded ? 230 : 60,
+        minHeight: "calc(100vh - 56px)",
+        zIndex: 10,
+        transition: "width 0.3s",
+        overflow: "hidden",
+      }}
+    >
+      <ul
+        style={{
+          listStyle: "none",
+          padding: "8px 0",
+          margin: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          color: "white",
+          minHeight: "calc(100vh - 56px)",
+        }}
+      >
+        {navItems.map((item, i) => {
+          const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+          return (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                title={item.label}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  padding: "12px 16px",
+                  color: "white",
+                  textDecoration: "none",
+                  whiteSpace: "nowrap",
+                  fontSize: 14,
+                  fontWeight: 500,
+                  background: isActive ? "rgba(255,255,255,0.1)" : "transparent",
+                }}
+              >
+                <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>{icons[i]}</span>
+                {expanded && <span>{item.label}</span>}
+              </Link>
+            </li>
+          );
+        })}
+
+        {/* Collapse/Expand toggle */}
+        <li>
+          <button
+            onClick={() => setExpanded(!expanded)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              padding: "12px 16px",
+              color: "white",
+              background: "none",
+              border: "none",
+              borderTop: "1px solid rgba(255,255,255,0.1)",
+              cursor: "pointer",
+              width: "100%",
+              fontSize: 14,
+              fontWeight: 500,
+              marginTop: 8,
+            }}
+          >
+            <span style={{ minWidth: 28, display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="white"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+                style={{ transform: expanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s" }}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+              </svg>
+            </span>
+            {expanded && <span>Collapse</span>}
+          </button>
+        </li>
+      </ul>
+    </div>
   );
 }
