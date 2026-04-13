@@ -1,0 +1,626 @@
+{
+  "week1": [
+    {
+      "title": "W1_L1: Vectors",
+      "videoId": "1So2VV9Tm_A",
+      "url": "https://www.youtube.com/watch?v=1So2VV9Tm_A",
+      "thumbnail": "https://img.youtube.com/vi/1So2VV9Tm_A/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L2: Matrices",
+      "videoId": "rnIDlZnrCc0",
+      "url": "https://www.youtube.com/watch?v=rnIDlZnrCc0",
+      "thumbnail": "https://img.youtube.com/vi/rnIDlZnrCc0/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L3: Systems of linear equations",
+      "videoId": "WzR4NKeLHMY",
+      "url": "https://www.youtube.com/watch?v=WzR4NKeLHMY",
+      "thumbnail": "https://img.youtube.com/vi/WzR4NKeLHMY/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L4: Determinants | part 1",
+      "videoId": "A3fxp49I4U8",
+      "url": "https://www.youtube.com/watch?v=A3fxp49I4U8",
+      "thumbnail": "https://img.youtube.com/vi/A3fxp49I4U8/mqdefault.jpg"
+    },
+    {
+      "title": "W1_L5: Determinants | part 2",
+      "videoId": "wejxX0YYYg4",
+      "url": "https://www.youtube.com/watch?v=wejxX0YYYg4",
+      "thumbnail": "https://img.youtube.com/vi/wejxX0YYYg4/mqdefault.jpg"
+    },
+    {
+      "title": "W1_T1: Tutorial 1",
+      "videoId": "rMK4GaWpoXU",
+      "url": "https://www.youtube.com/watch?v=rMK4GaWpoXU",
+      "thumbnail": "https://img.youtube.com/vi/rMK4GaWpoXU/mqdefault.jpg"
+    },
+    {
+      "title": "W1_T2: Tutorial 2",
+      "videoId": "TL2rliCK_Vg",
+      "url": "https://www.youtube.com/watch?v=TL2rliCK_Vg",
+      "thumbnail": "https://img.youtube.com/vi/TL2rliCK_Vg/mqdefault.jpg"
+    },
+    {
+      "title": "W1_T3: Tutorial 3",
+      "videoId": "oB1ws3Vk49E",
+      "url": "https://www.youtube.com/watch?v=oB1ws3Vk49E",
+      "thumbnail": "https://img.youtube.com/vi/oB1ws3Vk49E/mqdefault.jpg"
+    },
+    {
+      "title": "W1_T4: Tutorial 4",
+      "videoId": "Zenj3dOF9Hc",
+      "url": "https://www.youtube.com/watch?v=Zenj3dOF9Hc",
+      "thumbnail": "https://img.youtube.com/vi/Zenj3dOF9Hc/mqdefault.jpg"
+    },
+    {
+      "title": "W1_T5: Tutorial 5",
+      "videoId": "OOAEXJsgUBM",
+      "url": "https://www.youtube.com/watch?v=OOAEXJsgUBM",
+      "thumbnail": "https://img.youtube.com/vi/OOAEXJsgUBM/mqdefault.jpg"
+    }
+  ],
+  "week2": [
+    {
+      "title": "W2_L1: Determinants | part 3",
+      "videoId": "uO3mocPU9Q4",
+      "url": "https://www.youtube.com/watch?v=uO3mocPU9Q4",
+      "thumbnail": "https://img.youtube.com/vi/uO3mocPU9Q4/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L2: Cramer's rule",
+      "videoId": "sOFHgNXXRFM",
+      "url": "https://www.youtube.com/watch?v=sOFHgNXXRFM",
+      "thumbnail": "https://img.youtube.com/vi/sOFHgNXXRFM/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L3: Solutions to a system of linear equations with an invertible coefficient matrix",
+      "videoId": "0txe9Mu5OdM",
+      "url": "https://www.youtube.com/watch?v=0txe9Mu5OdM",
+      "thumbnail": "https://img.youtube.com/vi/0txe9Mu5OdM/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L4: The echelon form",
+      "videoId": "6N8owlkf9AQ",
+      "url": "https://www.youtube.com/watch?v=6N8owlkf9AQ",
+      "thumbnail": "https://img.youtube.com/vi/6N8owlkf9AQ/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L5: Row reduction",
+      "videoId": "ECRhKDTUxM8",
+      "url": "https://www.youtube.com/watch?v=ECRhKDTUxM8",
+      "thumbnail": "https://img.youtube.com/vi/ECRhKDTUxM8/mqdefault.jpg"
+    },
+    {
+      "title": "W2_L6: The gaussian elimination method",
+      "videoId": "gdk1_aEe7j4",
+      "url": "https://www.youtube.com/watch?v=gdk1_aEe7j4",
+      "thumbnail": "https://img.youtube.com/vi/gdk1_aEe7j4/mqdefault.jpg"
+    }
+  ],
+  "week3": [
+    {
+      "title": "W3_L1: Introduction to vector spaces",
+      "videoId": "dAttVL9a5Go",
+      "url": "https://www.youtube.com/watch?v=dAttVL9a5Go",
+      "thumbnail": "https://img.youtube.com/vi/dAttVL9a5Go/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L2: Some properties of vector spaces",
+      "videoId": "yUISwV4LE20",
+      "url": "https://www.youtube.com/watch?v=yUISwV4LE20",
+      "thumbnail": "https://img.youtube.com/vi/yUISwV4LE20/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L3: Linear dependence",
+      "videoId": "1Krnnc6wKyk",
+      "url": "https://www.youtube.com/watch?v=1Krnnc6wKyk",
+      "thumbnail": "https://img.youtube.com/vi/1Krnnc6wKyk/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L4: Linear independence - part 1",
+      "videoId": "Uf5nqIJv1Fk",
+      "url": "https://www.youtube.com/watch?v=Uf5nqIJv1Fk",
+      "thumbnail": "https://img.youtube.com/vi/Uf5nqIJv1Fk/mqdefault.jpg"
+    },
+    {
+      "title": "W3_L5: Linear independence - part 2",
+      "videoId": "9Adm4c2alAY",
+      "url": "https://www.youtube.com/watch?v=9Adm4c2alAY",
+      "thumbnail": "https://img.youtube.com/vi/9Adm4c2alAY/mqdefault.jpg"
+    }
+  ],
+  "week4": [
+    {
+      "title": "W4_L1: What is a basis for a vector space?",
+      "videoId": "lhAQIaFOPxA",
+      "url": "https://www.youtube.com/watch?v=lhAQIaFOPxA",
+      "thumbnail": "https://img.youtube.com/vi/lhAQIaFOPxA/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L2: Finding bases for vector spaces",
+      "videoId": "SxPhClO9zSU",
+      "url": "https://www.youtube.com/watch?v=SxPhClO9zSU",
+      "thumbnail": "https://img.youtube.com/vi/SxPhClO9zSU/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L3: What is the rank/dimension for a vector space",
+      "videoId": "oATXqim4F5Q",
+      "url": "https://www.youtube.com/watch?v=oATXqim4F5Q",
+      "thumbnail": "https://img.youtube.com/vi/oATXqim4F5Q/mqdefault.jpg"
+    },
+    {
+      "title": "W4_L4: Rank and dimension using gaussian elimination",
+      "videoId": "0yEKEavVQJE",
+      "url": "https://www.youtube.com/watch?v=0yEKEavVQJE",
+      "thumbnail": "https://img.youtube.com/vi/0yEKEavVQJE/mqdefault.jpg"
+    },
+    {
+      "title": "W4_T6: Tutorial 6",
+      "videoId": "5wdSQzZDZME",
+      "url": "https://www.youtube.com/watch?v=5wdSQzZDZME",
+      "thumbnail": "https://img.youtube.com/vi/5wdSQzZDZME/mqdefault.jpg"
+    },
+    {
+      "title": "W4_T7: Tutorial 7",
+      "videoId": "deoLXUT9E60",
+      "url": "https://www.youtube.com/watch?v=deoLXUT9E60",
+      "thumbnail": "https://img.youtube.com/vi/deoLXUT9E60/mqdefault.jpg"
+    },
+    {
+      "title": "W4_T8: Tutorial 8",
+      "videoId": "kbeuYmC7dp4",
+      "url": "https://www.youtube.com/watch?v=kbeuYmC7dp4",
+      "thumbnail": "https://img.youtube.com/vi/kbeuYmC7dp4/mqdefault.jpg"
+    }
+  ],
+  "week5": [
+    {
+      "title": "W5_L1: The null space of a matrix : finding nullity and a basis - part 1",
+      "videoId": "3_U6oMJeklc",
+      "url": "https://www.youtube.com/watch?v=3_U6oMJeklc",
+      "thumbnail": "https://img.youtube.com/vi/3_U6oMJeklc/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L2: The null space of a matrix : finding nullity and a basis - part 2",
+      "videoId": "sDKAGDJlSAE",
+      "url": "https://www.youtube.com/watch?v=sDKAGDJlSAE",
+      "thumbnail": "https://img.youtube.com/vi/sDKAGDJlSAE/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L3: What is a linear mapping - part 1",
+      "videoId": "MvCkhmYhTkw",
+      "url": "https://www.youtube.com/watch?v=MvCkhmYhTkw",
+      "thumbnail": "https://img.youtube.com/vi/MvCkhmYhTkw/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L4: What is a linear mapping - part 2",
+      "videoId": "aRNE_GrR0Yk",
+      "url": "https://www.youtube.com/watch?v=aRNE_GrR0Yk",
+      "thumbnail": "https://img.youtube.com/vi/aRNE_GrR0Yk/mqdefault.jpg"
+    },
+    {
+      "title": "W5_L5: What is a linear transformation",
+      "videoId": "6jA-RRGbmOw",
+      "url": "https://www.youtube.com/watch?v=6jA-RRGbmOw",
+      "thumbnail": "https://img.youtube.com/vi/6jA-RRGbmOw/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T1: Tutorial 1",
+      "videoId": "k5GlgJkdRBU",
+      "url": "https://www.youtube.com/watch?v=k5GlgJkdRBU",
+      "thumbnail": "https://img.youtube.com/vi/k5GlgJkdRBU/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T2: Tutorial 2",
+      "videoId": "R5S2bPGErWs",
+      "url": "https://www.youtube.com/watch?v=R5S2bPGErWs",
+      "thumbnail": "https://img.youtube.com/vi/R5S2bPGErWs/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T3: Tutorial 3",
+      "videoId": "3xjDfMoGlCM",
+      "url": "https://www.youtube.com/watch?v=3xjDfMoGlCM",
+      "thumbnail": "https://img.youtube.com/vi/3xjDfMoGlCM/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T4: Tutorial 4",
+      "videoId": "VyoyjXx1UFg",
+      "url": "https://www.youtube.com/watch?v=VyoyjXx1UFg",
+      "thumbnail": "https://img.youtube.com/vi/VyoyjXx1UFg/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T5: Tutorial 5",
+      "videoId": "_O0yZXIWWv0",
+      "url": "https://www.youtube.com/watch?v=_O0yZXIWWv0",
+      "thumbnail": "https://img.youtube.com/vi/_O0yZXIWWv0/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T6: Tutorial 6",
+      "videoId": "ZCUivTd2yu0",
+      "url": "https://www.youtube.com/watch?v=ZCUivTd2yu0",
+      "thumbnail": "https://img.youtube.com/vi/ZCUivTd2yu0/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T7: Tutorial 7",
+      "videoId": "zixmz3zRpJE",
+      "url": "https://www.youtube.com/watch?v=zixmz3zRpJE",
+      "thumbnail": "https://img.youtube.com/vi/zixmz3zRpJE/mqdefault.jpg"
+    },
+    {
+      "title": "W5_T8: Tutorial 8",
+      "videoId": "cPJJ_8BY1VY",
+      "url": "https://www.youtube.com/watch?v=cPJJ_8BY1VY",
+      "thumbnail": "https://img.youtube.com/vi/cPJJ_8BY1VY/mqdefault.jpg"
+    }
+  ],
+  "week6": [
+    {
+      "title": "W6_L1: Linear transformations, ordered bases & matrices",
+      "videoId": "lVX2mih3mcQ",
+      "url": "https://www.youtube.com/watch?v=lVX2mih3mcQ",
+      "thumbnail": "https://img.youtube.com/vi/lVX2mih3mcQ/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L2: Image & kernel of linear transformations",
+      "videoId": "e4BXKGcntiQ",
+      "url": "https://www.youtube.com/watch?v=e4BXKGcntiQ",
+      "thumbnail": "https://img.youtube.com/vi/e4BXKGcntiQ/mqdefault.jpg"
+    },
+    {
+      "title": "W6_L3: Examples of finding bases for the kernel & image of a linear transformation",
+      "videoId": "5slY2FjErkc",
+      "url": "https://www.youtube.com/watch?v=5slY2FjErkc",
+      "thumbnail": "https://img.youtube.com/vi/5slY2FjErkc/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T1: Tutorial 1",
+      "videoId": "aKziQ7vYvcs",
+      "url": "https://www.youtube.com/watch?v=aKziQ7vYvcs",
+      "thumbnail": "https://img.youtube.com/vi/aKziQ7vYvcs/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T2: Tutorial 2",
+      "videoId": "WxAil6kpPCQ",
+      "url": "https://www.youtube.com/watch?v=WxAil6kpPCQ",
+      "thumbnail": "https://img.youtube.com/vi/WxAil6kpPCQ/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T4: Tutorial 4",
+      "videoId": "MbHIGidPL-w",
+      "url": "https://www.youtube.com/watch?v=MbHIGidPL-w",
+      "thumbnail": "https://img.youtube.com/vi/MbHIGidPL-w/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T5: Tutorial 5",
+      "videoId": "jlB2kQ-ardc",
+      "url": "https://www.youtube.com/watch?v=jlB2kQ-ardc",
+      "thumbnail": "https://img.youtube.com/vi/jlB2kQ-ardc/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T6: Tutorial 6",
+      "videoId": "t6PA2E_G0do",
+      "url": "https://www.youtube.com/watch?v=t6PA2E_G0do",
+      "thumbnail": "https://img.youtube.com/vi/t6PA2E_G0do/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T7: Tutorial 7",
+      "videoId": "D3jQmnIzbUM",
+      "url": "https://www.youtube.com/watch?v=D3jQmnIzbUM",
+      "thumbnail": "https://img.youtube.com/vi/D3jQmnIzbUM/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T8: Tutorial 8",
+      "videoId": "vTrRpFbt4ZU",
+      "url": "https://www.youtube.com/watch?v=vTrRpFbt4ZU",
+      "thumbnail": "https://img.youtube.com/vi/vTrRpFbt4ZU/mqdefault.jpg"
+    },
+    {
+      "title": "W6_T9: Tutorial 9",
+      "videoId": "QE0Wq0AWiIE",
+      "url": "https://www.youtube.com/watch?v=QE0Wq0AWiIE",
+      "thumbnail": "https://img.youtube.com/vi/QE0Wq0AWiIE/mqdefault.jpg"
+    }
+  ],
+  "week7": [
+    {
+      "title": "W7_L1: Equivalence & similarity of matrices",
+      "videoId": "ORWbVJ54hW8",
+      "url": "https://www.youtube.com/watch?v=ORWbVJ54hW8",
+      "thumbnail": "https://img.youtube.com/vi/ORWbVJ54hW8/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L2: Affine subspaces & affine mappings",
+      "videoId": "RUJInY6skG0",
+      "url": "https://www.youtube.com/watch?v=RUJInY6skG0",
+      "thumbnail": "https://img.youtube.com/vi/RUJInY6skG0/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L3: Lengths & angles",
+      "videoId": "TtQ6AQUlwl0",
+      "url": "https://www.youtube.com/watch?v=TtQ6AQUlwl0",
+      "thumbnail": "https://img.youtube.com/vi/TtQ6AQUlwl0/mqdefault.jpg"
+    },
+    {
+      "title": "W7_L4: Inner products & norms on a vector space",
+      "videoId": "HH2Md3dBlq4",
+      "url": "https://www.youtube.com/watch?v=HH2Md3dBlq4",
+      "thumbnail": "https://img.youtube.com/vi/HH2Md3dBlq4/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T1: Tutorial 1",
+      "videoId": "_Hj2FqJ5xZM",
+      "url": "https://www.youtube.com/watch?v=_Hj2FqJ5xZM",
+      "thumbnail": "https://img.youtube.com/vi/_Hj2FqJ5xZM/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T2: Tutorial 2",
+      "videoId": "jl12b0JYLbk",
+      "url": "https://www.youtube.com/watch?v=jl12b0JYLbk",
+      "thumbnail": "https://img.youtube.com/vi/jl12b0JYLbk/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T3: Tutorial 3",
+      "videoId": "fnrOwu-Veoc",
+      "url": "https://www.youtube.com/watch?v=fnrOwu-Veoc",
+      "thumbnail": "https://img.youtube.com/vi/fnrOwu-Veoc/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T4: Tutorial 4",
+      "videoId": "FNZ0LJEE-7E",
+      "url": "https://www.youtube.com/watch?v=FNZ0LJEE-7E",
+      "thumbnail": "https://img.youtube.com/vi/FNZ0LJEE-7E/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T5: Tutorial 5",
+      "videoId": "pX5LCYHDJKY",
+      "url": "https://www.youtube.com/watch?v=pX5LCYHDJKY",
+      "thumbnail": "https://img.youtube.com/vi/pX5LCYHDJKY/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T6: Tutorial 6",
+      "videoId": "jS2rZVsBqjg",
+      "url": "https://www.youtube.com/watch?v=jS2rZVsBqjg",
+      "thumbnail": "https://img.youtube.com/vi/jS2rZVsBqjg/mqdefault.jpg"
+    },
+    {
+      "title": "W7_T7: Tutorial 7",
+      "videoId": "5VDV90OpB5Y",
+      "url": "https://www.youtube.com/watch?v=5VDV90OpB5Y",
+      "thumbnail": "https://img.youtube.com/vi/5VDV90OpB5Y/mqdefault.jpg"
+    }
+  ],
+  "week8": [
+    {
+      "title": "W8_L1: Orthogonality & linear independence",
+      "videoId": "G9bYPb-qSfw",
+      "url": "https://www.youtube.com/watch?v=G9bYPb-qSfw",
+      "thumbnail": "https://img.youtube.com/vi/G9bYPb-qSfw/mqdefault.jpg"
+    },
+    {
+      "title": "W8_L2: What is an orthonormal basis?",
+      "videoId": "T646BdbrRm0",
+      "url": "https://www.youtube.com/watch?v=T646BdbrRm0",
+      "thumbnail": "https://img.youtube.com/vi/T646BdbrRm0/mqdefault.jpg"
+    },
+    {
+      "title": "W8_L3: Projections using inner products",
+      "videoId": "Qyiw4opSG9U",
+      "url": "https://www.youtube.com/watch?v=Qyiw4opSG9U",
+      "thumbnail": "https://img.youtube.com/vi/Qyiw4opSG9U/mqdefault.jpg"
+    },
+    {
+      "title": "W8_L4: The gram-schmidt process",
+      "videoId": "WEpy57pYKH4",
+      "url": "https://www.youtube.com/watch?v=WEpy57pYKH4",
+      "thumbnail": "https://img.youtube.com/vi/WEpy57pYKH4/mqdefault.jpg"
+    },
+    {
+      "title": "W8_L5: Orthogonal transformations & rotations",
+      "videoId": "2qruaPxQUJU",
+      "url": "https://www.youtube.com/watch?v=2qruaPxQUJU",
+      "thumbnail": "https://img.youtube.com/vi/2qruaPxQUJU/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T1: Tutorial 1",
+      "videoId": "AUPInEfil_4",
+      "url": "https://www.youtube.com/watch?v=AUPInEfil_4",
+      "thumbnail": "https://img.youtube.com/vi/AUPInEfil_4/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T2: Tutorial 2",
+      "videoId": "FcWl3vxK_zY",
+      "url": "https://www.youtube.com/watch?v=FcWl3vxK_zY",
+      "thumbnail": "https://img.youtube.com/vi/FcWl3vxK_zY/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T3: Tutorial 3",
+      "videoId": "P6tBnX1CdZo",
+      "url": "https://www.youtube.com/watch?v=P6tBnX1CdZo",
+      "thumbnail": "https://img.youtube.com/vi/P6tBnX1CdZo/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T4: Tutorial 4",
+      "videoId": "j1nHvWyoaYk",
+      "url": "https://www.youtube.com/watch?v=j1nHvWyoaYk",
+      "thumbnail": "https://img.youtube.com/vi/j1nHvWyoaYk/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T5: Tutorial 5",
+      "videoId": "ma3KcWIMHFg",
+      "url": "https://www.youtube.com/watch?v=ma3KcWIMHFg",
+      "thumbnail": "https://img.youtube.com/vi/ma3KcWIMHFg/mqdefault.jpg"
+    },
+    {
+      "title": "W8_T6: Tutorial 6",
+      "videoId": "RoJDTZIsOck",
+      "url": "https://www.youtube.com/watch?v=RoJDTZIsOck",
+      "thumbnail": "https://img.youtube.com/vi/RoJDTZIsOck/mqdefault.jpg"
+    }
+  ],
+  "week9": [
+    {
+      "title": "W9_L1: Multivariable functions : visualization",
+      "videoId": "MfrAPZRrqxw",
+      "url": "https://www.youtube.com/watch?v=MfrAPZRrqxw",
+      "thumbnail": "https://img.youtube.com/vi/MfrAPZRrqxw/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L2: Partial derivatives",
+      "videoId": "GoJoNFBuCJ8",
+      "url": "https://www.youtube.com/watch?v=GoJoNFBuCJ8",
+      "thumbnail": "https://img.youtube.com/vi/GoJoNFBuCJ8/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L3: Directional derivatives",
+      "videoId": "uhUqybTaGns",
+      "url": "https://www.youtube.com/watch?v=uhUqybTaGns",
+      "thumbnail": "https://img.youtube.com/vi/uhUqybTaGns/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L4: Limits for scalar-valued multivariable functions",
+      "videoId": "Uvv8-Ujgqjo",
+      "url": "https://www.youtube.com/watch?v=Uvv8-Ujgqjo",
+      "thumbnail": "https://img.youtube.com/vi/Uvv8-Ujgqjo/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L5: Continuity for multivariable functions",
+      "videoId": "_G6UYEZYaGk",
+      "url": "https://www.youtube.com/watch?v=_G6UYEZYaGk",
+      "thumbnail": "https://img.youtube.com/vi/_G6UYEZYaGk/mqdefault.jpg"
+    },
+    {
+      "title": "W9_L6: Directional derivatives in terms of the gradient",
+      "videoId": "2eYER90_4wA",
+      "url": "https://www.youtube.com/watch?v=2eYER90_4wA",
+      "thumbnail": "https://img.youtube.com/vi/2eYER90_4wA/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T1: Tutorial 1",
+      "videoId": "JYmLAB2eDXo",
+      "url": "https://www.youtube.com/watch?v=JYmLAB2eDXo",
+      "thumbnail": "https://img.youtube.com/vi/JYmLAB2eDXo/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T2: Tutorial 2",
+      "videoId": "al01RaBUkIo",
+      "url": "https://www.youtube.com/watch?v=al01RaBUkIo",
+      "thumbnail": "https://img.youtube.com/vi/al01RaBUkIo/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T3: Tutorial 3",
+      "videoId": "vlZIhKlM6bc",
+      "url": "https://www.youtube.com/watch?v=vlZIhKlM6bc",
+      "thumbnail": "https://img.youtube.com/vi/vlZIhKlM6bc/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T4: Tutorial 4",
+      "videoId": "CadYHZuxSCg",
+      "url": "https://www.youtube.com/watch?v=CadYHZuxSCg",
+      "thumbnail": "https://img.youtube.com/vi/CadYHZuxSCg/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T5: Tutorial 5",
+      "videoId": "65wV32DCtVA",
+      "url": "https://www.youtube.com/watch?v=65wV32DCtVA",
+      "thumbnail": "https://img.youtube.com/vi/65wV32DCtVA/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T6: Tutorial 6",
+      "videoId": "33BLotzDF0g",
+      "url": "https://www.youtube.com/watch?v=33BLotzDF0g",
+      "thumbnail": "https://img.youtube.com/vi/33BLotzDF0g/mqdefault.jpg"
+    },
+    {
+      "title": "W9_T7: Tutorial 7",
+      "videoId": "oHnLq0qzQ9g",
+      "url": "https://www.youtube.com/watch?v=oHnLq0qzQ9g",
+      "thumbnail": "https://img.youtube.com/vi/oHnLq0qzQ9g/mqdefault.jpg"
+    }
+  ],
+  "week10": [
+    {
+      "title": "W10_L1: The direction of steepest ascent/descent",
+      "videoId": "0H7ca6dFvQ8",
+      "url": "https://www.youtube.com/watch?v=0H7ca6dFvQ8",
+      "thumbnail": "https://img.youtube.com/vi/0H7ca6dFvQ8/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L2: Tangents for scalar-valued multivariable functions",
+      "videoId": "9yeyc472W5Q",
+      "url": "https://www.youtube.com/watch?v=9yeyc472W5Q",
+      "thumbnail": "https://img.youtube.com/vi/9yeyc472W5Q/mqdefault.jpg"
+    },
+    {
+      "title": "W10_L3: Finding the tangent hyper(plane)",
+      "videoId": "bz1gtPvNIAg",
+      "url": "https://www.youtube.com/watch?v=bz1gtPvNIAg",
+      "thumbnail": "https://img.youtube.com/vi/bz1gtPvNIAg/mqdefault.jpg"
+    }
+  ],
+  "refresher": [
+    {
+      "title": "Refresher week - tutorial 1",
+      "videoId": "x9Dv61Ml910",
+      "url": "https://www.youtube.com/watch?v=x9Dv61Ml910",
+      "thumbnail": "https://img.youtube.com/vi/x9Dv61Ml910/mqdefault.jpg"
+    },
+    {
+      "title": "Refresher week - tutorial 2",
+      "videoId": "S6hzxX1AIBU",
+      "url": "https://www.youtube.com/watch?v=S6hzxX1AIBU",
+      "thumbnail": "https://img.youtube.com/vi/S6hzxX1AIBU/mqdefault.jpg"
+    },
+    {
+      "title": "Refresher week - tutorial 3",
+      "videoId": "US18ZBaHO1Q",
+      "url": "https://www.youtube.com/watch?v=US18ZBaHO1Q",
+      "thumbnail": "https://img.youtube.com/vi/US18ZBaHO1Q/mqdefault.jpg"
+    },
+    {
+      "title": "Refresher week - tutorial 4",
+      "videoId": "lBqVQxUYTIs",
+      "url": "https://www.youtube.com/watch?v=lBqVQxUYTIs",
+      "thumbnail": "https://img.youtube.com/vi/lBqVQxUYTIs/mqdefault.jpg"
+    },
+    {
+      "title": "Refresher week - tutorial 5",
+      "videoId": "Z9jpB1gK-PQ",
+      "url": "https://www.youtube.com/watch?v=Z9jpB1gK-PQ",
+      "thumbnail": "https://img.youtube.com/vi/Z9jpB1gK-PQ/mqdefault.jpg"
+    },
+    {
+      "title": "Refresher week - tutorial 6",
+      "videoId": "nNWcu09Qo04",
+      "url": "https://www.youtube.com/watch?v=nNWcu09Qo04",
+      "thumbnail": "https://img.youtube.com/vi/nNWcu09Qo04/mqdefault.jpg"
+    }
+  ],
+  "extras": [
+    {
+      "title": "Mathematics for Data Science II",
+      "videoId": "UJFe9JIBogc",
+      "url": "https://www.youtube.com/watch?v=UJFe9JIBogc",
+      "thumbnail": "https://img.youtube.com/vi/UJFe9JIBogc/mqdefault.jpg"
+    },
+    {
+      "title": "Mathematics for Data Science II",
+      "videoId": "wj73NcPIeZE",
+      "url": "https://www.youtube.com/watch?v=wj73NcPIeZE",
+      "thumbnail": "https://img.youtube.com/vi/wj73NcPIeZE/mqdefault.jpg"
+    },
+    {
+      "title": "Mathematics for Data Science II",
+      "videoId": "SEevQPGIJSE",
+      "url": "https://www.youtube.com/watch?v=SEevQPGIJSE",
+      "thumbnail": "https://img.youtube.com/vi/SEevQPGIJSE/mqdefault.jpg"
+    },
+    {
+      "title": "Mathematics for Data Science II",
+      "videoId": "qcT49XqFzXo",
+      "url": "https://www.youtube.com/watch?v=qcT49XqFzXo",
+      "thumbnail": "https://img.youtube.com/vi/qcT49XqFzXo/mqdefault.jpg"
+    }
+  ]
+}
