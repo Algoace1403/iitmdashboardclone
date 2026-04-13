@@ -85,16 +85,8 @@ export default function ContentViewerPage() {
               </div>
             </div>
           ) : type === "Video" ? (
-            <div>
-              <div style={{ background: "#000", borderRadius: 8, width: "100%", maxWidth: 800, aspectRatio: "16/9", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <div style={{ textAlign: "center" }}>
-                  <div style={{ width: 64, height: 64, borderRadius: "50%", background: "rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 12px" }}>
-                    <svg style={{ width: 32, height: 32, color: "white", marginLeft: 4 }} fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-                  </div>
-                  <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 14, margin: 0 }}>{title}</p>
-                  <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 12, marginTop: 8 }}>Video hosted on SEEK portal</p>
-                </div>
-              </div>
+            <div style={{ background: "white", border: "1px solid #e0e0e0", borderRadius: 4, padding: 16 }}>
+              <p style={{ fontSize: 14, color: "#494f69", margin: 0 }}>This lecture is available on the SEEK portal.</p>
             </div>
           ) : (
             <div style={{ background: "white", border: "1px solid #e0e0e0", borderRadius: 4, padding: 24 }}>
