@@ -89,20 +89,8 @@ export default async function SeekWeekPage({ params }: Props) {
   const mathWeekKey = `week${weekNumber}` as keyof typeof mathLectures;
   const mathVideos = courseId === "mathematics_for_data_science_2" ? (mathLectures[mathWeekKey] as { title: string; videoId: string }[] | undefined) : null;
 
-  const items = courseId === "mathematics_for_data_science_2"
-    ? rawItems.filter(item => {
-        if (item.type !== "Video" && item.type !== "Lesson") return true; // keep assignments
-        if ((item as { url?: string }).url) return true; // keep items with URLs (question banks)
-        if (item.type === "Lesson") return true; // keep lessons
-        // For videos: only keep if YouTube link exists
-        if (!mathVideos) return false;
-        const titleLower = item.title.toLowerCase();
-        return mathVideos.some(v => {
-          const vLower = v.title.toLowerCase();
-          return titleLower.split(":").some(part => part.trim().length > 3 && vLower.includes(part.trim().substring(0, 12)));
-        });
-      })
-    : rawItems;
+  // Keep all items — videos with YouTube links will open the player
+  const items = rawItems;
 
   return (
     <div>
