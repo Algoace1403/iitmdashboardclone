@@ -1,0 +1,21 @@
+{
+  "name": "My Dashboard - IIT Madras BS Online Degree",
+  "short_name": "IIT Madras",
+  "description": "Student Dashboard - IIT Madras BS Degree Programme",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#aa3535",
+  "icons": [
+    {
+      "src": "/iitm-seal.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}

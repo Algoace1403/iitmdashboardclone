@@ -79,32 +79,28 @@ export function CourseCard({ course }: CourseCardProps) {
         {/* Week assignment scores */}
         {course.weeks.map((w) => (
           <div key={w.week}>
-            {w.assignment !== undefined && w.assignment !== null ? (
+            {w.assignment !== undefined && w.assignment !== null && (
               <p>
                 Week {w.week} Assignment -{" "}
                 <span className="font-medium">{w.assignment.toFixed(2)}</span>
               </p>
-            ) : w.assignment === null ? (
-              <p className="text-[#A7A7A7]">
-                Week {w.week} Assignment - <span className="italic">Absent</span>
-              </p>
-            ) : null}
+            )}
 
-            {/* GrPA scores */}
-            {w.grpas?.map((score, i) => (
+            {/* GrPA scores — hide Absent */}
+            {w.grpas?.filter(score => score !== "Absent").map((score, i) => (
               <p key={`grpa-${w.week}-${i}`} className="pl-2">
                 Week {w.week} GrPA {i + 1} -{" "}
-                <span className={typeof score === "string" ? "italic text-[#A7A7A7]" : "font-medium"}>
+                <span className="font-medium">
                   {typeof score === "number" ? score.toFixed(2) : score}
                 </span>
               </p>
             ))}
 
-            {/* Activity scores */}
-            {w.activity !== undefined && w.activity !== null && (
+            {/* Activity scores — hide Absent */}
+            {w.activity !== undefined && w.activity !== null && w.activity !== "Absent" && (
               <p>
                 Week {w.week} Activity -{" "}
-                <span className={typeof w.activity === "string" ? "italic text-[#A7A7A7]" : "font-medium"}>
+                <span className="font-medium">
                   {typeof w.activity === "number" ? w.activity.toFixed(2) : w.activity}
                 </span>
               </p>
