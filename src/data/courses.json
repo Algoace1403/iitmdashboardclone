@@ -210,7 +210,7 @@
       },
       {
         "week": 8,
-        "assignment": null
+        "assignment": 98
       },
       {
         "week": 9,
@@ -241,7 +241,14 @@
     "program": "BS in Data Science and Applications",
     "coursePageUrl": "#",
     "allowedEndTerm": null,
-    "scores": {},
+    "scores": {
+      "quizScores": [
+        {
+          "label": "POSH",
+          "value": 100
+        }
+      ]
+    },
     "weeks": []
   },
   {
@@ -294,7 +301,7 @@
       },
       {
         "week": 8,
-        "assignment": null
+        "assignment": 100
       },
       {
         "week": 9,
@@ -365,7 +372,7 @@
       },
       {
         "week": 8,
-        "assignment": null
+        "assignment": 100
       },
       {
         "week": 9,
