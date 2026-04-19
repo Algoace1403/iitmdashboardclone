@@ -12,8 +12,49 @@ interface SeekSidebarProps {
   onClose?: () => void;
 }
 
+interface SupplementaryConfig {
+  lectureSlidesUrl: string;
+  showLectureTranscripts: boolean;
+  lectureTranscriptsUrl: string;
+  quiz1Url: string;
+  quiz2Url: string | null;
+}
+
+const DEFAULT_SUPPLEMENTARY: SupplementaryConfig = {
+  lectureSlidesUrl: "https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_",
+  showLectureTranscripts: true,
+  lectureTranscriptsUrl: "https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_",
+  quiz1Url: "#",
+  quiz2Url: null,
+};
+
+const SUPPLEMENTARY_BY_COURSE: Record<string, SupplementaryConfig> = {
+  statistics_for_data_science_2: {
+    lectureSlidesUrl: "https://drive.google.com/drive/folders/1giM0HunaYBKNzTeXXK_XEYcDQl7iZECl?usp=sharing",
+    showLectureTranscripts: false,
+    lectureTranscriptsUrl: "",
+    quiz1Url: "https://drive.google.com/file/d/1EnFp6tQTLlW1YnDybmeESsVMdmHMTaVW/view",
+    quiz2Url: "https://drive.google.com/file/d/1cnQ32AWYL6DVosWFSgw-3IWmZkQ0dLrI/view",
+  },
+  mathematics_for_data_science_2: {
+    lectureSlidesUrl: "https://drive.google.com/drive/folders/1EPt5z4GLPbmJciNx8vsoDmCSis2l0Fgg",
+    showLectureTranscripts: false,
+    lectureTranscriptsUrl: "",
+    quiz1Url: "https://drive.google.com/file/d/1UgDDweLNhlku4zdwOUPnux9kf1-GjscL/view",
+    quiz2Url: "https://drive.google.com/file/d/1ZeMUqZL0zbfYryCIjee5Uw2Idj5NoA6S/view",
+  },
+  english_2: {
+    lectureSlidesUrl: "https://drive.google.com/drive/folders/1XUCElD_QczIADrZy8rWWuHm2a-jC-kxe",
+    showLectureTranscripts: false,
+    lectureTranscriptsUrl: "",
+    quiz1Url: "https://drive.google.com/file/d/1lJkuy5GRogOsgh10hLPnQQbeF9Fp8Xa3/view",
+    quiz2Url: "https://drive.google.com/file/d/1bhnkCdEh-s_Dq2pVl-kL_qsXYwj2A9F9/view",
+  },
+};
+
 export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open = true, onClose }: SeekSidebarProps) {
   const pathname = usePathname();
+  const supp = SUPPLEMENTARY_BY_COURSE[courseId] ?? DEFAULT_SUPPLEMENTARY;
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
     "course-intro": true,
   });
@@ -188,17 +229,7 @@ export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open =
             title="Practice Tests (Objective)"
             expanded={expandedSections["practice"]}
             onToggle={() => toggle("practice")}
-          >
-            {courseId === "statistics_for_data_science_2" && (
-              <SidebarLink
-                href="https://drive.google.com/file/d/1cnQ32AWYL6DVosWFSgw-3IWmZkQ0dLrI/view?usp=drive_link"
-                label="Quiz 2 - Question Paper"
-                sublabel="Lesson"
-                active={false}
-                onClick={isMobile ? onClose : undefined}
-              />
-            )}
-          </AccordionSection>
+          />
 
           {/* Supplementary Contents */}
           <AccordionSection
@@ -207,29 +238,31 @@ export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open =
             onToggle={() => toggle("supplementary")}
           >
             <SidebarLink
-              href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
+              href={supp.lectureSlidesUrl}
               label="Lecture PPTs/Slides"
               sublabel="Lesson"
               active={false}
               onClick={isMobile ? onClose : undefined}
             />
+            {supp.showLectureTranscripts && (
+              <SidebarLink
+                href={supp.lectureTranscriptsUrl}
+                label="Lecture Transcripts"
+                sublabel="Lesson"
+                active={false}
+                onClick={isMobile ? onClose : undefined}
+              />
+            )}
             <SidebarLink
-              href="https://drive.google.com/drive/folders/1xjgelPNfh5QGKjnBxtjVYJwICG0Pkix_"
-              label="Lecture Transcripts"
-              sublabel="Lesson"
-              active={false}
-              onClick={isMobile ? onClose : undefined}
-            />
-            <SidebarLink
-              href="#"
+              href={supp.quiz1Url}
               label="Quiz 1 - Question Paper and Answer key"
               sublabel="Lesson"
               active={false}
               onClick={isMobile ? onClose : undefined}
             />
-            {courseId === "statistics_for_data_science_2" && (
+            {supp.quiz2Url && (
               <SidebarLink
-                href="https://drive.google.com/drive/folders/1giM0HunaYBKNzTeXXK_XEYcDQl7iZECl?usp=sharing"
+                href={supp.quiz2Url}
                 label="Quiz 2 - Question Paper and Answer key"
                 sublabel="Lesson"
                 active={false}
