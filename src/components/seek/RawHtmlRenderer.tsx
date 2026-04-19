@@ -105,12 +105,12 @@ function injectBookmarkSlots(
   const slots: BookmarkSlot[] = [];
   const seen = new Set<string>();
 
-  const questionEls = container.querySelectorAll<HTMLElement>(".qt-question");
-  questionEls.forEach((qEl, idx) => {
-    const inner = qEl.querySelector<HTMLElement>(
-      ".qt-mc-question[id], .qt-sa-question[id]"
-    );
-    const rawId = inner?.id || qEl.id || `q${idx}`;
+  const questionEls = container.querySelectorAll<HTMLElement>(
+    ".qt-mc-question[id], .qt-sa-question[id]"
+  );
+  questionEls.forEach((qEl) => {
+    const rawId = qEl.id;
+    if (!rawId) return;
     const questionId = `${courseId}:${assignmentId}:${rawId}`;
     if (seen.has(questionId)) return;
     seen.add(questionId);

@@ -280,17 +280,16 @@ function extractQuestionHtml(fullHtml: string, compositeQuestionId: string): str
 
   if (typeof window === "undefined") return null;
   const doc = new DOMParser().parseFromString(fullHtml, "text/html");
-  const questionEls = doc.querySelectorAll<HTMLElement>(".qt-question");
-  for (const qEl of Array.from(questionEls)) {
-    const inner = qEl.querySelector<HTMLElement>(
-      ".qt-mc-question[id], .qt-sa-question[id]"
-    );
-    const id = inner?.id || qEl.id;
-    if (id === rawId) {
-      return qEl.outerHTML;
-    }
-  }
-  return null;
+
+  const escaped = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(rawId) : rawId.replace(/"/g, '\\"');
+  const target = doc.querySelector<HTMLElement>(
+    `.qt-mc-question[id="${escaped}"], .qt-sa-question[id="${escaped}"]`
+  );
+  if (!target) return null;
+
+  // Prefer the enclosing .qt-question wrapper so question text + all options are included.
+  const wrapper = target.closest<HTMLElement>(".qt-question");
+  return (wrapper ?? target).outerHTML;
 }
 
 function buildSeekLink(courseId: string, assignmentId: string): string {
