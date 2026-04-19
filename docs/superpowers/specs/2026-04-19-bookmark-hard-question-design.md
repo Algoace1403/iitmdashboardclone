@@ -121,16 +121,20 @@ Grouping order: course → assignment → question (by `questionNumber` asc). Co
 
 ## 9. Setup steps (for the user)
 
-1. Go to [supabase.com](https://supabase.com) → create a free project.
-2. In the Supabase SQL editor, paste and run the SQL from section 3.
-3. In Supabase project settings → API, copy `Project URL` and `anon public` key.
-4. Paste them into `.env.local`:
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOi...
-   ```
-5. On Vercel: add the same two env vars under Project Settings → Environment Variables.
-6. `npm install` (handled as part of the implementation plan).
+Minimum-effort path (Option A — ~3–5 min of user work):
+
+1. Go to [supabase.com](https://supabase.com) → sign up → click **New Project** → set a DB password → wait ~1 min for the project to provision.
+2. In the Supabase dashboard → **Project Settings → API**, copy `Project URL` and `anon public` key.
+3. Paste both values into the chat with the assistant.
+
+After that, the assistant does everything else locally:
+- Creates `.env.local` with the two env vars.
+- Runs the SQL from section 3 via the Supabase SQL editor (user pastes into the browser once) OR via the Supabase REST API using the anon key + a service role key if the user prefers to paste that too.
+- Installs `@supabase/supabase-js`.
+- Writes all component/hook code.
+- Starts the dev server and manually verifies the feature works.
+
+**No deployment.** This feature is built and tested locally only. Vercel env configuration is out of scope.
 
 ## 10. Open questions / future work
 
