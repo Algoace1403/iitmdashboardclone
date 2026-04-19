@@ -173,6 +173,10 @@
         {
           "label": "Quiz 1",
           "value": 0
+        },
+        {
+          "label": "Quiz 2",
+          "value": 39.5
         }
       ]
     },
@@ -267,6 +271,10 @@
         {
           "label": "Quiz 1",
           "value": 60
+        },
+        {
+          "label": "Quiz 2",
+          "value": 70
         }
       ]
     },
@@ -337,6 +345,10 @@
         {
           "label": "Quiz 1",
           "value": 55
+        },
+        {
+          "label": "Quiz 2",
+          "value": 32
         }
       ]
     },

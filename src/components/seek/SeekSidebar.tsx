@@ -188,7 +188,17 @@ export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open =
             title="Practice Tests (Objective)"
             expanded={expandedSections["practice"]}
             onToggle={() => toggle("practice")}
-          />
+          >
+            {courseId === "statistics_for_data_science_2" && (
+              <SidebarLink
+                href="https://drive.google.com/file/d/1cnQ32AWYL6DVosWFSgw-3IWmZkQ0dLrI/view?usp=drive_link"
+                label="Quiz 2 - Question Paper"
+                sublabel="Lesson"
+                active={false}
+                onClick={isMobile ? onClose : undefined}
+              />
+            )}
+          </AccordionSection>
 
           {/* Supplementary Contents */}
           <AccordionSection
@@ -217,6 +227,15 @@ export function SeekSidebar({ courseId, weekCount = 10, isMobile = false, open =
               active={false}
               onClick={isMobile ? onClose : undefined}
             />
+            {courseId === "statistics_for_data_science_2" && (
+              <SidebarLink
+                href="https://drive.google.com/drive/folders/1giM0HunaYBKNzTeXXK_XEYcDQl7iZECl?usp=sharing"
+                label="Quiz 2 - Question Paper and Answer key"
+                sublabel="Lesson"
+                active={false}
+                onClick={isMobile ? onClose : undefined}
+              />
+            )}
           </AccordionSection>
         </div>
       </div>
