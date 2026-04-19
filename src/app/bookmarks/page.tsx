@@ -208,10 +208,10 @@ function BookmarkCard({ entry }: { entry: BookmarkEntry }) {
         <RawQuestionPreview html={rawHtml} />
         <div className="mt-4">
           <Link
-            href={buildSeekLink(courseId, assignmentId)}
+            href={buildSeekLink(courseId, assignmentId, questionId)}
             className="text-xs text-indigo-600 font-medium hover:underline"
           >
-            Go to assignment →
+            Open this question →
           </Link>
         </div>
       </div>
@@ -301,20 +301,25 @@ function extractQuestionHtml(fullHtml: string, compositeQuestionId: string): str
   return target.outerHTML;
 }
 
-function buildSeekLink(courseId: string, assignmentId: string): string {
+function buildSeekLink(courseId: string, assignmentId: string, questionId: string): string {
+  // Extract rawId from composite "courseId:assignmentId:rawId" to use as URL hash for scroll-to-question.
+  const parts = questionId.split(":");
+  const rawId = parts[parts.length - 1];
+  const hash = rawId ? `#${encodeURIComponent(rawId)}` : "";
+
   // Seek assignment ids can be titles like "AQ4.4: ..." — use them in the title query param.
   // Try to detect a week number from the title if present.
   const weekMatch = assignmentId.match(/\d+/);
   const weekNum = weekMatch ? weekMatch[0] : "1";
   if (assignmentId.endsWith("-graded")) {
-    return `/seek/courses/${courseId}/week/${weekNum}/graded`;
+    return `/seek/courses/${courseId}/week/${weekNum}/graded${hash}`;
   }
   if (assignmentId.endsWith("-practice")) {
-    return `/seek/courses/${courseId}/week/${weekNum}/practice`;
+    return `/seek/courses/${courseId}/week/${weekNum}/practice${hash}`;
   }
   if (assignmentId.endsWith("-activity")) {
-    return `/seek/courses/${courseId}/week/${weekNum}/activity`;
+    return `/seek/courses/${courseId}/week/${weekNum}/activity${hash}`;
   }
   // Default: assignment route with title
-  return `/seek/courses/${courseId}/week/${weekNum}/assignment?title=${encodeURIComponent(assignmentId)}`;
+  return `/seek/courses/${courseId}/week/${weekNum}/assignment?title=${encodeURIComponent(assignmentId)}${hash}`;
 }

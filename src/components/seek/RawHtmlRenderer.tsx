@@ -65,6 +65,29 @@ export function RawHtmlRenderer({ html, courseId, assignmentId }: RawHtmlRendere
       setSlots([]);
     }
 
+    // If URL has #<rawQuestionId>, scroll to and briefly highlight that question.
+    const rawHash = typeof window !== "undefined" ? decodeURIComponent(window.location.hash.slice(1)) : "";
+    if (rawHash && containerRef.current) {
+      setTimeout(() => {
+        if (!containerRef.current) return;
+        const escaped = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(rawHash) : rawHash;
+        const target = containerRef.current.querySelector<HTMLElement>(
+          `.qt-mc-question[id="${escaped}"], .qt-sa-question[id="${escaped}"]`
+        );
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          const prevBg = target.style.background;
+          const prevTransition = target.style.transition;
+          target.style.transition = "background 0.8s ease";
+          target.style.background = "#fff7d6";
+          setTimeout(() => {
+            target.style.background = prevBg;
+            target.style.transition = prevTransition;
+          }, 2500);
+        }
+      }, 300);
+    }
+
   }, [html, courseId, assignmentId]);
 
   return (
