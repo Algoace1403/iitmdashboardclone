@@ -48,7 +48,10 @@ export default function BookmarksPage() {
           const courseRaw = (rawAssignments as Record<string, Record<string, string>>)[b.course_id];
           const fullHtml = courseRaw?.[b.assignment_id];
           if (fullHtml) {
-            rawHtml = extractQuestionHtml(fullHtml, b.question_id);
+            // First try the precise question. If the rawId can't be matched
+            // (e.g. bookmark was saved by stale cached JS), fall back to the
+            // whole assignment HTML so the user still sees questions + answers.
+            rawHtml = extractQuestionHtml(fullHtml, b.question_id) ?? fullHtml;
           }
         }
 

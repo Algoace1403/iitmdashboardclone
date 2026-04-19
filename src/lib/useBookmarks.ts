@@ -64,6 +64,14 @@ export function useBookmarks(): UseBookmarksResult {
         setError("You must be logged in to bookmark questions");
         return;
       }
+      // Guard against malformed IDs from stale cached JS (old code used "q0"/"q1"
+      // fallbacks that the bookmarks page can't resolve back to a real question).
+      const parts = questionId.split(":");
+      const rawId = parts[parts.length - 1];
+      if (!rawId || /^q\d+$/.test(rawId) || parts.length < 3) {
+        setError("Couldn't bookmark this question — please hard-refresh the page (Cmd+Shift+R) and try again.");
+        return;
+      }
       const existing = bookmarks.find((b) => b.question_id === questionId);
       const sb = getSupabase();
 
