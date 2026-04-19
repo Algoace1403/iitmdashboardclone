@@ -21,36 +21,65 @@ export default function CurrentCoursesPage() {
 
   return (
     <div>
-      {/* Date + Term + Bookmarked Questions button -- top right */}
+      {/* Date + Term + Bookmarked Questions button */}
       <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 16 }}>
         <div style={{ textAlign: "right" }}>
           <p style={{ fontWeight: 600, fontSize: isMobile ? 15 : 18, color: "#000", margin: 0 }}>{today}</p>
           <p style={{ fontSize: 12, color: "#707070", margin: 0, textTransform: "uppercase", letterSpacing: 1 }}>
             {studentData.currentTerm}
           </p>
-          <Link
-            href="/bookmarks"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 6,
-              marginTop: 8,
-              padding: "6px 14px",
-              background: "#aa3535",
-              color: "white",
-              borderRadius: 4,
-              fontSize: 13,
-              fontWeight: 600,
-              textDecoration: "none",
-            }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
-            Bookmarked Questions
-          </Link>
+          {!isMobile && (
+            <Link
+              href="/bookmarks"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                marginTop: 8,
+                padding: "6px 14px",
+                background: "#aa3535",
+                color: "white",
+                borderRadius: 4,
+                fontSize: 13,
+                fontWeight: 600,
+                textDecoration: "none",
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+              </svg>
+              Bookmarked Questions
+            </Link>
+          )}
         </div>
       </div>
+
+      {/* Mobile-only full-width Bookmarked Questions button */}
+      {isMobile && (
+        <Link
+          href="/bookmarks"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 8,
+            marginBottom: 16,
+            padding: "10px 14px",
+            background: "#aa3535",
+            color: "white",
+            borderRadius: 4,
+            fontSize: 14,
+            fontWeight: 600,
+            textDecoration: "none",
+            width: "100%",
+          }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+          Bookmarked Questions
+        </Link>
+      )}
 
       {/* Title + CGPA */}
       <div style={{ marginBottom: 24 }}>
