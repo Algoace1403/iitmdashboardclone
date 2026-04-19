@@ -109,7 +109,11 @@ export default function PracticeAssignmentPage() {
 
           {/* Raw HTML rendering for Math courses */}
           {useRawHtml ? (
-            <RawHtmlRenderer html={rawHtml} />
+            <RawHtmlRenderer
+              html={rawHtml}
+              courseId={courseId}
+              assignmentId={`week${weekNum}-practice`}
+            />
           ) : practice && practice.questions.length > 0 ? (
             /* Interactive parsed version with Check Answers */
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>

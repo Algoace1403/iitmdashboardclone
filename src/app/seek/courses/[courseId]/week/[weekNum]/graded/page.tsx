@@ -256,7 +256,13 @@ export default function GradedAssignmentPage() {
 
                 // If we have raw HTML, render it directly (100% accurate)
                 if (gradedHtml) {
-                  return <RawHtmlRenderer html={gradedHtml} />;
+                  return (
+                    <RawHtmlRenderer
+                      html={gradedHtml}
+                      courseId={courseId}
+                      assignmentId={`week${weekNum}-graded`}
+                    />
+                  );
                 }
 
                 // Fallback: parsed questions with Check Answers

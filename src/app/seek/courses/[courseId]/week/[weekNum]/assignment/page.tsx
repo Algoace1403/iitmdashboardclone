@@ -34,7 +34,11 @@ export default function AssignmentViewPage() {
           </h1>
 
           {html ? (
-            <RawHtmlRenderer html={html} />
+            <RawHtmlRenderer
+              html={html}
+              courseId={courseId}
+              assignmentId={title || `week${weekNum}-assignment`}
+            />
           ) : (
             <div style={{ background: "#fff", borderRadius: 4, padding: 32, textAlign: "center" }}>
               <p style={{ color: "rgba(0,0,0,0.54)", fontSize: 14 }}>

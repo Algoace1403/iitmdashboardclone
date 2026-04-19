@@ -1,12 +1,18 @@
 "use client";
 
 import type { Question } from "@/lib/types";
+import { BookmarkButton } from "@/components/ui/BookmarkButton";
 
 interface QuestionBlockProps {
   question: Question;
+  courseId?: string;
+  assignmentId?: string;
 }
 
-export function QuestionBlock({ question: q }: QuestionBlockProps) {
+export function QuestionBlock({ question: q, courseId, assignmentId }: QuestionBlockProps) {
+  const bookmarkQuestionId = courseId && assignmentId
+    ? `${courseId}:${assignmentId}:${q.id}`
+    : null;
   return (
     <div className="p-5" style={{ background: "#ffffff", borderRadius: 4, boxShadow: "0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12)", fontFamily: "Roboto, 'Helvetica Neue', sans-serif" }}>
       {/* Header: question number + marks + score */}
@@ -31,6 +37,13 @@ export function QuestionBlock({ question: q }: QuestionBlockProps) {
           <span className="text-xs text-[#7d8698]">
             [{q.marks} mark{q.marks > 1 ? "s" : ""}]
           </span>
+          {bookmarkQuestionId && courseId && assignmentId && (
+            <BookmarkButton
+              courseId={courseId}
+              assignmentId={assignmentId}
+              questionId={bookmarkQuestionId}
+            />
+          )}
         </div>
       </div>
 

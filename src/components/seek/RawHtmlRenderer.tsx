@@ -1,13 +1,23 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import { BookmarkButton } from "@/components/ui/BookmarkButton";
 
 interface RawHtmlRendererProps {
   html: string;
+  courseId?: string;
+  assignmentId?: string;
 }
 
-export function RawHtmlRenderer({ html }: RawHtmlRendererProps) {
+interface BookmarkSlot {
+  node: HTMLElement;
+  questionId: string;
+}
+
+export function RawHtmlRenderer({ html, courseId, assignmentId }: RawHtmlRendererProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [slots, setSlots] = useState<BookmarkSlot[]>([]);
 
   useEffect(() => {
     if (!containerRef.current || !html) return;
@@ -47,22 +57,73 @@ export function RawHtmlRenderer({ html }: RawHtmlRendererProps) {
     // Inject our own Check Answers functionality
     injectCheckAnswers(containerRef.current);
 
-  }, [html]);
+    // Inject bookmark slots into each question
+    if (courseId && assignmentId) {
+      const newSlots = injectBookmarkSlots(containerRef.current, courseId, assignmentId);
+      setSlots(newSlots);
+    } else {
+      setSlots([]);
+    }
+
+  }, [html, courseId, assignmentId]);
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        background: "#fff",
-        borderRadius: 4,
-        padding: 24,
-        boxShadow: "0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12)",
-        fontSize: 14,
-        lineHeight: 1.7,
-        color: "rgba(0,0,0,0.87)",
-      }}
-    />
+    <>
+      <div
+        ref={containerRef}
+        style={{
+          background: "#fff",
+          borderRadius: 4,
+          padding: 24,
+          boxShadow: "0px 2px 1px -1px rgba(0,0,0,.2), 0px 1px 1px 0px rgba(0,0,0,.14), 0px 1px 3px 0px rgba(0,0,0,.12)",
+          fontSize: 14,
+          lineHeight: 1.7,
+          color: "rgba(0,0,0,0.87)",
+        }}
+      />
+      {courseId && assignmentId &&
+        slots.map((slot) =>
+          createPortal(
+            <BookmarkButton
+              courseId={courseId}
+              assignmentId={assignmentId}
+              questionId={slot.questionId}
+            />,
+            slot.node,
+            slot.questionId
+          )
+        )}
+    </>
   );
+}
+
+function injectBookmarkSlots(
+  container: HTMLElement,
+  courseId: string,
+  assignmentId: string
+): BookmarkSlot[] {
+  const slots: BookmarkSlot[] = [];
+  const seen = new Set<string>();
+
+  const questionEls = container.querySelectorAll<HTMLElement>(".qt-question");
+  questionEls.forEach((qEl, idx) => {
+    const inner = qEl.querySelector<HTMLElement>(
+      ".qt-mc-question[id], .qt-sa-question[id]"
+    );
+    const rawId = inner?.id || qEl.id || `q${idx}`;
+    const questionId = `${courseId}:${assignmentId}:${rawId}`;
+    if (seen.has(questionId)) return;
+    seen.add(questionId);
+
+    const slot = document.createElement("span");
+    slot.className = "bookmark-slot";
+    slot.style.cssText =
+      "display:inline-flex;float:right;margin-left:8px;align-items:center;";
+    qEl.insertBefore(slot, qEl.firstChild);
+    slots.push({ node: slot, questionId });
+  });
+
+  return slots;
 }
 
 function hideCapturedFeedback(container: HTMLElement) {

@@ -44,7 +44,12 @@ export default async function ActivityQuestionsPage({ params }: Props) {
           ) : (
             <div className="space-y-4">
               {questions.map((q) => (
-                <QuestionBlock key={q.id} question={q} />
+                <QuestionBlock
+                  key={q.id}
+                  question={q}
+                  courseId={courseId}
+                  assignmentId={`week${weekNumber}-activity`}
+                />
               ))}
             </div>
           )}
