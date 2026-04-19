@@ -281,15 +281,24 @@ function extractQuestionHtml(fullHtml: string, compositeQuestionId: string): str
   if (typeof window === "undefined") return null;
   const doc = new DOMParser().parseFromString(fullHtml, "text/html");
 
+  // Attribute selector value is inside quotes — CSS.escape handles any special chars safely.
   const escaped = typeof CSS !== "undefined" && CSS.escape ? CSS.escape(rawId) : rawId.replace(/"/g, '\\"');
   const target = doc.querySelector<HTMLElement>(
     `.qt-mc-question[id="${escaped}"], .qt-sa-question[id="${escaped}"]`
   );
   if (!target) return null;
 
-  // Prefer the enclosing .qt-question wrapper so question text + all options are included.
-  const wrapper = target.closest<HTMLElement>(".qt-question");
-  return (wrapper ?? target).outerHTML;
+  // Include the parent group's introduction (context text like "Use the info below for Q3 and Q4"),
+  // plus the specific question element. That gives the student full context + the question.
+  const group = target.closest<HTMLElement>(".qt-question-group");
+  const intro = group?.querySelector<HTMLElement>(":scope > .qt-introduction");
+  if (intro) {
+    const wrap = doc.createElement("div");
+    wrap.appendChild(intro.cloneNode(true));
+    wrap.appendChild(target.cloneNode(true));
+    return wrap.innerHTML;
+  }
+  return target.outerHTML;
 }
 
 function buildSeekLink(courseId: string, assignmentId: string): string {
